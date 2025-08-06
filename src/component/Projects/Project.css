@@ -1,0 +1,12 @@
+
+
+.project-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+

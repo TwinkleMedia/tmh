@@ -1,0 +1,102 @@
+
+    .influencersContainer{
+        background-image:linear-gradient(to top ,rgba(0, 0, 0, 0.799) 5%,rgba(0, 0, 0, 0.163)), url("./../../../public/asset/influencer/influencerBackgroundi.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+
+    }
+    .influencersContainer h1{
+        color: white;
+        font-weight: 700;
+        font-size: 50px;
+    }
+    .influencersContainer span{
+        color: white;
+    }
+    .influencerSection {
+      
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 0;
+      min-height: 5rem;
+    }   
+      .member {
+        
+        margin-right: -10px; 
+        
+        height: 7rem;
+        aspect-ratio: 1;
+              
+        background: var(--img-url) center center;
+        background-size: cover;
+        border-radius: 50%;
+        border: 2px white solid;
+        box-shadow: 0 0 10px fade(black, 90%);
+        
+        transition: .5s;
+      }
+        .member:hover {
+          margin-top: -2rem;
+          box-shadow: 0px 10px 10px fade(white, 20%);
+          border-radius: calc(50% - 8px);
+          
+        }
+  
+
+        .login-box {
+            position:relative;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            background:#1C5ABC;
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            border-radius: 10px;
+          }
+          
+          .login-box h2 {
+            margin: 0 0 30px;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+          }
+          
+          .login-box .user-box {
+            position: relative;
+          }
+          
+          .login-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+          }
+          .login-box .user-box label {
+            position: absolute;
+            top:0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+          }
+          
+          .login-box .user-box input:focus ~ label,
+          .login-box .user-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+          }
+          
+        

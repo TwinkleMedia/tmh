@@ -1,0 +1,151 @@
+.plans-section {
+background-color: white;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.plans-title {
+    font-size: 3vw;
+  font-weight: 400;
+  font-weight: bold;
+  color: #1E5DB3; /* Similar blue color as in the image */
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Anta", sans-serif;
+  margin-bottom: 20px;
+}
+.plans-title::after {
+    content: '';
+    width: 600px; /* Adjust the width as needed */
+    height: 4px; /* Adjust the height as needed */
+    background-color: #FFA500; /* Similar yellow color as in the image */
+    position: absolute;
+    bottom: -10px; /* Adjust the distance from the text */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 100%;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.plan-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 280px; /* Set consistent width for all cards */
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+    height: 100%; /* Ensure cards have equal height */
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.plan-card h3 {
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.plan-card p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ecf0f1;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.plan-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    flex-grow: 1; /* Allow the list to push content down */
+}
+
+.plan-card ul li {
+    padding: 10px 20px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.plan-card ul li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Social media buttons */
+.social-media-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto; /* Push the buttons to the bottom of the card */
+}
+
+.social-media-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-media-btn:hover {
+    background-color: #27ae60;
+}
+
+.social-media-btn i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Specific styles for each plan */
+.plan-card.basic h3 {
+    background-color: #3498db;
+}
+
+.plan-card.silver h3 {
+    background-color: #bdc3c7;
+}
+
+.plan-card.gold h3 {
+    background-color: #f1c40f;
+}
+
+.plan-card.platinum h3 {
+    background-color: #e23333;
+}
+
+@media (max-width: 1200px) {
+    .plans-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

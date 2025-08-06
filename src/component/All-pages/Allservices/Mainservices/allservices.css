@@ -1,0 +1,61 @@
+h2,h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.serv-head h1{
+    font-weight: 700;
+    font-size: 44px;
+    padding-bottom: 5px;
+    
+}
+
+.serv-head span{
+    font-weight: 700;
+    color: var(--Primary-colour);
+}
+
+.serv-head h4{
+    font-weight: 600;
+    font-size: 18px;
+   
+}
+
+
+.animate-border{
+    width: 115px;
+    height: 3px;
+    background: var(--Primary-colour);
+}
+
+
+.sw-main-content{
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.sw-main-content p{
+    line-height: 1.75;
+    text-align: justify;
+}
+
+
+.serv-btn{
+    border: none;
+    padding: 0.8rem 3rem;
+    border-radius: 1rem;
+    background-color: var(--Primary-colour);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+   transition:  0.3s all ease-in-out;
+   cursor: pointer;
+}
+
+.serv-btn:hover{
+    background-color: blue;
+    color: var(--Primary-colour);
+   
+}

@@ -1,0 +1,69 @@
+
+
+.about{
+.bg-light{
+    background-color: #EFEFEF !important;
+}
+.logo{
+    width: 200px;
+    position: absolute;
+    top: -50px;
+    left:2%;
+    animation: aboutlogoanimation 5s infinite linear;
+}
+.row h1{
+    font-size: 45px;
+    text-shadow:var(--text-shadow);
+}
+p{
+    font-size: 20px;
+}
+
+}
+.gradient-text{
+    color: var(--Primary-colour);
+}
+
+@keyframes aboutlogoanimation{
+    0%{transform:scale(0)}
+    20%{transform:scale(1.2)}
+    40%{transform:scale(1)}
+    75%{transform:rotate(0)}
+    79%{transform:rotate(30deg)}
+    81%{transform:rotate(-30deg)}
+    85%{transform:rotate(0deg)}
+    100%{transform:rotate(0)}
+ }
+
+
+ .box-experice .numb-ex{
+    font-size: 90px;
+    line-height: 94px;
+    color: var(--Primary-colour);
+    transform: scale3d(1, 1.2, 1);
+    margin-right: 15px;
+    text-shadow: var(--text-shadow);
+ }
+
+ .box-experice h3{
+    font-size: 2.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+ }
+ @media (max-width:500px){
+    .about{
+        .row h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .box-experice .numb-ex {
+        font-size: 50px;
+    }
+    .box-experice h3 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,27 @@
+/* whatsapp-button.css */
+
+.App{
+  display: block;
+}
+
+.whatsapp-widget-container {
+    position: fixed;
+    bottom: 200px;
+    right: 80px;
+    z-index: 9999;
+  }
+  
+  .whatsapp-widget-button {
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .whatsapp-widget-button:hover {
+    background-color: #128c7e;
+  }
+  

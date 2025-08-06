@@ -1,0 +1,47 @@
+.back{
+    background-color: #EFEFEF;
+    text-align: center;
+    padding: 20px 0 ;
+    
+}
+
+.slide img{
+    width: 250px;
+    height: 100%;
+}
+
+.back h3{
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    margin: 5px 0px 20px 0px;
+    font-size: 3rem;
+}
+
+.back h2{
+    text-transform: uppercase;
+    color: var(--Primary-colour);
+    text-shadow: var(--text-shadow);
+    font-size: 3.7rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+
+.usp-heading img{
+    width: 250px;
+   
+}
+
+.usp-heading h4{
+    color: var(--Primary-colour);
+    text-shadow: var(--text-shadow);
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.usp-heading p {
+    padding: 0 2.5rem;
+    font-weight: 300;
+    font-size: 18px;
+   
+}

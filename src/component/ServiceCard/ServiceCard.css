@@ -1,0 +1,44 @@
+.service-card{
+    
+    background-size: 200% 200%;
+    background-image:linear-gradient(to right top,#FA8F06 50%,white 50%);
+    background-position: 80% 20%;
+    transition: all .3s ;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+}
+.service-card::before{
+position: absolute;
+content: " ";
+display: block;
+height: 0px;
+width: 0px;
+left: 10px;
+bottom: 10px;
+border:10px solid white;
+border-top-color:transparent;
+border-right-color:transparent;
+transition: all .3s;
+
+}
+.service-card svg{
+    transform: scale(3);
+    margin: 30px;
+}
+
+.service-card:hover{
+    background-position: 20% 80%;
+    color:white;
+}
+
+.service-card:hover h4{
+    color: #1C5ABC;
+    text-shadow: 1px 1px 1px white;
+}
+
+.service-card:hover::before{
+    
+height: 200px;
+width: 200px;
+}

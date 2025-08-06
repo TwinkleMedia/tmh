@@ -1,0 +1,113 @@
+
+.footer{
+    box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+opacity: 0.8;
+}
+
+
+.footer_logo{
+    width: 250px;
+}
+.social_icon{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+.facebook_icon{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.2s all ease-in;
+    cursor: pointer;
+}
+
+.f_icon{
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+.facebook_icon:hover{
+   border: 1px solid var(--secondary-color);
+}
+
+
+.instagram_icon{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.2s all ease-in;
+    cursor: pointer;
+}
+.instagram_icon:hover{
+    border: 1px solid var(--secondary-color);
+}
+.i_icon{
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+
+.youtube_icon{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s all ease-in;
+    cursor: pointer;
+}
+.youtube_icon:hover{
+    border: 1px solid var(--secondary-color);
+}
+.y_icon{
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+.l_icon{
+    color: var(--secondary-color);
+    font-size: 45px;
+}
+.foot_details{
+ul{
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+    /* height: 350px; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer_links{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    color: var(--secondary-color);
+    transition: 0.2s all ease-in;
+}
+.footer_links:hover{
+    color: var( --Primary-colour);
+}
+.address_details{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.address_details:hover{
+    color: var(--Primary-colour);
+}
+.s_icon{
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin-right: 20px;
+}

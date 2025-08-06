@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Glitch+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+.heading{
+    position: relative;
+}
+.heading span{
+    font-size: 4vw;
+    position: absolute;
+    font-family: "Rubik Glitch Pop", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    color: #1c59bc16;
+    top: 0;
+    text-transform: capitalize;
+    transition: all 2s;
+    left: 50%; 
+     transform: translateX(-50%);
+     animation: textani 2s infinite;
+  }
+  @keyframes textani {
+    from{color: #1c59bc16;}
+    to{color: #1c59bc3f;}
+  }
+  .heading span:hover{
+    color: #1c59bc83;
+  }
+.heading h2{
+    text-align: center;
+    color: #1C5ABC;
+    font-size:  3vw;
+    text-transform: uppercase;
+    font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.heading h2::after{
+  content:"";
+  height: 6px;
+  width: 300px;
+  background-color: orange;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.heading h3{
+    text-align: center;
+    color: #1C5ABC;
+    font-size:  3vw;
+    text-transform: uppercase;
+    font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.heading h3::after{
+  content:"";
+  height: 6px;
+  width: 300px;
+  background-color: orange;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.heading h4{
+    text-align: center;
+    color: #1C5ABC;
+    font-size:  3vw;
+    text-transform: uppercase;
+    font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.heading h4::after{
+  content:"";
+  height: 6px;
+  width: 300px;
+  background-color: orange;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+@media (max-width:500px){
+  .heading span{
+    font-size: 15vw;
+  }
+  .heading h2{
+    font-size:  8vw;
+}
+}

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.brandlogo {
+  height: 100%;
+  width: 200px;
+}
+.navbar {
+  display: flex;
+  /* position: sticky; */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure this value is higher than the breadcrumb's z-index */
+  box-shadow: 0px 10px 60px -13px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 10px 60px -13px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 10px 60px -13px rgba(0, 0, 0, 0.5);
+  background-color: var(--white-color);
+  justify-content: space-between;
+}
+
+/* .navbar .container{
+  display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.active {
+  text-shadow: 0 0 1px white;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0 20px !important;
+  color: orange;
+}
+
+.updateNav {
+  box-shadow: 0 3px 20px;
+}
+
+.updateNav .active {
+  color: blue !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler .text {
+  font-size: 13px !important;
+}
+.navbar-toggler-icon {
+  background-blend-mode: saturation !important;
+}
+
+/*========================== Media Queries for Navbar ==============================================*/
+
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+  .brandlogo {
+    height: 55px;
+    width: auto;
+  }
+  #navbarNav{
+    li{
+      padding: 4px 0;
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+  #navbarNav{
+    li{
+      padding: 4px 0;
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 426px) {
+  #navbarNav{
+    li{
+      padding: 4px 0;
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+  #navbarNav{
+    li{
+      padding: 4px 0;
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 769px) {
+  #navbarNav{
+    li{
+      padding: 4px 0;
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
+  .navbar .container {
+    max-width: 10000px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .navbar .container {
+    max-width: 10000px;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1201px) {
+  .navbar .container {
+    max-width: 10000px;
+  }
+}
+@media only screen and (max-width: 2560px) and (min-width: 1441px) {
+  .navbar .container {
+    max-width: 10000px;
+  }
+}

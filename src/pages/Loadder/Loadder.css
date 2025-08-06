@@ -1,0 +1,39 @@
+/* Full screen container for the logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-color: #fff; /* Background color for better visibility */
+    position: fixed; /* Ensure it stays in place */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure it stays on top */
+  }
+  
+  /* Logo styling with heartbeat animation */
+  .logos {
+    width: 150px; /* Adjust as needed */
+    animation: heartbeat 1.5s infinite;
+  }
+  
+  /* Keyframes for the heartbeat animation */
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
