@@ -8,15 +8,14 @@
 :root {
   --Primary-colour: #f67b0c;
   --text-shadow: 0 1px 2px #1c5abc;
-  --background-color: #eeeeee;
-  --background-2nd-color: #31363f;
+  --background-color: #31363f;
   --secondary-color: #1c5abc;
   --white-color: #fff;
 }
 
 .body {
-  /* background: url(../public/asset/back-img/back-img.png); */
-  color: #fff;
+background-color: var(--background-color) !important;
+  color: #fff !important;
   overflow: hidden;
 }
 

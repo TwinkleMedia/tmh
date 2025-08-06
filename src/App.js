@@ -15,7 +15,7 @@ import HomePortfolio from './pages/home-portfolio/HomePortfolio.js';
 import HomeGrid from './pages/home-grid/HomeGrid.js';
 import TestimonialSection from './pages/testimonial/TestimonialSection.js';
 import HomeAd from './pages/home-ad/HomeAd.js';
-import Loadder from './pages/Loadder/Loadder.jsx';
+// import Loadder from './pages/Loadder/Loadder.jsx';
 import Whatsappbutton from './pages/Whatsapp/Whatsappbutton.jsx';
 import { Helmet } from 'react-helmet';
 // import reelslider from './pages/Reel.js';
@@ -45,10 +45,10 @@ export default function App() {
   return (
     <>
 
-{isLoading?(<Loadder/>):(
+{/* {isLoading?(<Loadder/>):( */}
 
-  <div style={{overflow:'hidden'}}>
-    <Suspense  fallback={<Loadder/>}>
+   <div style={{overflow:'hidden'}}>
+  {/* //   <Suspense  fallback={<Loadder/>}> */}
 
   <Home/>
   {/* <About/> */}
@@ -67,10 +67,10 @@ export default function App() {
   {/* <Influencer/> */}
   {/* <Blog/> */}
   
-    </Suspense>
+    {/* </Suspense> */}
   </div>
-    )
- } 
+    {/* )
+ }  */}
     </>
     
   )

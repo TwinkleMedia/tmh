@@ -1,138 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-.brandlogo {
-  height: 100%;
-  width: 200px;
-}
 .navbar {
-  display: flex;
-  /* position: sticky; */
-  top: 0;
-  width: 100%;
-  z-index: 1000; /* Ensure this value is higher than the breadcrumb's z-index */
+  background-color: #2c2e33; /* dark background */
+  padding: 10px 0;
   box-shadow: 0px 10px 60px -13px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 10px 60px -13px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 10px 60px -13px rgba(0, 0, 0, 0.5);
-  background-color: var(--white-color);
-  justify-content: space-between;
+  z-index: 1000;
 }
 
-/* .navbar .container{
-  display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-} */
-
-.active {
-  text-shadow: 0 0 1px white;
+.brandlogo {
+  height: 80px;
+  width: auto;
 }
 
+/* Navigation Links */
 .nav-link {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-style: normal;
-  padding: 0 20px !important;
-  color: orange;
+  color: orange !important;
+  padding: 10px 15px;
 }
 
-.updateNav {
-  box-shadow: 0 3px 20px;
+.nav-link:hover {
+  color: #ff8800 !important;
 }
 
-.updateNav .active {
-  color: blue !important;
+/* Header Layout */
+.header-container {
+  padding: 0 20px;
+}
+
+.navbar-nav {
+  align-items: center;
+  gap: 10px;
 }
 
 .navbar-toggler {
-  border: none !important;
+  border: none;
 }
-.navbar-toggler .text {
-  font-size: 13px !important;
-}
+
 .navbar-toggler-icon {
-  background-blend-mode: saturation !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff8800' viewBox='0 0 30 30'%3e%3cpath stroke='orange' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/*========================== Media Queries for Navbar ==============================================*/
+/* Responsive: Center Nav, Download Btn on Bottom */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
 
-@media only screen and (max-width: 375px) and (min-width: 320px) {
-  .brandlogo {
-    height: 55px;
-    width: auto;
+  .navbar-collapse {
+    padding-top: 15px;
   }
-  #navbarNav{
-    li{
-      padding: 4px 0;
-      border-bottom: 1px solid #dee2e6;
-      border-top: 1px solid #dee2e6;
-      width: 100%;
-      text-align: center;
-    }
+
+  .navbar-brand {
+    margin: auto;
   }
-}
-@media only screen and (max-width: 425px) and (min-width: 376px) {
-  #navbarNav{
-    li{
-      padding: 4px 0;
-      border-bottom: 1px solid #dee2e6;
-      border-top: 1px solid #dee2e6;
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
-@media only screen and (max-width: 600px) and (min-width: 426px) {
-  #navbarNav{
-    li{
-      padding: 4px 0;
-      border-bottom: 1px solid #dee2e6;
-      border-top: 1px solid #dee2e6;
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 601px) {
-  #navbarNav{
-    li{
-      padding: 4px 0;
-      border-bottom: 1px solid #dee2e6;
-      border-top: 1px solid #dee2e6;
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
-@media only screen and (max-width: 991px) and (min-width: 769px) {
-  #navbarNav{
-    li{
-      padding: 4px 0;
-      border-bottom: 1px solid #dee2e6;
-      border-top: 1px solid #dee2e6;
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
-@media only screen and (max-width: 1024px) and (min-width: 992px) {
-  .navbar .container {
-    max-width: 10000px;
-  }
-}
-@media only screen and (max-width: 1200px) and (min-width: 1025px) {
-  .navbar .container {
-    max-width: 10000px;
-  }
-}
-@media only screen and (max-width: 1440px) and (min-width: 1201px) {
-  .navbar .container {
-    max-width: 10000px;
-  }
-}
-@media only screen and (max-width: 2560px) and (min-width: 1441px) {
-  .navbar .container {
-    max-width: 10000px;
+
+  .d-flex {
+    justify-content: center !important;
   }
 }

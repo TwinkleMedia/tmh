@@ -3,101 +3,59 @@ import "./Header.css";
 import logo from "./../../image/brand.webp";
 import { Link } from "react-router-dom";
 import DownloadBtn from "../download-button/DownloadBtn";
-import pdf from '../download-button/TMH Company Profile.pdf';
+import pdf from "../download-button/TMH Company Profile.pdf";
 
 export default function Header() {
-
-
-  
-
   return (
-    <>
-      <nav className="navbar sticky-top navbar-expand-lg" >
-        <div className="container">
-          <Link to="/">
-            <img src={logo} className="brandlogo"></img>
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul className="navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Our Work
-                </Link>
-              </li>
+    <nav className="navbar navbar-expand-lg sticky-top">
+      <div className="container-fluid header-container">
+        {/* Left: Logo */}
+        <Link className="navbar-brand" to="/">
+          <img src={logo} alt="Brand Logo" className="brandlogo" />
+        </Link>
 
-              <li className="nav-item">
-                <Link className="nav-link " to="/about">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link " to="/services">
-                  Services
-                </Link>
-              </li>
+        {/* Toggle Button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-              {/* <li className="nav-item">
-                  <Link className="nav-link " to="/portfolio">
-                    Portfolio
-                  </Link>
-                </li> */}
+        {/* Collapsible Nav */}
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          {/* Center: Nav Links */}
+          <ul className="navbar-nav mx-auto text-center">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Our Work</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/services">Services</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/blog">Blog</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">Contact</Link>
+            </li>
+          </ul>
 
-              {/* <li className="nav-item">
-                <Link className="nav-link " to="/collaborations">
-                  Collaboration
-                </Link>
-              </li> */}
-              {/* <li className="nav-item">
-                <Link className="nav-link " to="#">
-                Ads
-                </Link>
-                </li> */}
-
-              {/* <li className="nav-item">
-                  <Link className="nav-link " to="/influencers">
-                  Influencers
-                  </Link>
-                  </li> */}
-
-              <li className="nav-item">
-                <Link className="nav-link " to="/blog">
-                  Blog
-                </Link>
-              </li>
-
-              {/* <li className="nav-item">
-                  <Link className="nav-link " to="/career">
-                    Career
-                  </Link>
-                </li> */}
-              <li className="nav-item">
-                <Link className="nav-link " to="/contact">
-                  Contact
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link " to={pdf} target="_blank" download>
-                  <DownloadBtn/>
-                </Link>
-              </li>
-            </ul>
+          {/* Right: Download Button */}
+          <div className="d-flex justify-content-center mt-2 mt-lg-0">
+            <Link to={pdf} target="_blank" download>
+              <DownloadBtn />
+            </Link>
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }
