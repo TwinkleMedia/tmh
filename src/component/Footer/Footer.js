@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./../../image/brand.webp";
+// import logo from "./../../image/brand.webp";
 import "./Footer.css";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="container">
         <div className="row gy-4">
           <div className="col-md-6 col-lg-4">
-            <img src={logo} className="img-fluid footer_logo mb-3" alt="logo" />
+            <img src="https://res.cloudinary.com/dh9dpvul4/image/upload/v1754563076/logo_logo_tm_300x-8_mtvlxl.png" className="img-fluid footer_logo mb-3" alt="logo" />
             <p className="footer_description">
               At Twinkle Media Hub Pvt. Ltd., we’re a passionate team of Advertising & Digital Marketing experts, turning brand visions into bold realities.
             </p>

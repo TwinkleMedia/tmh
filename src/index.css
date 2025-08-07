@@ -6,15 +6,15 @@
 
 
 :root {
-  --Primary-colour: #f67b0c;
+  --primary-color: #f67b0c;
   --text-shadow: 0 1px 2px #1c5abc;
-  --background-color: #31363f;
+  --background-color: black;
   --secondary-color: #1c5abc;
   --white-color: #fff;
 }
 
 .body {
-background-color: var(--background-color) !important;
+  background-color: var(--background-color) !important;
   color: #fff !important;
   overflow: hidden;
 }

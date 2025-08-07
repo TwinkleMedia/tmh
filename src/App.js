@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react'
+
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import Home from './pages/Home/Home'
@@ -47,7 +48,7 @@ export default function App() {
 
 {/* {isLoading?(<Loadder/>):( */}
 
-   <div style={{overflow:'hidden'}}>
+   <div className='body'>
   {/* //   <Suspense  fallback={<Loadder/>}> */}
 
   <Home/>

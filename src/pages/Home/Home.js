@@ -5,19 +5,19 @@ export default function Home() {
   const slides = [
     {
       id: 1,
-      bgImage: '/assets/images/slider1.jpg', // Replace with your image path
+      bgImage: 'https://res.cloudinary.com/dh9dpvul4/image/upload/v1754561048/Group_6_mp1xxm.png', // Replace with your image path
       heading: 'Creative Strategies',
       subtext: 'Delivering performance-driven marketing with design thinking.',
     },
     {
       id: 2,
-      bgImage: '/assets/images/slider2.jpg',
+      bgImage: 'https://res.cloudinary.com/dh9dpvul4/image/upload/v1754561048/Group_6_mp1xxm.png',
       heading: 'Digital First, Always',
       subtext: 'We build scalable, responsive digital campaigns.',
     },
     {
       id: 3,
-      bgImage: '/assets/images/slider3.jpg',
+      bgImage: 'https://res.cloudinary.com/dh9dpvul4/image/upload/v1754561048/Group_6_mp1xxm.png',
       heading: 'Branding That Resonates',
       subtext: 'Creating identities that last and connect.',
     },

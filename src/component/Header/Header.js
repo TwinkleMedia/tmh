@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import logo from "./../../image/brand.webp";
+// import logo from "./../../image/brand.webp";
 import { Link } from "react-router-dom";
 import DownloadBtn from "../download-button/DownloadBtn";
 import pdf from "../download-button/TMH Company Profile.pdf";
@@ -11,7 +11,7 @@ export default function Header() {
       <div className="container-fluid header-container">
         {/* Left: Logo */}
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="Brand Logo" className="brandlogo" />
+          <img src="https://res.cloudinary.com/dh9dpvul4/image/upload/v1754563076/logo_logo_tm_300x-8_mtvlxl.png" alt="Brand Logo" className="brandlogo" />
         </Link>
 
         {/* Toggle Button */}
