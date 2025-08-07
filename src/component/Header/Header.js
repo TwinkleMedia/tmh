@@ -8,7 +8,7 @@ import pdf from "../download-button/TMH Company Profile.pdf";
 export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
-      <div className="container-fluid header-container">
+      <div className="container header-container">
         {/* Left: Logo */}
         <Link className="navbar-brand" to="/">
           <img src="https://res.cloudinary.com/dh9dpvul4/image/upload/v1754563076/logo_logo_tm_300x-8_mtvlxl.png" alt="Brand Logo" className="brandlogo" />
