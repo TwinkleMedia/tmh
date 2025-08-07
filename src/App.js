@@ -4,7 +4,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import Home from './pages/Home/Home'
 import About from './pages/About/About';
 import Service from './pages/service/Service';
-import Scrollingg from './component/ScrollingText/Scrollingg.js';
+// import Scrollingg from './component/ScrollingText/Scrollingg.js';
 import Blog from './pages/Blog/Blog.js';
 import Influencer from './pages/Influencer/Influencer.js';
 import Our_usp from './component/Ourusp/Our_usp.jsx';
@@ -53,7 +53,7 @@ export default function App() {
   <Home/>
   {/* <About/> */}
   {/* <Service/> */}
-  <Scrollingg/>
+  {/* <Scrollingg/> */}
   <Why/>
   <HomePortfolio/>
   <HomeAd/>
