@@ -22,10 +22,10 @@ You know your target audience—we help you speak to them in the most creative a
           </p>
         </div>
         <div className="why-box col-md-4 col-sm-12 mb-4">
-          <span className="why-sub">03 / DIGITAL MARKETING</span>
-          <h3 className="why-title">Digital Marketing Solutions For Your Brand</h3>
+          <span className="why-sub">03 / 360° Marketing Solutions</span>
+          <h3 className="why-title">Your Brand Our Mission 360° Marketing Solutions.</h3>
           <p>
-            Our expert team offers top-notch SEO, SEM, and social media services to elevate your brand’s online presence. From strategic planning to campaign optimization, we deliver measurable results by analyzing past metrics and creating data-driven strategies. Partner with the best advertising agency in Navi Mumbai to achieve success across all digital platforms.
+            Our expert team offers high-impact SEO, SEM, and social media services to elevate your brand’s online presence. From strategic planning to campaign optimization, we deliver measurable results by analyzing past metrics and creating data-driven strategies. Partner with the best advertising agency in Navi Mumbai to achieve success across all digital platforms.
           </p>
         </div>
       </div>

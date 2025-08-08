@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 .navbar {
-  background-color: var(--secondary-color); /* dark background */
+  background-color: #063F9C; /* dark background */
   padding: 10px 0;
   box-shadow: 0px 10px 60px -13px rgba(0, 0, 0, 0.5);
   z-index: 1000;
