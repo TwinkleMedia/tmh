@@ -35,9 +35,9 @@ export default function HomePortfolio() {
         </div>
       </Carousel> */}
       <div className="py-5">
-          <Heading headingLabel="Our Services" />
+          {/* <Heading headingLabel="Our Services" /> */}
         </div>
-      <PortfolioContent/>
+      {/* <PortfolioContent/> */}
     </>
   );
 }

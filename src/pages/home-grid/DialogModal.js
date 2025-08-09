@@ -23,7 +23,7 @@ export default function DialogModal(props) {
             </video>
           </>
         ) : (
-          /*<div className=" videoModal">
+          <div className=" videoModal">
             <Carousel
               showThumbs={true}
               infiniteLoop={true}
@@ -47,9 +47,8 @@ export default function DialogModal(props) {
                 <p className="legend">Legend 3</p>
               </div>
             </Carousel>
-            </div>*/
-            " "
-          
+            </div>
+                      
         )}
         <div className=" videoBtn">
           <button

@@ -11,13 +11,13 @@ export default function Home() {
     },
     {
       id: 2,
-        bgImage: 'https://res.cloudinary.com/dh9dpvul4/image/upload/v1754573802/Group_7_octgbf.png',
+        bgImage: 'https://res.cloudinary.com/dh9dpvul4/image/upload/v1754724044/tmh_cover_6_qmai7s.png',
         heading: 'Digital First, Always',
       subtext: 'We build scalable, responsive digital campaigns.',
     },
     {
       id: 3,
-      bgImage: 'https://res.cloudinary.com/dh9dpvul4/image/upload/v1754573802/Group_7_octgbf.png',
+      bgImage: 'https://res.cloudinary.com/dh9dpvul4/image/upload/v1754724044/tmh_cover_5_j1qbwx.png',
       heading: 'Branding That Resonates',
       subtext: 'Creating identities that last and connect.',
     },

@@ -3,7 +3,7 @@ import "./Heading.css";
 
 export default function Heading({ headingLabel }) {
   return (
-    <div className="heading py-5">
+    <div className="heading ">
       {/* <span>{headingLabel}</span> */}
       {headingLabel == "our team" ? (
         <h4>{headingLabel}</h4>

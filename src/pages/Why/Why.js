@@ -2,7 +2,7 @@ import "./why.css";
 
 export default function Why() {
   return (
-    <div className="why-container container py-5">
+    <div className="why-container container mt-5">
       <div className="row justify-content-between">
         <div className="why-box col-md-4 col-sm-12 mb-4">
           <span className="why-sub">01 / Born to Brand</span>

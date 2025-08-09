@@ -68,7 +68,7 @@ export default function HomeGrid() {
                 All
               </button>
               <button type="button" className="btn m-2" value="ai-posts" onClick={handleFilter}>
-                AI Posts
+                Real Estate Industries
               </button>
               <button type="button" className="btn m-2" value="brochures" onClick={handleFilter}>
                 Brochures

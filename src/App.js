@@ -3,6 +3,7 @@ import React, { Suspense } from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import Home from './pages/Home/Home'
+import Our_work from './pages/Work/Our_work';
 import About from './pages/About/About';
 import Service from './pages/service/Service';
 // import Scrollingg from './component/ScrollingText/Scrollingg.js';
@@ -55,12 +56,14 @@ export default function App() {
   {/* <About/> */}
   {/* <Service/> */}
   {/* <Scrollingg/> */}
+
   <Why/>
+  <Our_work/>
   <HomePortfolio/>
-  <HomeAd/>
   <HomeGrid/>
-<ReelSlider/>
-<Plans/>
+  <HomeAd/>
+  <ReelSlider/>
+  <Plans/>
   <TestimonialSection/>
   <FaQ/>
   {/* <Our_usp/> */}
