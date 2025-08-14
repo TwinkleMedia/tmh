@@ -58,7 +58,7 @@ export default function HomeGrid() {
     <>
       <div className="home-grid">
         <div className="py-4">
-          <Heading headingLabel="Our Dedication" />
+          <Heading headingLabel="Our Best Creation" />
         </div>
         <div className="filter"></div>
         <div className="grid container text-center">
