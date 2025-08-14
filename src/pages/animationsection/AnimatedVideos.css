@@ -1,0 +1,212 @@
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.video-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  /* Fixed aspect ratio container */
+  aspect-ratio: 16/9; /* You can change this to 4/3 or 1/1 for different shapes */
+  background-color: #000; /* Fallback background color */
+}
+
+.video-card img,
+.video-card video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  /* This ensures the content fills the container while maintaining aspect ratio */
+  object-fit: cover; /* This crops the image/video to fit the container */
+  /* Alternative: object-fit: contain; - This will fit the entire image/video with black bars if needed */
+}
+
+/* Hover Zoom for desktop only */
+@media (hover: hover) {
+  .video-card:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.video-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+.play-icon {
+  font-size: 40px;
+  color: white;
+}
+
+/* 📱 Small screens (mobile) */
+@media (max-width: 576px) {
+  .video-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Slightly different aspect ratio for mobile if needed */
+  .video-card {
+    aspect-ratio: 16/9;
+  }
+}
+
+/* 📱 Medium screens (tablet) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .video-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .video-card {
+    aspect-ratio: 16/9;
+  }
+}
+
+/* 💻 Large screens (desktop) */
+@media (min-width: 993px) {
+  .video-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .video-card {
+    aspect-ratio: 16/9;
+  }
+}
+
+/* Alternative aspect ratios you can use instead of 16/9: */
+/*
+.video-card {
+  aspect-ratio: 4/3;   // More square-like
+  aspect-ratio: 1/1;   // Perfect square
+  aspect-ratio: 3/2;   // Photography standard
+  aspect-ratio: 21/9;  // Ultra-wide
+}
+*/
+
+/* Load More/Less Button Styles */
+.loadLess {
+  .Btn {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(var(--bs-orange), var(--bs-yellow));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+  }
+
+  .arrow path {
+    fill: white;
+  }
+
+  .text {
+    font-size: 1em;
+    width: 100px;
+    position: absolute;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -45px;
+    opacity: 0;
+    transition-duration: .7s;
+  }
+
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .7s;
+  }
+
+  .Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.loadMore {
+  .Btn {
+    transform: rotate(180deg);
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(var(--bs-orange), var(--bs-yellow));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+  }
+  
+  .arrow path {
+    fill: white;
+  }
+  
+  .text {
+    transform: rotate(-180deg);
+    font-size: 1em;
+    width: 100px;
+    position: absolute;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 35px;
+    opacity: 0;
+    transition-duration: .7s;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .7s;
+  }
+  
+  .Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

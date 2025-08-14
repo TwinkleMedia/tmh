@@ -10,15 +10,21 @@
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
+  /* Fixed aspect ratio container */
+  aspect-ratio: 16/9; /* You can change this to 4/3 or 1/1 for different shapes */
+  background-color: #000; /* Fallback background color */
 }
 
 .video-card img,
 .video-card video {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   transition: transform 0.3s ease;
   border-radius: 10px;
+  /* This ensures the content fills the container while maintaining aspect ratio */
+  object-fit: cover; /* This crops the image/video to fit the container */
+  /* Alternative: object-fit: contain; - This will fit the entire image/video with black bars if needed */
 }
 
 /* Hover Zoom for desktop only */
@@ -57,6 +63,11 @@
   .video-gallery {
     grid-template-columns: 1fr;
   }
+  
+  /* Slightly different aspect ratio for mobile if needed */
+  .video-card {
+    aspect-ratio: 16/9;
+  }
 }
 
 /* 📱 Medium screens (tablet) */
@@ -64,11 +75,208 @@
   .video-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .video-card {
+    aspect-ratio: 16/9;
+  }
 }
 
 /* 💻 Large screens (desktop) */
 @media (min-width: 993px) {
   .video-gallery {
     grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .video-card {
+    aspect-ratio: 16/9;
+  }
+}
+
+/* Alternative aspect ratios you can use instead of 16/9: */
+/*
+.video-card {
+  aspect-ratio: 4/3;   // More square-like
+  aspect-ratio: 1/1;   // Perfect square
+  aspect-ratio: 3/2;   // Photography standard
+  aspect-ratio: 21/9;  // Ultra-wide
+}
+*/
+
+/* View More Button Styles */
+.view-more-btn {
+  background: linear-gradient(135deg, #ffeb3b, #ff9800); /* Yellow to Orange gradient */
+  border: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.view-more-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #fff59d, #ffb74d);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.view-more-btn:hover::before {
+  opacity: 1;
+}
+
+.view-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.5);
+}
+
+.view-more-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.6);
+}
+
+/* Icon positioning */
+.view-more-btn {
+  z-index: 1;
+}
+
+.btn-icon {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.view-more-btn:hover .btn-icon {
+  transform: scale(1.1);
+}
+
+
+/* Add these styles to your Our_work.css file */
+
+.loadLess {
+  .Btn {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(var(--bs-orange), var(--bs-yellow));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+  }
+
+  .arrow path {
+    fill: white;
+  }
+
+  .text {
+    font-size: 1em;
+    width: 100px;
+    position: absolute;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -45px;
+    opacity: 0;
+    transition-duration: .7s;
+  }
+
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .7s;
+  }
+
+  .Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.loadMore {
+  .Btn {
+    transform: rotate(180deg);
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(var(--bs-orange), var(--bs-yellow));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+  }
+  
+  .arrow path {
+    fill: white;
+  }
+  
+  .text {
+    transform: rotate(-180deg);
+    font-size: 1em;
+    width: 100px;
+    position: absolute;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 35px;
+    opacity: 0;
+    transition-duration: .7s;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .7s;
+  }
+  
+  .Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }
