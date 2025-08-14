@@ -24,6 +24,7 @@ import FaQ from "./pages/FAQ/FaQ.js";
 import ReelSlider from "./reelssection/ReelSlider.js";
 import BehindTheSeen from "./pages/BTS/BehindTheSeen.js";
 import AnimatedVideos from "./pages/animationsection/AnimatedVideos.js";
+import ClientTestimonial from "./pages/clienttestmonial/ClientTestimonial.jsx";
 
 export default function App() {
   const [isLoading, setIsLoading] = React.useState(true);
@@ -61,6 +62,7 @@ export default function App() {
         <HomeGrid />
         <AnimatedVideos />
         <ReelSlider />
+        <ClientTestimonial/>
         <TestimonialSection />
         <FaQ />
         {/* <Our_usp /> */}

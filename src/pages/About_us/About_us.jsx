@@ -21,7 +21,7 @@ export default function About_us() {
 
   return (
     <>
-      <div className="about " id="about">
+      <div className="about " id="about" >
         <Breadcrumbs breadheading={"About Us"} breadcrumbsLabel={"About"} />
       </div>
 
