@@ -12,11 +12,9 @@ import Influencer from './pages/Influencer/Influencer.js';
 import Our_usp from './component/Ourusp/Our_usp.jsx';
 import Whatsapp_api from './component/Whatsapp-api/Whatsapp_api.jsx';
 import Home_portfolio from './pages/Portfolio/Home_portfolio.js';
-
 import HomePortfolio from './pages/home-portfolio/HomePortfolio.js';
 import HomeGrid from './pages/home-grid/HomeGrid.js';
 import TestimonialSection from './pages/testimonial/TestimonialSection.js';
-import HomeAd from './pages/home-ad/HomeAd.js';
 // import Loadder from './pages/Loadder/Loadder.jsx';
 import Whatsappbutton from './pages/Whatsapp/Whatsappbutton.jsx';
 import { Helmet } from 'react-helmet';
@@ -25,7 +23,7 @@ import Why from './pages/Why/Why.js';
 import FaQ from './pages/FAQ/FaQ.js';
 
 import ReelSlider from './reelssection/ReelSlider.js';
-import Plans from './pages/Ourplans/Plans.js';
+
 export default function App() {
 
   const [isLoading, setIsLoading] = React.useState(true);
@@ -61,9 +59,7 @@ export default function App() {
   <Our_work/>
   <HomePortfolio/>
   <HomeGrid/>
-  <HomeAd/>
   <ReelSlider/>
-  <Plans/>
   <TestimonialSection/>
   <FaQ/>
   {/* <Our_usp/> */}
