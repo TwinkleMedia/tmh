@@ -49,6 +49,14 @@ export default function Service() {
       <Heading headingLabel="Best Digital Marketing Agency in Mumbai" />
       <div className="container">
         <div className="row">
+
+              <ServiceCard
+            url="CommercialAds"
+            icon={<TerminalIcon />}
+            heading="Commercial Ads"
+          ><br/><br/>
+          </ServiceCard>
+
           <ServiceCard
             url="socialmediamarketing"
             icon={<TerminalIcon />}
@@ -76,12 +84,7 @@ export default function Service() {
             heading="GRAPHIC DESIGN"
           ><br/><br/>
           </ServiceCard>
-          <ServiceCard
-            url="EmailMarketing"
-            icon={<TerminalIcon />}
-            heading="EMAIL MARKETING"
-          ><br/><br/>
-          </ServiceCard>
+      
           <ServiceCard
             url="bulkWhatsapp"
             icon={<TerminalIcon />}

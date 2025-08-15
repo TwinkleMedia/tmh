@@ -3,7 +3,7 @@ import img from "./../../image/blog1front.png";
 import BlogCard from "../../component/BlogCard/BlogCard";
 import Breadcrumbs from "../../component/Breadcrumbs/Breadcrumbs";
 import { Helmet } from "react-helmet";
-import Loader from "../Loadder/Loadder";
+
 import axios from "axios";
 
 export default function BlogPage() {
@@ -95,7 +95,7 @@ export default function BlogPage() {
           </div>
         </div>
       ) : (
-        <Loader/>
+        <p className="text-center py-5">Loading blogs...</p>
       )}
     </>
   );

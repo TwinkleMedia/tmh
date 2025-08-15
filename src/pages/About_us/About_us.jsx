@@ -21,15 +21,15 @@ export default function About_us() {
 
   return (
     <>
-      <div className="about " id="about" >
+      <div className="about" id="about" >
         <Breadcrumbs breadheading={"About Us"} breadcrumbsLabel={"About"} />
       </div>
 
       <About/>
-
+       
       <div className="container">
         <div className="team-about">
-     <TeamSlider/>
+     <Heading headingLabel="Our USP" />
         </div>
         <div className="row">
           <ServiceCard icon={<SupervisorAccountIcon />} heading="WHO WE ARE?">

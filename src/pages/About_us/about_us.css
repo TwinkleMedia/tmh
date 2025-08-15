@@ -7,10 +7,9 @@ background-color: black;
 .about-head-main{
     margin-block: 5rem;
     text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 800;
-    color: var(--Primary-colour);
-    text-shadow: var(--text-shadow);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px white;
 }
 
 .about-para{
@@ -82,17 +81,17 @@ font-weight: 700;
 }
 
 .progress-bar1{
-    background-color: var(--Primary-colour);
+    background-color: #f67b0c;
     width: 75%;
 }
 
 .progress-bar2{
-    background-color: var(--Primary-colour);
+    background-color: #f67b0c;
     width: 85%;
 }
 
 .progress-bar3{
-    background-color: var(--Primary-colour);
+    background-color: #f67b0c;
     width: 95%;
 }
 
@@ -188,7 +187,7 @@ line-height:28px;
 text-align:center;    
 }
 .section-head p, p.awesome_line{
-color:#818181;
+margin-top: 30px;
 font-size:16px;
 line-height:28px;
 text-align:center;  
@@ -220,6 +219,7 @@ color:var(--Primary-colour);
 .item {
 height: 400px;
 background: #fff;
+color: #2f2f2f;
 text-align: center;
 padding: 30px 25px;
 -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
@@ -232,7 +232,7 @@ transition: all .5s ease 0;
 transition: all 0.5s ease 0s;
 }
 .item:hover{
-background:var(--Primary-colour);
+background:#f67b0c;
 box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
 -webkit-transition: all .5s ease 0;
 transition: all .5s ease 0;

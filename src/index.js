@@ -12,7 +12,7 @@ import Webdevlopment from './component/All-pages/Allservices/Webdevlopment';
 import Seo from './component/All-pages/Allservices/Seo';
 import BulkWhatsapp from './component/All-pages/Allservices/BulkWhatsapp';
 import DirectMarketing from './component/All-pages/Allservices/DirectMarketing';
-import EmailMarketing from './component/All-pages/Allservices/EmailMarketing';
+
 import GraphicsDesigning from './component/All-pages/Allservices/GraphicsDesigning';
 import PayPerClick from './component/All-pages/Allservices/PayPerClick';
 import About_us from './pages/About_us/About_us';
@@ -32,6 +32,8 @@ import ModelPage from './component/modelmarketing/modelPage';
 import Page404 from './component/404Page/Page404';
 import MainInfluencer from './component/Influencermodel/mainInfluencer';
 import { hydrate,render } from 'react-dom';
+import CommercialAds from './component/All-pages/Allservices/CommercialAds';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -57,7 +59,7 @@ root.render(
         
         
         {/* <Route path="/career" element={<Career/>}/> */}
-        <Route path="/emailMarketing" element={<EmailMarketing/>}/>
+        <Route path="/commercialAds" element={<CommercialAds/>}/>
         <Route path="/graphicsDesigning" element={<GraphicsDesigning/>}/>
         <Route path="/payPerClick" element={<PayPerClick/>}/>
         <Route path="/seo" element={<Seo/>}/>

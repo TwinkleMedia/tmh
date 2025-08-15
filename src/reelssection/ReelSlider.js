@@ -50,7 +50,7 @@ const ReelSlider = () => {
   
   return (
     <div className="reel-container">
-      <h2 className="section-title">Reels</h2>
+      <h2 className="section-title"> Our Showcase Reels</h2>
 
       <div className="reel-slider">
         <button className="prev-btn" onClick={handlePrev}>

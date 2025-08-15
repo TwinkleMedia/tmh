@@ -1,5 +1,5 @@
 .service-card{
-    
+    color: black;
     background-size: 200% 200%;
     background-image:linear-gradient(to right top,#FA8F06 50%,white 50%);
     background-position: 80% 20%;

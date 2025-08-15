@@ -12,7 +12,7 @@ import { LinkedIn } from "@mui/icons-material";
 
 export default function Footer() {
   return (
-    <footer className="footer mt-4">
+    <footer className="footer">
       <div className="container">
         <div className="row gy-4">
           <div className="col-md-6 col-lg-4">
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center mt-4 pt-3 border-top">
-          <p>Twinkle Media Hub Pvt. Ltd. © 2024, All Rights Reserved.</p>
+          <p>Twinkle Media Hub Pvt. Ltd. © 2022, All Rights Reserved.</p>
         </div>
       </div>
     </footer>

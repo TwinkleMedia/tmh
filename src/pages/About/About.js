@@ -38,11 +38,10 @@ export default function About() {
         />
         <meta property="og:type" content="website" />
       </Helmet>
-      <div className="about " id="about">
-        <Heading headingLabel="About us" />
+      <div className="about" id="about">
         <div className="container-fluid">
           <div className="row  position-relative d-flex justify-content-center">
-            <div className="col-lg-6 p-lg-2 border bg-light m-2">
+            <div className="col-lg-6 p-lg-2  bg-light m-2">
               <div className="bg-light p-3 pt-5 p-md-5">
                 <h1 className="text-uppercase">
                   ELEVATE YOUR BRAND AND GROW YOUR BUSINESS
@@ -72,7 +71,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 p-lg-2 border bg-light m-2">
+            <div className="col-lg-5 p-lg-2  bg-light m-2">
               <div className="bg-light p-2 py-5">
                 <video
                   src={video}

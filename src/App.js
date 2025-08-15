@@ -45,10 +45,7 @@ export default function App() {
 
   return (
     <>
-      {/* Loader Example */}
-      {/* {isLoading ? (
-        <Loadder />
-      ) : ( */}
+    
       <div className="body">
         <Home />
         {/* <About /> */}
