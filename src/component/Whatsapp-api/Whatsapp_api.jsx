@@ -6,7 +6,7 @@ function Whatsapp_api() {
   const [logos, setLogos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost/tmhadmin/sidenavabar/get_client_logos.php") // Change to your server path
+    fetch("https://twinklemediahub.com/admin/sidenavabar/get_client_logos.php") // Change to your server path
       .then((res) => res.json())
       .then((data) => setLogos(data))
       .catch((err) => console.error("Error fetching logos:", err));

@@ -16,7 +16,7 @@ const ReelSlider = () => {
     const fetchReels = async () => {
       try {
         const response = await fetch(
-          "https://twinklemediahub.com/twinkleadmin/reactapi/fetch_reels.php"
+          "https://twinklemediahub.com/admin/reactapi/fetch_reels.php"
         );
         const data = await response.json();
         console.log("Fetched Reels Data:", data); // Debug log
@@ -71,7 +71,7 @@ const ReelSlider = () => {
     return (
       <div key={reel.id || index} className="video-container">
         <video
-          src={`https://twinklemediahub.com/twinkleadmin/sidenavabar/${reel.video_path}`}
+          src={`https://twinklemediahub.com/admin/sidenavabar/${reel.video_path}`}
           controls
           autoPlay
           loop

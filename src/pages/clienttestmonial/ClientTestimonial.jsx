@@ -12,7 +12,7 @@ const ClientTestimonial = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          "http://localhost/tmhadmin/sidenavabar/getclienttestimonial.php"
+          "https://twinklemediahub.com/admin/sidenavabar/getclienttestimonial.php"
         );
         
         if (!response.ok) {

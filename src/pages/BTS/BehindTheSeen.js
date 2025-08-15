@@ -12,8 +12,8 @@ export default function BehindTheSeen() {
     // Add category parameter to the fetch URL
     const category = "Behind The Seen";
     const encodedCategory = encodeURIComponent(category);
-    
-    fetch(`http://localhost/tmhadmin/sidenavabar/get_videos.php?category=${encodedCategory}`)
+
+    fetch(`https://twinklemediahub.com/admin/sidenavabar/get_videos.php?category=${encodedCategory}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.error) {

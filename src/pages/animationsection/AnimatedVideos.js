@@ -13,7 +13,7 @@ export default function AnimatedVideos() {
     const category = "Animation Video";
     const encodedCategory = encodeURIComponent(category);
     
-    fetch(`http://localhost/tmhadmin/sidenavabar/get_videos.php?category=${encodedCategory}`)
+    fetch(`https://twinklemediahub.com/admin/sidenavabar/get_videos.php?category=${encodedCategory}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.error) {
