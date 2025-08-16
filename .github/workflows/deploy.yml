@@ -35,7 +35,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./build/
-        server-dir: public_html/ 
+        server-dir: /
         exclude: |
           **/.git*
           **/.git*/**
@@ -44,5 +44,6 @@ jobs:
         log-level: verbose
 
         timeout: 60000
+
 
 
