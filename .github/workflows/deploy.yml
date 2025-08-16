@@ -1,31 +1,32 @@
-name: Deploy to Hostinger
+name: Deploy React App to Hostinger
 
 on:
   push:
     branches:
-      - main   # or master
+      - main  # change if your default branch is different
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
 
-      - name: Install Dependencies & Build
-        run: |
-          npm install
-          npm run build
+    - name: Install dependencies
+      run: npm install
 
-      - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
+    - name: Build React App
+      run: npm run build
+
+    - name: Deploy via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
           server: ftp.twinklemediahub.com
          username: ${{ u694280384.twinkletmh }}
          password: ${{ Twinkle@0118 }}
