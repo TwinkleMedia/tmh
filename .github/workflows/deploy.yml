@@ -31,11 +31,11 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: 45.89.206.229
-        username: u694280384
+        username: u694280384.deploy
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./build/
-        server-dir: /public_html/
+        server-dir: /
         exclude: |
           **/.git*
           **/.git*/**
