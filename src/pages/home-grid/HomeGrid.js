@@ -42,11 +42,11 @@ export default function HomeGrid() {
         setError(null);
         
         // First, test if the API is reachable
-        const testUrl = 'http://localhost/tmhadmin/sidenavabar/getCreative.php';
+        const testUrl = 'https://twinklemediahub.com/admin/sidenavabar/getCreative.php';
         console.log('Testing API connection...');
         
         // Fetch categories
-        const categoriesUrl = 'http://localhost/tmhadmin/sidenavabar/getCreative.php?type=categories';
+        const categoriesUrl = 'https://twinklemediahub.com/admin/sidenavabar/getCreative.php?type=categories';
         console.log('Fetching categories from:', categoriesUrl);
         
         const categoriesResponse = await fetch(categoriesUrl);
@@ -78,7 +78,7 @@ export default function HomeGrid() {
         setCategories(categoriesData.data || []);
 
         // Fetch images
-        const imagesUrl = 'http://localhost/tmhadmin/sidenavabar/getCreative.php?type=images&category=all';
+        const imagesUrl = 'https://twinklemediahub.com/admin/sidenavabar/getCreative.php?type=images&category=all';
         console.log('Fetching images from:', imagesUrl);
         
         const imagesResponse = await fetch(imagesUrl);
