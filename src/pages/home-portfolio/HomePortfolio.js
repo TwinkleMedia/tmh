@@ -1,4 +1,4 @@
-import image from "../../image/image-portfolio.jpg";
+
 import "./HomePortfolio.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";

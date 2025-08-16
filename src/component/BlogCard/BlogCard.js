@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./../../image/blog1front.png";
+
 import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 import "./BlogCard.css";
 

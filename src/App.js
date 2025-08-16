@@ -13,7 +13,7 @@ import Whatsapp_api from "./component/Whatsapp-api/Whatsapp_api.jsx";
 import HomePortfolio from "./pages/home-portfolio/HomePortfolio.js";
 import HomeGrid from "./pages/home-grid/HomeGrid.js";
 import Blog from "./pages/Blog/Blog.js";
-import Home_portfolio from "./pages/Portfolio/Home_portfolio.js";
+
 import TestimonialSection from "./pages/testimonial/TestimonialSection.js";
 // import Loadder from './pages/Loadder/Loadder.jsx';
 import Whatsappbutton from "./pages/Whatsapp/Whatsappbutton.jsx";

@@ -17,7 +17,7 @@ import GraphicsDesigning from './component/All-pages/Allservices/GraphicsDesigni
 import PayPerClick from './component/All-pages/Allservices/PayPerClick';
 import About_us from './pages/About_us/About_us';
 import ContactForm from './component/Contact/ContactForm';
-import BlogPage from './pages/BlogPage/BlogPage';
+
 import Career from './pages/Career/Career';
 import InfluencersPage from './pages/Influencer/InfluencersPage';
 import CollaborationsPage from './pages/collaborations-page/CollaborationsPages';
@@ -66,7 +66,7 @@ root.render(
         <Route path="/mediaProduction" element={<ProductShoot/>}/>
         {/* <Route path="/contact" element={<ContactForm/>}/> */}
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="/blog" element={<BlogPage/>}/>
+
         {/* <Route path="/blog" element={<BlogPg/>}/> */}
         <Route path="/Influencers" element={<InfluencersPage/>}/>
         {/* <Route path="/collaborations" element={<CollaborationsPage/>}/> */}
