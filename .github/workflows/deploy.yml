@@ -42,4 +42,8 @@ jobs:
           **/node_modules/**
           **/.DS_Store
         log-level: verbose
+
         timeout: 60000
+
+
+
