@@ -31,7 +31,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: 45.89.206.229
-        username: u694280384
+        username: u694280384.deploy
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./build/
@@ -42,4 +42,5 @@ jobs:
           **/node_modules/**
           **/.DS_Store
         log-level: verbose
+
         timeout: 60000
