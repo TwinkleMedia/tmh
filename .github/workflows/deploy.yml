@@ -30,7 +30,7 @@ jobs:
     - name: Deploy to Hostinger
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.twinklemediahub.com
+        server: 45.89.206.229
         username: u694280384
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
