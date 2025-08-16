@@ -28,7 +28,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.twinklemediahub.com
-          username: ${{ u694280384.twinkletmh }}
-          password: ${{ Twinkle@0118 }}
+          username:  u694280384.twinkletmh 
+          password:  Twinkle@0118 
           server-dir: /home/u694280384/domains/twinklemediahub.com/public_html/
           local-dir: build/
