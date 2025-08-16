@@ -6,7 +6,7 @@ export default function Home() {
     {
       id: 1,
       bgImage: 'https://res.cloudinary.com/dh9dpvul4/image/upload/v1754573802/Group_7_octgbf.png', // Replace with your image path
-      heading: 'Creative/ Strategies',
+      heading: 'Creative Strategies',
       subtext: 'Delivering performance-driven marketing with design thinking.',
     },
     {
@@ -34,7 +34,7 @@ export default function Home() {
               backgroundImage: `url(${slide.bgImage})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '40vh',
+              height: '75vh',
               display: 'flex',
               alignItems: 'center',
               padding: '0 5%',
