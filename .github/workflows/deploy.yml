@@ -1,38 +1,33 @@
-name: Deploy React App to Hostinger
+name: Deploy to Hostinger
 
 on:
   push:
     branches:
-      - main   # or master if you use that
+      - main   # or master
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
 
-      # 👇 If your React app is in a subfolder, set working-directory
-      - name: Install dependencies
-        run: npm install
-        working-directory: .   # change to client if your code is inside /client
+      - name: Install Dependencies & Build
+        run: |
+          npm install
+          npm run build
 
-      - name: Build React App
-        run: npm run build
-        working-directory: .   # change to client if your code is inside /client
-
-      - name: Deploy via FTP
+      - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
-          server-dir: ${{ secrets.FTP_PATH }}
-          local-dir: build    # change to client/build if your code is inside /client
+          server: ftp.twinklemediahub.com
+          username: ${{ u694280384.twinkletmh }}
+          password: ${{ Twinkle@0118 }}
+          server-dir: /home/u694280384/domains/twinklemediahub.com/public_html
+          local-dir: build/
