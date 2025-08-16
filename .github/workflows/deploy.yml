@@ -22,21 +22,24 @@ jobs:
       run: npm ci
         
     - name: Build React App
-      run: |
-        export CI=false
-        npx react-scripts build
+      run: npm run build
       env:
         CI: false
+        GENERATE_SOURCEMAP: false
         
     - name: Deploy to Hostinger
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
+        server: 45.89.206.229
+        username: u694280384.twinklemediahub.com
         password: ${{ secrets.FTP_PASSWORD }}
+        port: 21
         local-dir: ./build/
         server-dir: /public_html/
         exclude: |
           **/.git*
           **/.git*/**
           **/node_modules/**
+          **/.DS_Store
+        log-level: verbose
+        timeout: 60000
