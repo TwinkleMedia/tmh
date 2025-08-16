@@ -30,5 +30,6 @@ jobs:
           server: ftp.twinklemediahub.com
           username:  u694280384.twinkletmh 
           password:  Twinkle@0118 
+          port: 21
           server-dir: /home/u694280384/domains/twinklemediahub.com/public_html/
           local-dir: build/
