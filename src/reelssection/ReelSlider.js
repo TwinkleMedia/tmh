@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Heading from "../component/Heading/Heading"; 
 import {
   ChevronLeft,
   ChevronRight,
@@ -50,7 +51,7 @@ const ReelSlider = () => {
   
   return (
     <div className="reel-container">
-      <h2 className="section-title"> Our Showcase Reels</h2>
+      <Heading headingLabel="Our Showcase Reels" />
 
       <div className="reel-slider">
         <button className="prev-btn" onClick={handlePrev}>

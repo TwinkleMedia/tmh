@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Heart, MessageCircle, Share2 } from "lucide-react";
+import Heading from "../../component/Heading/Heading";
 
 const ClientTestimonial = () => {
   const [videosData, setVideosData] = useState([]);
@@ -283,7 +284,7 @@ const ClientTestimonial = () => {
         `}
       </style>
 
-      <h2 className="section-title">Client Testimonials</h2>
+      <Heading headingLabel="Client Testimonials" />
 
       <div className="testimonial-slider">
         <button className="prev-btn" onClick={handlePrev}>

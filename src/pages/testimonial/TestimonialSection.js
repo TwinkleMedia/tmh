@@ -62,8 +62,8 @@ const testimonials = [
 export default function TestimonialSection() {
   return (
     <div className="testimonial-section container py-5">
-      <div className="row justify-content-center">
-      <Heading headingLabel="testimonials" />
+      <div className="row justify-content-center py-5">
+      <Heading headingLabel="Google Reviews" />
       </div>
       <Carousel>
         {testimonials.map((testimonial, index) => (
