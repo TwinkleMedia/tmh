@@ -21,7 +21,7 @@ const ReelSlider = () => {
           "https://twinklemediahub.com/admin/sidenavabar/fetch_reel.php"
         );
         const data = await response.json();
-        console.log("Fetched Reels Data:", data);
+        console.log("Fetched Reelsadsadsadas Data:", data);
 
         if (data.success && Array.isArray(data.reels)) {
           // Remove duplicates by video_url
