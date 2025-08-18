@@ -17,7 +17,7 @@ const ReelSlider = () => {
     const fetchReels = async () => {
       try {
         const response = await fetch(
-          "https://twinklemediahub.com/admin/reactapi/fetch_reels.php"
+          "https://twinklemediahub.com/admin/sidenavabar/fetch_reels.php"
         );
         const data = await response.json();
         console.log("Fetched Reels Data:", data); // Debug log
