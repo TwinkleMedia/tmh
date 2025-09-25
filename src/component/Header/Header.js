@@ -11,7 +11,7 @@ export default function Header() {
       <div className="container header-container">
         {/* Left: Logo */}
         <Link className="navbar-brand" to="/">
-          <img src="https://res.cloudinary.com/dh9dpvul4/image/upload/v1758794735/white_logo_svg_x4vwvg.svg" alt="Brand Logo" className="brandlogo" />
+          <img src="https://res.cloudinary.com/dh9dpvul4/image/upload/v1758795520/new_300x-8_xhjwhq.png" alt="Brand Logo" className="brandlogo" />
         </Link>
 
         {/* Toggle Button */}
