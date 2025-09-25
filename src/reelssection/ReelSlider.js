@@ -6,7 +6,24 @@ import "./reelslider.css";
 const ReelSlider = () => {
   const [reelsData, setReelsData] = useState([]);
   const [startIndex, setStartIndex] = useState(0);
-  const videosToShow = 4;
+  const [videosToShow, setVideosToShow] = useState(4); // default for desktop
+
+  // Handle responsive videosToShow
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setVideosToShow(1); // mobile view
+      } else if (window.innerWidth < 1024) {
+        setVideosToShow(2); // tablet view
+      } else {
+        setVideosToShow(4); // desktop view
+      }
+    };
+
+    handleResize(); // initial call
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const fetchReels = async () => {
@@ -18,7 +35,6 @@ const ReelSlider = () => {
         console.log("Fetched Reels Data:", data);
 
         if (data.success && Array.isArray(data.reels)) {
-          // Remove duplicates by video_url
           const uniqueReels = [
             ...new Map(data.reels.map((item) => [item.video_url, item])).values(),
           ];
@@ -33,6 +49,17 @@ const ReelSlider = () => {
 
     fetchReels();
   }, []);
+
+  // Auto-slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (reelsData.length > 0) {
+        setStartIndex((prevIndex) => (prevIndex + 1) % reelsData.length);
+      }
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [reelsData]);
 
   const handleNext = () => {
     if (reelsData.length === 0) return;
@@ -64,45 +91,38 @@ const ReelSlider = () => {
         </button>
 
         <div className="video-grid">
-          {visibleReels.map((reel, index) => {
-            if (!reel || !reel.video_url) {
-              console.error(`Invalid reel at index ${index}:`, reel);
-              return null;
-            }
-
-            return (
-              <div key={reel.id || index} className="video-container">
-                <video
-                  src={reel.video_url}
-                  controls
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  style={{ width: "100%", height: "auto" }}
-                />
-                <div className="video-overlay">
-                  <div className="video-info">
-                    <div className="video-title">{reel.title}</div>
-                    <div className="video-description">
-                      Uploaded on: {new Date(reel.created_at).toLocaleDateString()}
-                    </div>
-                  </div>
-                  <div className="video-controls">
-                    <button className="control-button">
-                      <Heart size={24} />
-                    </button>
-                    <button className="control-button">
-                      <MessageCircle size={24} />
-                    </button>
-                    <button className="control-button">
-                      <Share2 size={24} />
-                    </button>
+          {visibleReels.map((reel, index) => (
+            <div key={reel.id || index} className="video-container">
+              <video
+                src={reel.video_url}
+                controls
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{ width: "100%", height: "auto" }}
+              />
+              <div className="video-overlay">
+                <div className="video-info">
+                  <div className="video-title">{reel.title}</div>
+                  <div className="video-description">
+                    Uploaded on: {new Date(reel.created_at).toLocaleDateString()}
                   </div>
                 </div>
+                <div className="video-controls">
+                  <button className="control-button">
+                    <Heart size={24} />
+                  </button>
+                  <button className="control-button">
+                    <MessageCircle size={24} />
+                  </button>
+                  <button className="control-button">
+                    <Share2 size={24} />
+                  </button>
+                </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
 
         <button className="next-btn" onClick={handleNext}>
