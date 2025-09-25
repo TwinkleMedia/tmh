@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Heading from "../component/Heading/Heading";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Heart,
-  MessageCircle,
-  Share2,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, Heart, MessageCircle, Share2 } from "lucide-react";
 import "./reelslider.css";
 
 const ReelSlider = () => {
@@ -21,7 +15,7 @@ const ReelSlider = () => {
           "https://twinklemediahub.com/admin/sidenavabar/fetch_reel.php"
         );
         const data = await response.json();
-        console.log("Fetched Reelsadsadsadas Data:", data);
+        console.log("Fetched Reels Data:", data);
 
         if (data.success && Array.isArray(data.reels)) {
           // Remove duplicates by video_url
@@ -52,10 +46,13 @@ const ReelSlider = () => {
     );
   };
 
-  const visibleReels = reelsData.filter(
-    (reel, index, self) =>
-      index === self.findIndex((r) => r.video_url === reel.video_url)
-  );
+  // Get visible reels with infinite loop
+  const visibleReels = [];
+  for (let i = 0; i < videosToShow; i++) {
+    if (reelsData.length === 0) break;
+    const index = (startIndex + i) % reelsData.length;
+    visibleReels.push(reelsData[index]);
+  }
 
   return (
     <div className="reel-container">
@@ -64,10 +61,6 @@ const ReelSlider = () => {
       <div className="reel-slider">
         <button className="prev-btn" onClick={handlePrev}>
           <ChevronLeft />
-        </button>
-
-        <button className="next-btn" onClick={handleNext}>
-          <ChevronRight />
         </button>
 
         <div className="video-grid">
@@ -92,8 +85,7 @@ const ReelSlider = () => {
                   <div className="video-info">
                     <div className="video-title">{reel.title}</div>
                     <div className="video-description">
-                      Uploaded on:{" "}
-                      {new Date(reel.created_at).toLocaleDateString()}
+                      Uploaded on: {new Date(reel.created_at).toLocaleDateString()}
                     </div>
                   </div>
                   <div className="video-controls">
@@ -112,6 +104,10 @@ const ReelSlider = () => {
             );
           })}
         </div>
+
+        <button className="next-btn" onClick={handleNext}>
+          <ChevronRight />
+        </button>
       </div>
     </div>
   );
