@@ -51,7 +51,7 @@ export default function About() {
                 </h2>
                 <p className="py-3 py-md-5">
                   At <b>Twinkle Media Hub Pvt Ltd.®</b>, we are a passionate team of advertising and digital marketing experts dedicated to transforming businesses into powerful brands. We craft captivating campaigns that tell
-                  We create captivating campaigns® that tell your unique story, build stronger connections, generate quality leads, and deliver measurable results. From strategic planning and innovative creativity® to data-driven optimization and performance marketing®, we empower businesses of every size to shine brighter and stand out in the digital world — all with affordable, high-quality solutions®.
+                  We create <b>captivating campaigns®</b> that tell your unique story, build stronger connections, generate quality leads, and deliver measurable results. From strategic planning and innovative <b>creativity®</b> to data-driven optimization and <b>performance marketing®</b>, we empower businesses of every size to shine brighter and stand out in the digital world — all with affordable, <b>high-quality solutions®</b>.
                 </p>
 
                 <div className="box-experice .gradient-text d-flex mt-10">
