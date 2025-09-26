@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="col-md-6 col-lg-4">
             <img src="https://res.cloudinary.com/dh9dpvul4/image/upload/v1758795520/new_300x-8_xhjwhq.png" className="img-fluid footer_logo mb-3" alt="logo" />
             <p className="footer_description">
-              At Twinkle Media Hub Pvt. Ltd., we’re a passionate team of Advertising & Digital Marketing experts, turning brand visions into bold realities.
+              At Twinkle Media Hub Pvt Ltd.®, we’re a passionate team of Advertising & Digital Marketing experts, turning brand visions into bold realities.
             </p>
             <div className="social_icon mt-3">
               <Link to="https://www.facebook.com/profile.php?id=61554146648877"><FaFacebookSquare className="f_icon" /></Link>
