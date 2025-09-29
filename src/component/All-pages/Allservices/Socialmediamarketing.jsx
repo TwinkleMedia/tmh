@@ -13,35 +13,86 @@ export default function Socialmediamarketing() {
   });
   return (
     <>
-      <Helmet>
-        <title>
-          Best Social Media Marketing Agency In Navi Mumbai | Twinkle Media Hub
-        </title>
-        <link rel="canonical" href="https://www.twinklemediahub.com/socialmediamarketing" />
+    <Helmet>
+  {/* Title & Canonical */}
+  <title>
+    Best Social Media Marketing Agency in Navi Mumbai | Twinkle Media Hub
+  </title>
+  <link
+    rel="canonical"
+    href="https://www.twinklemediahub.com/socialmediamarketing"
+  />
 
-        <meta
-          name="description"
-          content="Twinkle Media Hub - Best social media marketing agency in Navi Mumbai - Our social media marketing company offers top social media marketing services to boost your brand's online presence"
-        />
-        <meta
-          name="keywords"
-          content="Twinkle Media Hub, Social Media Marketing Agency, social media marketing company, social media marketing agency in Mumbai, social media marketing companies in Mumbai, Facebook FB, Linkedin, digital marketing agency, Instagram, Youtube"
-        />
-        <meta
-          property="og:title"
-          content="Best Social Media Marketing Agency In Navi Mumbai | Twinkle Media Hub"
-        />
-        <meta
-          property="og:site_name"
-          content="Twinkle Media Hub Services Pvt. Ltd."
-        />
-        <meta property="og:url" content="https://twinklemediahub.com/socialmediamarketing" />
-        <meta
-          property="og:description"
-          content="Twinkle Media Hub - Best social media marketing agency in Navi Mumbai - Our social media marketing company offers top social media marketing services to boost your brand's online presence"
-        />
-        <meta property="og:type" content="website" />
-      </Helmet>
+  {/* Meta Description */}
+  <meta
+    name="description"
+    content="Twinkle Media Hub is the best Social Media Marketing Agency in Navi Mumbai. We help brands grow on Facebook, Instagram, LinkedIn, and YouTube with performance-driven strategies."
+  />
+
+  {/* Meta Keywords (optional, not a ranking factor but fine to keep) */}
+  <meta
+    name="keywords"
+    content="Twinkle Media Hub, Social Media Marketing Agency Navi Mumbai, social media marketing company Mumbai, Facebook marketing, Instagram ads, LinkedIn marketing, YouTube campaigns, digital marketing agency Navi Mumbai"
+  />
+
+  {/* Open Graph (Facebook, LinkedIn) */}
+  <meta
+    property="og:title"
+    content="Best Social Media Marketing Agency in Navi Mumbai | Twinkle Media Hub"
+  />
+  <meta property="og:site_name" content="Twinkle Media Hub Pvt. Ltd." />
+  <meta
+    property="og:url"
+    content="https://www.twinklemediahub.com/socialmediamarketing"
+  />
+  <meta
+    property="og:description"
+    content="Boost your online presence with Twinkle Media Hub, Navi Mumbai's top social media marketing agency. We craft strategies for Facebook, Instagram, LinkedIn & YouTube."
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.twinklemediahub.com/assets/social-media-marketing-banner.jpg"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Best Social Media Marketing Agency in Navi Mumbai | Twinkle Media Hub"
+  />
+  <meta
+    name="twitter:description"
+    content="Twinkle Media Hub helps brands grow on social media platforms with performance-driven marketing strategies."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.twinklemediahub.com/assets/social-media-marketing-banner.jpg"
+  />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Social Media Marketing",
+        "provider": {
+          "@type": "Organization",
+          "name": "Twinkle Media Hub Pvt. Ltd.",
+          "url": "https://www.twinklemediahub.com",
+          "logo": "https://www.twinklemediahub.com/logo.png"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Navi Mumbai"
+        },
+        "description": "Twinkle Media Hub is the best Social Media Marketing Agency in Navi Mumbai. We offer services for Facebook, Instagram, LinkedIn, YouTube, and more to boost your brand's online presence."
+      }
+    `}
+  </script>
+</Helmet>
+
       <div className="">
         <Breadcrumbs
           breadheading={"Social Media (SMM)"}
