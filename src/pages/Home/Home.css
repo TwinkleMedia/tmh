@@ -1,28 +1,41 @@
 .carousel-container {
   overflow: hidden;
   position: relative;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .carousel {
   display: flex;
   animation: slide-animation 20s infinite;
+  width: 300%; /* ensures smooth sliding across all slides */
 }
 
 .carousel-slide {
   min-width: 100%;
+  box-sizing: border-box;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
 }
 
 .slide-heading {
   font-size: 3rem;
   font-weight: bold;
+  color: #000;
 }
 
 .slide-subtext {
   font-size: 1.2rem;
   margin-top: 1rem;
+  color: #333;
 }
 
+/* Animation */
 @keyframes slide-animation {
   0% { transform: translateX(0%); }
   33% { transform: translateX(0%); }
@@ -31,3 +44,38 @@
   69% { transform: translateX(-200%); }
   100% { transform: translateX(-200%); }
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .slide-heading {
+    font-size: 2.5rem;
+  }
+  .slide-subtext {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    padding: 1.5rem;
+  }
+  .slide-heading {
+    font-size: 2rem;
+  }
+  .slide-subtext {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-slide {
+    padding: 1rem;
+  }
+  .slide-heading {
+    font-size: 1.6rem;
+  }
+  .slide-subtext {
+    font-size: 0.85rem;
+  }
+}
+

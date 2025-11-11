@@ -6,9 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="msvalidate.01" content="74FE6138A367EA036DB1CBE635B1D6B9" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16995466228">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16995466228');
+</script>
+
+<!-- Event snippet for Contact conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16995466228/KJIZCLj5xZwbEPT3iKg_',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
     <meta
       name="title"
-      content="Best Advertising Agency in Mumbai | Top Marketing & Branding Company"
+      content="Best Advertising Agency in Mumbai & Navi Mumbai | Twinkle Media Hub"
     />
     <meta
       name="description"

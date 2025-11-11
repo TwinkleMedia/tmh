@@ -14,40 +14,88 @@ export default function CommercialAds() {
   return (
     <>
       <Helmet>
-        <title>
-          Best Commercial Ads Company in Mumbai & Navi Mumbai - Twinkle Media Hub
-        </title>
-        <link
-          rel="canonical"
-          href="https://www.twinklemediahub.com/commercialAds"
-        />
+  {/* Title & Canonical */}
+  <title>
+    Best Commercial Ads Company in Mumbai & Navi Mumbai - Twinkle Media Hub
+  </title>
+  <link
+    rel="canonical"
+    href="https://www.twinklemediahub.com/commercialAds"
+  />
 
-        <meta
-          name="description"
-          content="Twinkle Media Hub is the leading Commercial Ads Company in Mumbai & Navi Mumbai. We create high-quality, engaging, and impactful commercial advertisements for TV, social media, and digital platforms."
-        />
-        <meta
-          name="keywords"
-          content="Commercial ads in Mumbai, commercial ads company in Mumbai, ad film production, commercial ads services, video ads, TV commercials, corporate ads, best ad agency in Mumbai"
-        />
-        <meta
-          property="og:title"
-          content="Best Commercial Ads Company in Mumbai & Navi Mumbai - Twinkle Media Hub"
-        />
-        <meta
-          property="og:site_name"
-          content="Twinkle Media Hub Services Pvt. Ltd."
-        />
-        <meta
-          property="og:url"
-          content="https://www.twinklemediahub.com/commercialAds"
-        />
-        <meta
-          property="og:description"
-          content="Twinkle Media Hub creates professional and creative commercial ads that captivate audiences and boost brand visibility."
-        />
-        <meta property="og:type" content="website" />
-      </Helmet>
+  {/* Meta Description */}
+  <meta
+    name="description"
+    content="Twinkle Media Hub is the leading Commercial Ads Company in Mumbai & Navi Mumbai. We create high-quality, engaging, and impactful commercial advertisements for TV, social media, and digital platforms."
+  />
+
+  {/* Meta Keywords (optional, not important for Google) */}
+  <meta
+    name="keywords"
+    content="Commercial ads in Mumbai, commercial ads company in Mumbai, ad film production, commercial ads services, video ads, TV commercials, corporate ads, best ad agency in Mumbai"
+  />
+
+  {/* Open Graph (Facebook, LinkedIn) */}
+  <meta
+    property="og:title"
+    content="Best Commercial Ads Company in Mumbai & Navi Mumbai - Twinkle Media Hub"
+  />
+  <meta
+    property="og:site_name"
+    content="Twinkle Media Hub Pvt. Ltd."
+  />
+  <meta
+    property="og:url"
+    content="https://www.twinklemediahub.com/commercialAds"
+  />
+  <meta
+    property="og:description"
+    content="Twinkle Media Hub creates professional and creative commercial ads that captivate audiences and boost brand visibility."
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.twinklemediahub.com/assets/commercial-ads-banner.jpg"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Best Commercial Ads Company in Mumbai & Navi Mumbai - Twinkle Media Hub"
+  />
+  <meta
+    name="twitter:description"
+    content="Professional commercial ads that boost brand visibility. TV, social media & digital campaigns by Twinkle Media Hub."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.twinklemediahub.com/assets/commercial-ads-banner.jpg"
+  />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Commercial Advertisement Production",
+        "provider": {
+          "@type": "Organization",
+          "name": "Twinkle Media Hub Pvt. Ltd.",
+          "url": "https://www.twinklemediahub.com",
+          "logo": "https://www.twinklemediahub.com/logo.png"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Mumbai"
+        },
+        "description": "Twinkle Media Hub is the leading Commercial Ads Company in Mumbai & Navi Mumbai. We create high-quality, engaging, and impactful commercial advertisements for TV, social media, and digital platforms."
+      }
+    `}
+  </script>
+</Helmet>
+
 
       <div>
         <Breadcrumbs
