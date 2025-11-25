@@ -4,7 +4,7 @@
   margin: 60px auto;
   max-width: 1200px;
   padding: 0 20px;
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 
 .section-title {
@@ -165,7 +165,7 @@
 
 @media (max-width: 1024px) {
   .video-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

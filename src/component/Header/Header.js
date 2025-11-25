@@ -11,7 +11,7 @@ export default function Header() {
       <div className="container header-container">
         {/* Left: Logo */}
         <Link className="navbar-brand" to="/">
-          <img src="https://res.cloudinary.com/dh9dpvul4/image/upload/v1758795520/new_300x-8_xhjwhq.png" alt="Brand Logo" className="brandlogo" />
+          <img src="./asset/newTMHLogo.png" alt="Brand Logo" className="brandlogo" />
         </Link>
 
         {/* Toggle Button */}
@@ -45,6 +45,9 @@ export default function Header() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">Career</Link>
             </li>
           </ul>
 

@@ -8,14 +8,14 @@
 :root {
   --primary-color: #f67b0c;
   --text-shadow: 0 1px 2px #1c5abc;
-  --background-color: black;
+  --background-color: #fff;
   --secondary-color: #1c5abc;
   --white-color: #fff;
 }
 
 .body {
   background-color: var(--background-color) !important;
-  color: #fff !important;
+  color: #000000 !important;
   overflow: hidden;
 }
 
@@ -35,7 +35,7 @@
 
 .btn-main:hover {
   background: #03e9f4;
-  color: #fff;
+  color: #000000;
   border-radius: 5px;
   box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 100px #03e9f4;
@@ -121,7 +121,7 @@
   bottom: 2%;
   left: 2%;
   background-color: var(--background-2nd-color);
-  color: #ffffff;
+  color: #000000;
   border: none;
   font-size: 30px;
   border-radius: 50%;

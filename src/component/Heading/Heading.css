@@ -1,80 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Glitch+Pop&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-.heading{
-    position: relative;
+
+.heading {
+  position: relative;
 }
-.heading span{
-    font-size: 4vw;
-    position: absolute;
-    font-family: "Rubik Glitch Pop", system-ui;
-    font-weight: 100;
-    font-style: normal;
+
+.heading span {
+  font-size: 4vw;
+  position: absolute;
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  color: #1c59bc16;
+  top: 0;
+  text-transform: capitalize;
+  transition: all 2s;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: textani 2s infinite;
+}
+
+@keyframes textani {
+  from {
     color: #1c59bc16;
-    top: 0;
-    text-transform: capitalize;
-    transition: all 2s;
-    left: 50%; 
-     transform: translateX(-50%);
-     animation: textani 2s infinite;
   }
-  @keyframes textani {
-    from{color: #1c59bc16;}
-    to{color: #1c59bc3f;}
+
+  to {
+    color: #1c59bc3f;
   }
-  .heading span:hover{
-    color: #1c59bc83;
-  }
-.heading h2{
-    text-align: center;
-color: white;
-    font-size:  3vw;
-    text-transform: uppercase;
-    font-family: "Anta", sans-serif;
+}
+
+.heading span:hover {
+  color: #1c59bc83;
+}
+
+.heading h2 {
+  text-align: center;
+  color: #f67b0c;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-family: "Anta", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 20px;
 }
-.heading h2::after{
-  content:"";
+
+.heading h2::after {
+  content: "";
   height: 6px;
   width: 300px;
-  background-color: orange;
+  background-color: #f67b0c;
   position: absolute;
   bottom: -13px;
   left: 50%;
   transform: translateX(-50%);
 
 }
-.heading h3{
-    text-align: center;
-    color: #1C5ABC;
-    font-size:  3vw;
-    text-transform: uppercase;
-    font-family: "Anta", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.heading h3::after{
-  content:"";
-  height: 6px;
-  width: 300px;
-  background-color: orange;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
 
-}
-.heading h4{
-    text-align: center;
-    color: #1C5ABC;
-    font-size:  3vw;
-    text-transform: uppercase;
-    font-family: "Anta", sans-serif;
+.heading h3 {
+  text-align: center;
+  color: #1C5ABC;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-family: "Anta", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.heading h4::after{
-  content:"";
+
+.heading h3::after {
+  content: "";
   height: 6px;
   width: 300px;
   background-color: orange;
@@ -85,11 +79,71 @@ color: white;
 
 }
 
-@media (max-width:500px){
-  .heading span{
+.heading h4 {
+  text-align: center;
+  color: #1C5ABC;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heading h4::after {
+  content: "";
+  height: 6px;
+  width: 300px;
+  background-color: orange;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+@media (max-width:500px) {
+  .heading span {
     font-size: 15vw;
   }
-  .heading h2{
-    font-size:  8vw;
+
+  .heading h2 {
+    font-size: 8vw;
+  }
 }
+
+/* Default (unclicked) accordion header */
+.accordion-button {
+  color: #063F9C;
+  /* text color */
+  background-color: #fff;
+  /* white background */
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+.accordion-body
+{
+  color: #063F9C;
+}
+
+/* When accordion is clicked/open */
+.accordion-button:not(.collapsed) {
+  color: #063F9C;
+  /* white text */
+    background-color: rgba(86, 125, 201, 0.15);
+  /* orange background */
+  box-shadow: none;
+}
+
+/* Optional: change border color around items */
+.accordion-item {
+  border: 1px solid #063F9C;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Optional: remove blue outline when focused */
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(12, 86, 246, 0.25);
+  border-color: #063F9C;
 }

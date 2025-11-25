@@ -21,7 +21,7 @@ p{
 
 }
 .gradient-text{
-    color: var(--Primary-colour);
+    color: #FA8F06;
 }
 
 @keyframes aboutlogoanimation{

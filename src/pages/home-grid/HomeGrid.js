@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Heading from "../../component/Heading/Heading";
 import "./homeGrid.css";
 
-export default function HomeGrid() {
+/*export default function HomeGrid() {
   const someStyle = {
     aspectRatio: "1:1",
   };
@@ -154,7 +154,7 @@ export default function HomeGrid() {
       <div className="filter"></div>
       <div className="grid container text-center">
         <div className="row mb-5">
-          <div className="btn-group btn-grp justify-content-around flex-wrap" role="group" aria-label="Basic example">
+          {/* <div className="btn-group btn-grp justify-content-around flex-wrap" role="group" aria-label="Basic example">
             <button type="button" className="btn m-2" value="all" onClick={handleFilter}>
               All
             </button>
@@ -169,54 +169,163 @@ export default function HomeGrid() {
                 {category}
               </button>
             ))}
-          </div>
-        </div>
-        <div className="row justify-content-around">
-          {filteredData.length > 0 ? (
-            filteredData.map((item, index) => (
-              <div className="col-lg-3 col-md-5 col-sm-12 m-1 align-content-center" style={someStyle} key={index}>
-                <div className="boxImg align-content-center">
-                  <img src={item.image_url} alt={item.title} />
-                  <div className="info px-2">
-                    <h4>{item.title}</h4>
-                    <h2 className="m-0">{item.category}</h2>
-                  </div>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className="col-12">
-              <p>No items found</p>
-            </div>
-          )}
-        </div>
-        <div className="d-flex buttons justify-content-end">
-          <div className="loadMore m-2">
-            {filteredData.length < gridData.length && filter === 'all' ? (
-              <button className="Btn" onClick={loadMore}>
-                <svg height="1.2em" className="arrow" viewBox="0 0 512 512">
-                  <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
-                </svg>
-                <p className="text">See More</p>
-              </button>
-            ) : (
-              ""
-            )}
-          </div>
-          <div className="loadLess m-2">
-            {filteredData.length > 3 ? (
-              <button className="Btn" onClick={loadLess}>
-                <svg height="1.2em" className="arrow" viewBox="0 0 512 512">
-                  <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
-                </svg>
-                <p className="text">See Less</p>
-              </button>
-            ) : (
-              ""
-            )}
-          </div>
-        </div>
+          </div> */
+/* </div>
+ <div className="row justify-content-around">
+   {filteredData.length > 0 ? (
+     filteredData.map((item, index) => (
+       <div className="col-lg-3 col-md-5 col-sm-12 m-1 align-content-center" style={someStyle} key={index}>
+         <div className="boxImg align-content-center">
+           <img src={item.image_url} alt={item.title} />
+           <div className="info px-2">
+             <h4>{item.title}</h4>
+             <h2 className="m-0">{item.category}</h2>
+           </div>
+         </div>
+       </div>
+     ))
+   ) : (
+     <div className="col-12">
+       <p>No items found</p>
+     </div>
+   )}
+ </div>
+ <div className="d-flex buttons justify-content-end">
+   <div className="loadMore m-2">
+     {filteredData.length < gridData.length && filter === 'all' ? (
+       <button className="Btn" onClick={loadMore}>
+         <svg height="1.2em" className="arrow" viewBox="0 0 512 512">
+           <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
+         </svg>
+         <p className="text">See More</p>
+       </button>
+     ) : (
+       ""
+     )}
+   </div>
+   <div className="loadLess m-2">
+     {filteredData.length > 3 ? (
+       <button className="Btn" onClick={loadLess}>
+         <svg height="1.2em" className="arrow" viewBox="0 0 512 512">
+           <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
+         </svg>
+         <p className="text">See Less</p>
+       </button>
+     ) : (
+       ""
+     )}
+   </div>
+ </div>
+</div>
+</div>*/
+// );
+// }
+export default function HomeGrid() {
+  const images = [
+    "/asset/bestCreation/img1.png",
+    "/asset/bestCreation/img2.png",
+    "/asset/bestCreation/img3.png",
+    "/asset/bestCreation/img4.png",
+    "/asset/bestCreation/img5.png",
+    "/asset/bestCreation/img6.jpeg",
+    "/asset/bestCreation/img7.jpeg",
+    "/asset/bestCreation/img8.jpeg",
+    "/asset/bestCreation/img9.jpeg",
+    "/asset/bestCreation/img10.jpeg",
+    "/asset/bestCreation/img11.jpg",
+    "/asset/bestCreation/img12.jpeg",
+    "/asset/homeSlider/img12.png",
+    "/asset/homeSlider/img13.png",
+    "/asset/homeSlider/img14.png",
+    "/asset/homeSlider/img15.png",
+    "/asset/homeSlider/img16.png",
+    "/asset/homeSlider/img17.png",
+    "/asset/homeSlider/img26.png",
+    "/asset/homeSlider/img25.png",
+  ];
+  const groupedImages = [];
+  for (let i = 0; i < images.length; i += 4) {
+    groupedImages.push(images.slice(i, i + 4));
+  }
+
+  const [current, setCurrent] = useState(0);
+
+  // AUTO SLIDE
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) =>
+        prev === groupedImages.length - 1 ? 0 : prev + 1
+      );
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [groupedImages.length]);
+  return (
+    <div className="four-carousel-wrapper">
+      <div className="py-4">
+        <Heading headingLabel="Our Best Creation" />
       </div>
+
+      {/* SLIDER */}
+      <div
+        className="four-carousel-inner"
+        style={{
+          display: "flex",
+          width: `${groupedImages.length * 100}%`,
+          transform: `translateX(-${current * (100 / groupedImages.length)}%)`,
+          transition: "0.6s ease",
+        }}
+      >
+        {groupedImages.map((group, idx) => (
+          <div
+            className="four-carousel-slide"
+            key={idx}
+            style={{
+              width: `${100 / groupedImages.length}%`,
+              display: "flex",
+              justifyContent: "center",
+              gap: "20px",
+            }}
+          >
+            {group.map((img, i) => (
+              <div
+                className="four-img-box"
+                key={i}
+                style={{ width: "22%" }}
+              >
+                <img
+                  src={img}
+                  alt={`slide-${idx}-${i}`}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+
+      {/* ARROWS */}
+      <button
+        className="four-btn prev"
+        onClick={() =>
+          setCurrent(current === 0 ? groupedImages.length - 1 : current - 1)
+        }
+      >
+        ❮
+      </button>
+
+      <button
+        className="four-btn next"
+        onClick={() =>
+          setCurrent(current === groupedImages.length - 1 ? 0 : current + 1)
+        }
+      >
+        ❯
+      </button>
     </div>
   );
 }

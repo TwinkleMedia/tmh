@@ -54,6 +54,7 @@ export default function Service() {
             url="CommercialAds"
             icon={<TerminalIcon />}
             heading="Commercial Ads"
+            className="textColor"
           ><br/><br/>
           </ServiceCard>
 
@@ -61,7 +62,7 @@ export default function Service() {
             url="socialmediamarketing"
             icon={<TerminalIcon />}
             heading="SOCIAL MEDIA MARKETING (SMM)"
-            className="test"
+            className="test textColor"
           ><br/><br/>
           </ServiceCard>
 
@@ -69,6 +70,7 @@ export default function Service() {
             url="websitedevlopment"
             icon={<TerminalIcon />}
             heading="WEB DEVELOPMENT"
+            className="textColor"
           ><br/><br/>
           </ServiceCard>
 
@@ -76,12 +78,14 @@ export default function Service() {
             url="seo"
             icon={<TerminalIcon />}
             heading="SEO (SEARCH ENGINE OPTIMIZATION)"
+            className="textColor"
           ><br/><br/>
           </ServiceCard>
           <ServiceCard
             url="GraphicsDesigning"
             icon={<TerminalIcon />}
             heading="GRAPHIC DESIGN"
+            className="textColor"
           ><br/><br/>
           </ServiceCard>
       
@@ -89,18 +93,21 @@ export default function Service() {
             url="bulkWhatsapp"
             icon={<TerminalIcon />}
             heading="BULK WHATASPP MARKETING"
+            className="textColor"
           ><br/><br/>
           </ServiceCard>
           <ServiceCard
             url="Directmarketing"
             icon={<TerminalIcon />}
             heading="DIRECT MARKETING"
+            className="textColor"
           ><br/><br/>
           </ServiceCard>
           <ServiceCard
             url="PayPerClick"
             icon={<TerminalIcon />}
             heading="PAY PER CLICK"
+            className="textColor"
           >
             <br/><br/>
           </ServiceCard>
@@ -108,6 +115,7 @@ export default function Service() {
             url="mediaProduction"
             icon={<TerminalIcon />}
             heading="Media Production"
+            className="textColor"
           ><br/><br/>
           </ServiceCard>
         </div>

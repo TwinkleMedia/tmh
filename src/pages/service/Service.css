@@ -1,0 +1,8 @@
+.textColor
+{
+    color: orange !important;
+}
+.textColor:hover
+{
+    color: white!important;
+}

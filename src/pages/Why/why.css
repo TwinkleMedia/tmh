@@ -1,5 +1,4 @@
-
-
+/* 
 .why-box {
   padding: 10px 15px;
 }
@@ -27,4 +26,44 @@
   text-align: justify;
   color: #fff;
   line-height: 1.6;
+} */
+
+.Homestrategy {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  gap: 20px;
+}
+
+.Homestrategy-card {
+  background: rgba(86, 125, 201, 0.15);
+  border-radius: 12px;
+  width: 420px;
+  padding: 28px 22px;
+  transition: 0.3s ease-in-out;
+}
+
+.Homestrategy-card:hover {
+  background: rgba(86, 125, 201, 0.25);
+  transform: translateY(-5px);
+}
+
+.Homestrategy-card i {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #5ba0f5;
+}
+
+.Homestrategy-card h3 {
+  color: #063F9C;
+}
+
+.Homestrategy-card p {
+  color: #004995;
+}
+.Homestrategy-card span
+{
+  color: #f67b0c;
+  margin-left: 12px;
 }

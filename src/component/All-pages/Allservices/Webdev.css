@@ -1,0 +1,228 @@
+.Webservice {
+    text-align: center;
+    color: #fff;
+}
+
+.Webservice h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.Webservice p {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.Webservice-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.Webservice-card {
+    background: rgba(86, 125, 201, 0.15);
+    border-radius: 12px;
+    width: 300px;
+    padding: 28px 22px;
+    transition: 0.3s ease-in-out;
+}
+
+.Webservice-card:hover {
+    background: rgba(86, 125, 201, 0.25);
+    transform: translateY(-5px);
+}
+
+.Webservice-card i {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #5ba0f5;
+}
+
+.Webservice-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.Webservice-card p {
+    font-size: 14px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.offer {
+    display: flex;
+    gap: 20px;
+    padding: 40px 20px;
+
+}
+
+.offer p {
+    line-height: 1.9;
+}
+
+.process-section {
+    width: 100%;
+    padding: 60px 20px;
+    color: #fff;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+.process-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+.process-card {
+    background: rgba(86, 125, 201, 0.15);
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+
+.process-card:hover {
+    transform: translateY(-6px);
+    border-color: #444;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.process-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.process-card p {
+    font-size: 15px;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* GRID CONTAINER */
+.workcards-container {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* CARD STYLING */
+.workcard {
+    background: rgba(86, 125, 201, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* FRAME LABEL */
+.frame-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* WRAPPER THAT HIDES OVERFLOW */
+.image-wrapper {
+    width: 100%;
+    height: 360px;
+    /* Shows only part of the tall screenshot */
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* IMAGE SCROLLING LOGIC */
+.scroll-image {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    /* Start at top */
+    transform: translateY(0);
+    transition: transform 6s linear;
+}
+
+/* HOVER → SCROLL TO BOTTOM */
+.workcard:hover .scroll-image {
+    transform: translateY(calc(-100% + 360px));
+}
+
+/* BUTTON */
+.visit-btn {
+    margin-top: 15px;
+    width: 150px;
+    background: #064ea3;
+    color: white;
+    padding: 12px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.visit-btn:hover {
+    background: #003f88;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .image-wrapper {
+        height: 260px;
+    }
+}
+
+/* RESPONSIVE */
+@media (min-width: 600px) {
+    .process-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .process-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .Webservice-grid {
+        flex-direction: column;
+    }
+}

@@ -26,8 +26,10 @@
   font-size: 28px;
   transition: all 0.3s ease;
 }
+
 .social_icon a:hover {
   transform: scale(1.1);
+  color: #f67b0c;
 }
 
 .footer_title {
@@ -40,16 +42,20 @@
   list-style: none;
   padding-left: 0;
 }
+
 .footer_links_list li {
   margin-bottom: 10px;
 }
+
 .footer_links {
   color: white;
   text-decoration: none;
   font-size: 16px;
 }
+
 .footer_links:hover {
   text-decoration: underline;
+  color: #f67b0c;
 }
 
 .footer_contact_list {
@@ -57,17 +63,21 @@
   padding-left: 0;
   font-size: 16px;
 }
+
 .footer_contact_list li {
   margin-bottom: 12px;
   display: flex;
   align-items: flex-start;
 }
+
 .footer_contact_list li a {
   color: white;
   text-decoration: none;
 }
+
 .footer_contact_list li a:hover {
   text-decoration: underline;
+  color: #f67b0c;
 }
 
 .s_icon {
@@ -75,7 +85,11 @@
   margin-right: 10px;
   color: white;
 }
-
+.location
+{
+  font-size: 40px;
+  margin-right: 0px;
+}
 @media (max-width: 768px) {
   .footer {
     text-align: center;

@@ -1,0 +1,294 @@
+/* CLEAN MINIMAL AGENCY HERO */
+.hero {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(135deg, #001b44, #1036c6);
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* LAYOUT */
+.hero-container {
+    width: 88%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* LEFT SIDE */
+
+.hero-title {
+    display: inline-block;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-title span {
+    display: block;
+}
+
+.hero-left h1 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.services {
+    font-size: 22px;
+    color: #f67b0c;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    color: #dddcdc;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.quote-btn {
+    background: #063F9C;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+     animation: float 2.5s ease-in-out infinite;
+    border: 2px solid #063F9C;
+
+}
+
+.quote-btn:hover {
+    background: #fff;
+    border: 2px solid #063F9C;
+    color: #063F9C;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+/* RIGHT SLIDER (MINIMAL AESTHETIC) */
+.hero-right {
+    display: flex;
+    gap: 22px;
+    width: 430px;
+    height: 650px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* COLUMNS */
+.image-column {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-track {
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGE STYLE */
+.scroll-track img {
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 22px;
+    object-fit: cover;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+/* SMOOTH CLEAN SCROLL */
+.top-bottom {
+    animation: scroll-down 80s linear infinite;
+}
+
+.bottom-top {
+    animation: scroll-up 80s linear infinite;
+}
+
+@keyframes scroll-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* FLOATING BUBBLE EFFECT */
+.floating-blobs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1; /* Bring slightly above background */
+}
+
+.blob {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  
+  /* Beautiful bubble look */
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+
+  box-shadow: 
+    0 0 25px rgba(255, 255, 255, 0.25),
+    inset 0 0 12px rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(4px);
+  opacity: 0.55;
+
+  animation: bubbleFloat 9s ease-in-out infinite;
+}
+
+/* POSITION VARIANTS */
+.blob1 {
+  top: 12%;
+  left: 20%;
+  animation-duration: 10s;
+}
+
+.blob2 {
+  bottom: 15%;
+  left: 55%;
+  width: 160px;
+  height: 160px;
+  opacity: 0.5;
+  animation-duration: 12s;
+  animation-delay: 3s;
+}
+
+.blob3 {
+  top: 45%;
+  right: 15%;
+  width: 150px;
+  height: 150px;
+  opacity: 0.45;
+  animation-duration: 14s;
+  animation-delay: 1.5s;
+}
+.blob4 {
+  top: 80%;
+  left: 15%;
+  width: 150px;
+  height: 150px;
+  opacity: 0.45;
+  animation-duration: 14s;
+  animation-delay: 1.5s;
+}
+
+
+/* Smooth floating animation */
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+  25% {
+    transform: translateY(-30px) translateX(10px) scale(1.05); /* floating up */
+  }
+  50% {
+    transform: translateY(-10px) translateX(-10px) scale(1.02); /* slight dip down */
+  }
+  75% {
+    transform: translateY(-40px) translateX(5px) scale(1.08); /* higher up again */
+  }
+  100% {
+    transform: translateY(0) translateX(0) scale(1); /* return to start */
+  }
+}
+
+/* Ensure hero content is above blobs */
+.hero-left, .hero-right {
+  z-index: 2;
+}
+.gradient-blob {
+  z-index: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-right {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-left h1 {
+        font-size: 38px;
+    }
+
+    .hero-right {
+        width: 300px;
+        height: 420px;
+    }
+
+    .scroll-track img {
+        border-radius: 14px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-left h1 {
+        font-size: 30px;
+    }
+
+    .hero-right {
+        width: 250px;
+        height: 380px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+}

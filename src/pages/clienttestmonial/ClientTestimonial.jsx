@@ -93,7 +93,7 @@ const ClientTestimonial = () => {
             margin: 60px auto;
             max-width: 1200px;
             padding: 0 20px;
-            background-color: #000000ff;
+            // background-color: #000000ff;
           }
 
           .section-title {
@@ -286,7 +286,7 @@ const ClientTestimonial = () => {
 
       <Heading headingLabel="Client Testimonials" />
 
-      <div className="testimonial-slider">
+      {/* <div className="testimonial-slider">
         <button className="prev-btn" onClick={handlePrev}>
           <ChevronLeft />
         </button>
@@ -339,7 +339,7 @@ const ClientTestimonial = () => {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

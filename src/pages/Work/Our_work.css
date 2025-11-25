@@ -11,8 +11,10 @@
   border-radius: 10px;
   cursor: pointer;
   /* Fixed aspect ratio container */
-  aspect-ratio: 16/9; /* You can change this to 4/3 or 1/1 for different shapes */
-  background-color: #000; /* Fallback background color */
+  aspect-ratio: 16/9;
+  /* You can change this to 4/3 or 1/1 for different shapes */
+  background-color: #000;
+  /* Fallback background color */
 }
 
 .video-card img,
@@ -23,7 +25,8 @@
   transition: transform 0.3s ease;
   border-radius: 10px;
   /* This ensures the content fills the container while maintaining aspect ratio */
-  object-fit: cover; /* This crops the image/video to fit the container */
+  object-fit: cover;
+  /* This crops the image/video to fit the container */
   /* Alternative: object-fit: contain; - This will fit the entire image/video with black bars if needed */
 }
 
@@ -63,7 +66,7 @@
   .video-gallery {
     grid-template-columns: 1fr;
   }
-  
+
   /* Slightly different aspect ratio for mobile if needed */
   .video-card {
     aspect-ratio: 16/9;
@@ -75,7 +78,7 @@
   .video-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .video-card {
     aspect-ratio: 16/9;
   }
@@ -86,7 +89,7 @@
   .video-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .video-card {
     aspect-ratio: 16/9;
   }
@@ -104,7 +107,8 @@
 
 /* View More Button Styles */
 .view-more-btn {
-  background: linear-gradient(135deg, #ffeb3b, #ff9800); /* Yellow to Orange gradient */
+  background: linear-gradient(135deg, #ffeb3b, #ff9800);
+  /* Yellow to Orange gradient */
   border: none;
   color: #000;
   font-weight: bold;
@@ -240,11 +244,11 @@
     position: relative;
     border: none;
   }
-  
+
   .arrow path {
     fill: white;
   }
-  
+
   .text {
     transform: rotate(-180deg);
     font-size: 1em;
@@ -258,25 +262,65 @@
     opacity: 0;
     transition-duration: .7s;
   }
-  
+
   .Btn:hover .text {
     opacity: 1;
     transition-duration: .7s;
   }
-  
+
   .Btn:hover .arrow {
     animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
-  
+
   @keyframes slide-in-bottom {
     0% {
       transform: translateY(10px);
       opacity: 0;
     }
-  
+
     100% {
       transform: translateY(0);
       opacity: 1;
     }
+  }
+}
+
+.Framevideo-wrapper {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 10px;
+}
+
+/* YouTube Responsive Box */
+.Frameyt-video {
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+  border: 4px solid #fff;
+  /* Blue Border */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 73, 149, 0.5);
+}
+
+@media (max-width: 768px) {
+  .Framevideo-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .Frameyt-video {
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .Framevideo-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .Frameyt-video {
+    height: 150px;
+    width: 250px;
   }
 }
