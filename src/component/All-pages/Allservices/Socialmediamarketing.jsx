@@ -163,11 +163,7 @@ export default function SocialMediaMarketing() {
               <button className="serv-btn">Get Quote</button>
 
             </div>
-            <img
-              src="/asset/smm-gif.gif"
-              alt="Marketing consulting"
-              style={{ width: "100%", maxWidth: "450px" }}
-            />
+            
           </div>
         </section>
 
