@@ -1,23 +1,23 @@
-import React, { Suspense } from "react";
+import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 
 import Home from "./pages/Home/Home";
 import Our_work from "./pages/Work/Our_work";
-import About from "./pages/About/About";
-import Service from "./pages/service/Service";
+// import About from "./pages/About/About";
+// import Service from "./pages/service/Service";
 // import Scrollingg from './component/ScrollingText/Scrollingg.js';
-import Influencer from "./pages/Influencer/Influencer.js";
-import Our_usp from "./component/Ourusp/Our_usp.jsx";
+// import Influencer from "./pages/Influencer/Influencer.js";
+// import Our_usp from "./component/Ourusp/Our_usp.jsx";
 import Whatsapp_api from "./component/Whatsapp-api/Whatsapp_api.jsx";
 import HomePortfolio from "./pages/home-portfolio/HomePortfolio.js";
 import HomeGrid from "./pages/home-grid/HomeGrid.js";
-import Blog from "./pages/Blog/Blog.js";
+// import Blog from "./pages/Blog/Blog.js";
 
 import TestimonialSection from "./pages/testimonial/TestimonialSection.js";
 // import Loadder from './pages/Loadder/Loadder.jsx';
-import Whatsappbutton from "./pages/Whatsapp/Whatsappbutton.jsx";
-import { Helmet } from "react-helmet";
+// import Whatsappbutton from "./pages/Whatsapp/Whatsappbutton.jsx";
+// import { Helmet } from "react-helmet";
 // import reelslider from './pages/Reel.js';
 import Why from "./pages/Why/Why.js";
 import FaQ from "./pages/FAQ/FaQ.js";
