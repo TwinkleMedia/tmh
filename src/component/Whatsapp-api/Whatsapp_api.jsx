@@ -39,7 +39,7 @@ function Whatsapp_api() {
   ]
   return (
     <>
-      <div id="our_usp" className="pt-5">
+      <div id="our_usp">
         <Heading headingLabel="Our Clients" />
       </div>
 

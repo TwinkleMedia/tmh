@@ -301,7 +301,7 @@
 .video-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 4/5;
+  /* aspect-ratio: 4/5; */
   /* Perfect responsive video tiles */
   overflow: hidden;
   border-radius: 10px;
@@ -365,10 +365,6 @@
     font-size: 1rem;
   }
 
-  .video-container {
-    aspect-ratio: 1/1.2;
-    /* Slightly taller for mobile */
-  }
   .animatevideo-grid {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -3,7 +3,7 @@ import Heading from "../../component/Heading/Heading";
 
 const FaQ = () => {
   return (
-    <section id="faq" className="py-5">
+    <section id="faq" className="pb-5">
       <div className="container">
         <Heading headingLabel="Frequently Asked Questions" />
         <div className="accordion" id="faqAccordion">

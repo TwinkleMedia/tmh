@@ -111,4 +111,7 @@
   .footer_description {
     font-size: 14px;
   }
+  .social_icon {
+    justify-content: center;
+  } 
 }

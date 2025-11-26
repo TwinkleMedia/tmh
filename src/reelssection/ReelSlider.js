@@ -91,7 +91,7 @@ const ReelSlider = () => {
   ];
   const [reels] = useState(staticVideos);
   const [startIndex, setStartIndex] = useState(0);
-  const [videosToShow, setVideosToShow] = useState(4); // default 3 videos
+  const [videosToShow, setVideosToShow] = useState(4); // default 4 videos
 
   // Handle responsive videosToShow
   useEffect(() => {
@@ -140,9 +140,9 @@ const ReelSlider = () => {
           <ChevronLeft />
         </button>
 
-        <div className="video-grid">
+        <div className="reelvideo-grid">
           {visibleReels.map((reel) => (
-            <div key={reel.id} className="video-container">
+            <div key={reel.id} className="reelvideo-container">
               <video
                 src={reel.url}
                 controls
@@ -152,14 +152,14 @@ const ReelSlider = () => {
                 playsInline
                 style={{ width: "100%", height: "auto" }}
               />
-              <div className="video-overlay">
-                <div className="video-info">
-                  <div className="video-title">{reel.title}</div>
-                  <div className="video-description">
+              <div className="reelvideo-overlay">
+                <div className="reelvideo-info">
+                  <div className="reelvideo-title">{reel.title}</div>
+                  <div className="reelvideo-description">
                     Uploaded on: {new Date(reel.created_at).toLocaleDateString()}
                   </div>
                 </div>
-                <div className="video-controls">
+                <div className="reelvideo-controls">
                   <button className="control-button">
                     <Heart size={24} />
                   </button>
