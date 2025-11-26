@@ -21,6 +21,21 @@ function Whatsapp_api() {
     "/asset/ourClients/HOZONclient4.png",
     "/asset/ourClients/meritseducation.webp",
     "/asset/ourClients/naumikaDhingra.webp",
+    "/asset/ourClients/brewLogo.avif",
+    "/asset/ourClients/coderTechnologo.avif",
+    "/asset/ourClients/dsd.png",
+    "/asset/ourClients/ecdipluslogo.webp",
+    "/asset/ourClients/eksalogo.webp",
+    "/asset/ourClients/fancyLogo.png",
+    "/asset/ourClients/kidezeeLogo.png",
+    "/asset/ourClients/meridianLogo.png",
+    "/asset/ourClients/nandiinternationalLogo.png",
+    "/asset/ourClients/Nestgurulogo.png",
+    "/asset/ourClients/rapidiseLogo.jpg",
+    "/asset/ourClients/samalaLogo.webp",
+    "/asset/ourClients/skyline.webp",
+    "/asset/ourClients/unifleetlogo.png",
+    "/asset/ourClients/ycLogo.jpg",
   ]
   return (
     <>
@@ -46,13 +61,20 @@ function Whatsapp_api() {
       </div> */}
 
 
-      <div className="container py-5">
-        <div className="row justify-content-center">
-          {logos.map((logo, index) => (
-            <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2 client-item">
-              <div className="client-box">
-                <img src={logo} alt="client-logo" />
-              </div>
+      <div className="client-slider-container py-5">
+        {/* First row: left to right */}
+        <div className="client-slider client-slider-left">
+          {[...logos,...logos].map((logo, i) => (
+            <div key={i} className="client-item">
+              <img src={logo} alt="Ourclients" />
+            </div>
+          ))}
+        </div>
+        {/* Second row: right to left */}
+        <div className="client-slider client-slider-right mt-4">
+          {[...logos,...logos].map((logo, i) => (
+            <div key={i} className="client-item">
+              <img src={logo} alt="Ourclients" />
             </div>
           ))}
         </div>
