@@ -99,10 +99,10 @@ export default function SocialMediaMarketing() {
         <section className="hero-section">
           <div className="hero-content">
             <Allservices
-          Serviceh1={"Social Media Marketing Agency"}
-          Serviceh1span={"In Navi Mumbai"}
-          // h4para={""}
-        />
+              Serviceh1={"Social Media Marketing Agency"}
+              Serviceh1span={"In Navi Mumbai"}
+            // h4para={""}
+            />
             {/* <h1>
               Social Media Marketing <br /> Agency In Navi Mumbai
             </h1> */}
@@ -163,8 +163,13 @@ export default function SocialMediaMarketing() {
               <button className="serv-btn">Get Quote</button>
 
             </div>
-            
+ <img
+            src="/asset/smm-gif.gif"
+            alt="Marketing consulting"
+            style={{ width: "100%", maxWidth: "450px" }}
+          />
           </div>
+         
         </section>
 
         {/* How our services help */}

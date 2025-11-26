@@ -11,11 +11,7 @@ export default function Header() {
       <div className="container header-container">
         {/* Left: Logo */}
         <Link className="navbar-brand" to="/">
-<<<<<<< HEAD
           <img src="./asset/newTMHLogo.png" alt="Brand Logo" className="brandlogo" />
-=======
-          <img src="https://res.cloudinary.com/doe3ms4zs/image/upload/v1762844208/TMH_LOGO_Reg._300x-8_e8qnmn.png" alt="Brand Logo" className="brandlogo" />
->>>>>>> 6ac725c326d09f2d9cb4585452dbcd0b5a6bcd1e
         </Link>
 
         {/* Toggle Button */}
