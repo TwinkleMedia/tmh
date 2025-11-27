@@ -10,7 +10,7 @@ export default function Header() {
       <div className="container header-container">
         {/* Left: Logo */}
         <Link className="navbar-brand" to="/">
-          <img src="/asset/newTMHLogo.png" alt="Brand Logo" className="brandlogo" />
+          <img src="/asset/newlogo.png" alt="Brand Logo" className="brandlogo" />
         </Link>
 
         {/* Toggle Button */}
