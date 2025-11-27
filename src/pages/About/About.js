@@ -44,7 +44,7 @@ export default function About() {
             <div className="col-lg-6 p-lg-2  bg-light m-2">
               <div className="bg-light p-3 pt-5 p-md-5">
                 <h1 className="text-uppercase">
-                  ELEVATE YOUR BRAND AND GROW YOUR BUSINESS
+                   YOUR BRAND AND GROW YOUR BUSINESS
                 </h1>
                 <h2 className="text-uppercase gradient-text">
                   TAKE YOUR BUSINESS TO NEXT LEVEL
