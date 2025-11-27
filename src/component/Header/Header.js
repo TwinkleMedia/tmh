@@ -4,14 +4,13 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import DownloadBtn from "../download-button/DownloadBtn";
 import pdf from "../download-button/TMH Company Profile.pdf";
-import logo from "../../newlogo.png";
 export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container header-container">
         {/* Left: Logo */}
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="Brand Logo" className="brandlogo" />
+          <img src="/asset/newTMHLogo.png" alt="Brand Logo" className="brandlogo" />
         </Link>
 
         {/* Toggle Button */}
