@@ -76,7 +76,7 @@ export default function Home() {
             <div className="scroll-track top-bottom">
               {Array(2).fill(0).map((_, i) => (
                 <>
-                  <img key={`c1-img1-${i}`} src="/asset/homeSlider/img1.png" />
+                  <img key={`c1-img1-${i}`} src="/asset/homeSlider/img1.webp" />
                   <img key={`c1-img2-${i}`} src="/asset/homeSlider/img2.png" />
                   <img key={`c1-img3-${i}`} src="/asset/homeSlider/img3.png" />
                   <img key={`c1-img4-${i}`} src="/asset/homeSlider/img4.png" />
