@@ -76,32 +76,32 @@ export default function Home() {
             <div className="scroll-track top-bottom">
               {Array(2).fill(0).map((_, i) => (
                 <>
-                  <img key={`c1-img1-${i}`} src="./asset/homeSlider/img1.png" />
-                  <img key={`c1-img2-${i}`} src="./asset/homeSlider/img2.png" />
-                  <img key={`c1-img3-${i}`} src="./asset/homeSlider/img3.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img4.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img5.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img6.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img7.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img8.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img9.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img10.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img11.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img12.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img13.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img14.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img15.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img16.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img17.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img18.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img19.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img20.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img21.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img22.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img23.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img24.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img25.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img26.png" />
+                  <img key={`c1-img1-${i}`} src="/asset/homeSlider/img1.png" />
+                  <img key={`c1-img2-${i}`} src="/asset/homeSlider/img2.png" />
+                  <img key={`c1-img3-${i}`} src="/asset/homeSlider/img3.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img4.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img5.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img6.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img7.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img8.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img9.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img10.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img11.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img12.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img13.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img14.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img15.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img16.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img17.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img18.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img19.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img20.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img21.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img22.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img23.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img24.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img25.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img26.png" />
                 </>
               ))}
             </div>
@@ -111,32 +111,32 @@ export default function Home() {
             <div className="scroll-track bottom-top">
               {Array(2).fill(0).map((_, i) => (
                 <>
-                  <img key={`c2-img1-${i}`} src="./asset/homeSlider/img1.png" />
-                  <img key={`c2-img2-${i}`} src="./asset/homeSlider/img2.png" />
-                  <img key={`c2-img3-${i}`} src="./asset/homeSlider/img3.png" />
-                  <img key={`c2-img4-${i}`} src="./asset/homeSlider/img4.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img5.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img6.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img7.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img8.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img9.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img10.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img11.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img12.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img13.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img14.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img15.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img16.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img17.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img18.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img19.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img20.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img21.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img22.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img23.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img24.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img25.png" />
-                  <img key={`c1-img4-${i}`} src="./asset/homeSlider/img26.png" />
+                  <img key={`c2-img1-${i}`} src="/asset/homeSlider/img1.png" />
+                  <img key={`c2-img2-${i}`} src="/asset/homeSlider/img2.png" />
+                  <img key={`c2-img3-${i}`} src="/asset/homeSlider/img3.png" />
+                  <img key={`c2-img4-${i}`} src="/asset/homeSlider/img4.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img5.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img6.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img7.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img8.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img9.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img10.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img11.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img12.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img13.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img14.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img15.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img16.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img17.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img18.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img19.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img20.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img21.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img22.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img23.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img24.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img25.png" />
+                  <img key={`c1-img4-${i}`} src="/asset/homeSlider/img26.png" />
                 </>
               ))}
             </div>
