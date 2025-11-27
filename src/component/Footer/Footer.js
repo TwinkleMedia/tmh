@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="container">
         <div className="row gy-4">
           <div className="col-md-6 col-lg-4">
-            <img src="./asset/newTMHLogo.png" className="img-fluid footer_logo mb-3" alt="logo" />
+            <img src="/asset/newlogo.png" className="img-fluid footer_logo mb-3" alt="logo" />
             <p className="footer_description">
               At Twinkle Media Hub Pvt Ltd.®, we’re a passionate team of Advertising & Digital Marketing experts, turning brand visions into bold realities.
             </p>
