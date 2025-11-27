@@ -1,0 +1,10 @@
+deploy:
+  tasks:
+    - export NVM_DIR="$HOME/.nvm"
+    - . "$NVM_DIR/nvm.sh"
+    - nvm install 18
+    - nvm use 18
+    - npm install
+    - npm run build
+    - rm -rf /home/u694280384/domains/twinklemediahub.com/public_html/*
+    - cp -r build/* /home/u694280384/domains/twinklemediahub.com/public_html/
