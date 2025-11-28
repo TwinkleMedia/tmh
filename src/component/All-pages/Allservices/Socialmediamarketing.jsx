@@ -132,7 +132,7 @@ export default function SocialMediaMarketing() {
       </div>
 
       {/* =================== MAIN CONTENT =================== */}
-      <div className="container smm-container socialContainer">
+      <div className="container smm-container socialContainer mt-4">
 
         {/* Intro paragraph */}
         <section className="smm-section">
