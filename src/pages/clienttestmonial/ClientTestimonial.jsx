@@ -469,9 +469,9 @@ const ClientTestimonial = () => {
   }
   return (<div className="testimonial-container"><Heading headingLabel="Client Testimonial" />
     <div className="testimonials-slider">
-      <button className="prev-btn" onClick={handlePrev}>
+      {/* <button className="prev-btn" onClick={handlePrev}>
         <ChevronLeft />
-      </button>
+      </button> */}
 
       <div className="Clientvideo-grid">
         {visibletestimonialss.map((testimonials) => (
@@ -508,9 +508,9 @@ const ClientTestimonial = () => {
         ))}
       </div>
 
-      <button className="next-btn" onClick={handleNext}>
+      {/* <button className="next-btn" onClick={handleNext}>
         <ChevronRight />
-      </button>
+      </button> */}
     </div></div>)
 }
 

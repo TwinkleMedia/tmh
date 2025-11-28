@@ -8,7 +8,7 @@
 .carousel {
   display: flex;
   animation: slide-animation 20s infinite;
-  width: 300%; /* ensures smooth sliding across all slides */
+  width: 300%; 
 }
 
 .carousel-slide {
