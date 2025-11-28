@@ -198,7 +198,13 @@ export default function AnimatedVideos() {
     const index = (startIndex + i) % animatesData.length;
     visibleanimates.push(animatesData[index]);
   }
+  const handleNext = () => {
+    setStartIndex((prevIndex) => (prevIndex + 1) % animatesData.length);
+  };
 
+  const handlePrev = () => {
+    setStartIndex((prevIndex) => (prevIndex - 1 + animatesData.length) % animatesData.length);
+  };
   return (<div className="animate-container">
     <Heading headingLabel="Animated videos" />
 
@@ -218,14 +224,14 @@ export default function AnimatedVideos() {
               playsInline
               style={{ width: "100%", height: "auto", borderRadius: '10px' }}
             />
-            <div className="video-overlay">
-              {/* <div className="video-info"> */}
-              {/* <div className="video-title">{animate.title}</div> */}
-              {/* <div className="video-description">
+            {/* <div className="video-overlay"> */}
+            {/* <div className="video-info"> */}
+            {/* <div className="video-title">{animate.title}</div> */}
+            {/* <div className="video-description">
                   Uploaded on: {new Date(animate.created_at).toLocaleDateString()}
                 </div> */}
-              {/* </div> */}
-              {/* <div className="video-controls">
+            {/* </div> */}
+            {/* <div className="video-controls">
                 <button className="control-button">
                   <Heart size={24} />
                 </button>
@@ -236,7 +242,7 @@ export default function AnimatedVideos() {
                   <Share2 size={24} />
                 </button>
               </div> */}
-            </div>
+            {/* </div> */}
           </div>
         ))}
 
