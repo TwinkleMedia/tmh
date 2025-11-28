@@ -182,6 +182,7 @@
     height: auto;
     max-width: 100%;
     width: 500px;
+    border: 10px solid #063f9c4d;
 }
 @keyframes scroll {
   0% {
