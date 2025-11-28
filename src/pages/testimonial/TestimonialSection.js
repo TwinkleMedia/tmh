@@ -107,7 +107,7 @@ export default function TestimonialSection() {
                     className="testimonial-img mb-3"
                   /> */}
                   <img
-                    src="asset/img/googlereview.png"
+                    src="asset/img/googlereview.jpg"
                     alt="Google"
                     className="google-icon mb-2"
                   />
