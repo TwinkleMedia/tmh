@@ -124,11 +124,11 @@ export default function SocialMediaMarketing() {
             <img src='./asset/upscaled.png' alt="Growth Chart" />
           </div>
         </section>
-        <Allservices
+        {/* <Allservices
           // Serviceh1={"Social Media Marketing Agency"}
           // Serviceh1span={"In Navi Mumbai"}
           h4para={""}
-        />
+        /> */}
       </div>
 
       {/* =================== MAIN CONTENT =================== */}
@@ -138,7 +138,6 @@ export default function SocialMediaMarketing() {
         <section className="smm-section">
           <div className="companyInfo">
             <div className="data">
-
               <h3 className="socialTeamh3">How Our Social Team Can Help?</h3>
               <span className="animate-border center-line"></span>
 
