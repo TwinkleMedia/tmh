@@ -218,7 +218,7 @@ export default function SocialMediaMarketing() {
 
             {/* 2 */}
             <div className="image-box">
-              <img src="https://kudosdigitals.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-21-at-7.10.46-PM.jpeg" alt="" />
+              <img src="/asset/mock1.png" alt="" />
             </div>
 
             {/* 3 */}
@@ -230,11 +230,11 @@ export default function SocialMediaMarketing() {
               </p>
             </div>
             <div className="image-box">
-              <img src="https://kudosdigitals.com/wp-content/uploads/2023/09/customize.jpg" alt="" />
+              <img src="/asset/mock2.png" alt="" />
             </div>
             {/* 4 */}
             <div className="image-box">
-              <img src="https://kudosdigitals.com/wp-content/uploads/2023/09/allign-1.jpg" alt="" />
+              <img src="/asset/mock3.png" alt="" />
             </div>
 
             {/* 5 */}
