@@ -246,7 +246,7 @@ export default function SocialMediaMarketing() {
               </p>
             </div>
             <div className="image-box">
-              <img src="https://kudosdigitals.com/wp-content/uploads/2023/09/result.jpg" alt="" />
+              <img src="/asset/mock4.png" alt="" />
             </div>
             {/* 6 */}
             <div className="text-box">
