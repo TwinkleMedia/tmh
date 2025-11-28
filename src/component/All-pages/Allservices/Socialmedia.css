@@ -1,4 +1,3 @@
-
 .companyInfo {
     display: flex;
     justify-content: space-between;
@@ -30,21 +29,23 @@
     gap: 0;
     width: 100%;
 }
+
 /* Text Boxes */
 .text-box {
-    background: #063f9c;
+    background: rgb(55 123 255 / 15%);
     /* exact purple color */
-    color: white;
+    color: #063F9C;
     text-align: center;
     padding: 60px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.ctap
-{
+
+.ctap {
     color: #063f9c;
 }
+
 .text-box h3 {
     font-size: 24px;
     margin: 20px 0 10px;
