@@ -47,12 +47,14 @@
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: 600;
+    color: #003f88;
 }
 
 .Webservice-card p {
     font-size: 14px;
     opacity: 0.9;
     text-align: center;
+    color: #064ea3;
 }
 
 .offer {
@@ -64,6 +66,7 @@
 
 .offer p {
     line-height: 1.9;
+    color: #064ea3;
 }
 
 .process-section {
@@ -76,6 +79,7 @@
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #fd7e14;
 }
 
 .subtitle {
@@ -83,6 +87,7 @@
     opacity: 0.8;
     margin-bottom: 40px;
     max-width: 700px;
+    color: #fd7e14;
 }
 
 .process-container {
@@ -98,7 +103,7 @@
     border-radius: 14px;
     text-align: center;
     transition: 0.3s;
-    border: 1px solid #222;
+    /* border: 1px solid #222; */
 }
 
 .process-card:hover {
@@ -121,12 +126,14 @@
 .process-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #003f88;
 }
 
 .process-card p {
     font-size: 15px;
     opacity: 0.8;
     line-height: 1.6;
+    color: #064ea3;
 }
 
 /* GRID CONTAINER */
@@ -140,7 +147,7 @@
 
 /* CARD STYLING */
 .workcard {
-    background: rgba(86, 125, 201, 0.15);
+    background: #02287433;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
