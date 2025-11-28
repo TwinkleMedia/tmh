@@ -277,7 +277,7 @@ export default function SocialMediaMarketing() {
             <h3>Get Started with Twinkle Media Hub</h3>
             <span className="animate-border center-line"></span>
 
-            <p>
+            <p className="ctap">
               Partner with Twinkle Media Hub Pvt Ltd and elevate your digital
               presence today. Whether you're based in Mumbai or beyond, our{" "}
               <b>social media marketing services</b> are designed to drive

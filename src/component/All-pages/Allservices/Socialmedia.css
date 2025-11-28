@@ -6,11 +6,12 @@
 }
 
 .socialTeamh3 {
-    color: #fff;
+    color: #f67b0c;
 }
 
 .serv-btn {
     border: 2px solid #063f9c;
+    color: #063f9c;
 }
 
 .serv-btn:hover {
@@ -19,6 +20,7 @@
 
 .companyInfo p {
     line-height: 2 !important;
+    color: #063f9c;
 }
 
 .features-grid {
@@ -39,7 +41,10 @@
     flex-direction: column;
     justify-content: center;
 }
-
+.ctap
+{
+    color: #063f9c;
+}
 .text-box h3 {
     font-size: 24px;
     margin: 20px 0 10px;
