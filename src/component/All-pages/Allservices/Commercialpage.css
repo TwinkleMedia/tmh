@@ -14,6 +14,7 @@
   font-size: 16px;
   text-align: left;
   margin-bottom: 20px;
+  color: #063f9c;
 }
 
 .choose-grid {
@@ -46,12 +47,15 @@
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: 600;
+  color: #063f9c;
+
 }
 
 .choose-card p {
   font-size: 14px;
   opacity: 0.9;
   text-align: center;
+  color: #063f9c;
 }
 
 /* Responsive */
@@ -69,7 +73,7 @@
 .Ourservices-section h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: #f67b0c;
   margin-bottom: 50px;
   text-align: left;
 }
@@ -116,13 +120,13 @@
 .Ourservice-card h3 {
   font-size: 18px;
   font-weight: 600;
-  color: #fff;
+  color: #063f9c;
   margin-bottom: 10px;
 }
 
 .Ourservice-card p {
   font-size: 14px;
-  color: #a5a4a4;
+  color: #cacaca;
   max-width: 240px;
 }
 
@@ -149,7 +153,8 @@
   overflow: hidden;
   padding: 0px 20px;
 }
-.marquee-wrapper h3{
+
+.marquee-wrapper h3 {
   margin-bottom: 20px;
 }
 
@@ -208,14 +213,16 @@
     height: 45px;
   }
 }
-.ourApproach
-{
+
+.ourApproach {
   display: flex;
   padding: 50px;
   justify-content: space-between;
   gap: 20px;
 }
-.approach p
-{
+
+.approach p {
   max-width: 700px;
+  color: #063f9c;
+
 }
