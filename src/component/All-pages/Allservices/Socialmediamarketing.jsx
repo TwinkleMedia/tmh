@@ -285,7 +285,7 @@ export default function SocialMediaMarketing() {
               advantage.
             </p>
           </div>
-          <img src="./asset/social2.jpg" alt="" />
+          <img src="/asset/social2.jpg" alt="smmImportants" />
         </section>
       </div>
     </>
