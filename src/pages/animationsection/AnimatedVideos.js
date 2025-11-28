@@ -222,6 +222,8 @@ export default function AnimatedVideos() {
               muted
               loop
               playsInline
+              preload="none"
+              loading="lazy"
               style={{ width: "100%", height: "auto", borderRadius: '10px' }}
             />
             {/* <div className="video-overlay"> */}

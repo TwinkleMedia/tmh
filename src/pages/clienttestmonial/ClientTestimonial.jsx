@@ -424,47 +424,39 @@ const ClientTestimonial = () => {
   const [testimonials] = useState(staticVideos);
   const [startIndex, setStartIndex] = useState(0);
   const [videosToShow, setVideosToShow] = useState(3);
-  useEffect(()=>
-  {
-    const handleResize=()=>
-    {
-      if(window.innerWidth<480)
-      {
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 480) {
         setVideosToShow(2);
       }
-      else if(window.innerWidth<768)
-      {
+      else if (window.innerWidth < 768) {
         setVideosToShow(2);
       }
-      else if(window.innerWidth<1024)
-      {
+      else if (window.innerWidth < 1024) {
         setVideosToShow(3);
       }
-      else{
+      else {
         setVideosToShow(3);
       }
     };
     handleResize();
-    window.addEventListener("resize",handleResize);
-    return()=>window.removeEventListener("resize",handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   },
-  [])
-  const handleNext=()=>
-  {
-    if(testimonials.length===0)return;
-    setStartIndex((prevIndex)=>(prevIndex+1)%testimonials.length);
+    [])
+  const handleNext = () => {
+    if (testimonials.length === 0) return;
+    setStartIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
-  const handlePrev=()=>
-  {
-    if(testimonials.length===0)return;
-    setStartIndex((prevIndex)=>(prevIndex-1+testimonials.length)%testimonials.length);
+  const handlePrev = () => {
+    if (testimonials.length === 0) return;
+    setStartIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
   };
-  const visibletestimonialss=[];
-  const count=Math.min(videosToShow,testimonials.length);
-  for(let i=0;i<count;i++)
-  {
-    const index=(startIndex+i)%testimonials.length;
+  const visibletestimonialss = [];
+  const count = Math.min(videosToShow, testimonials.length);
+  for (let i = 0; i < count; i++) {
+    const index = (startIndex + i) % testimonials.length;
     visibletestimonialss.push(testimonials[index]);
   }
   return (<div className="testimonial-container"><Heading headingLabel="Client Testimonial" />
@@ -483,6 +475,8 @@ const ClientTestimonial = () => {
               loop
               muted
               playsInline
+              preload="none"
+              loading="lazy"
               style={{ width: "100%", height: "auto" }}
             />
             <div className="Clientvideo-overlay">
