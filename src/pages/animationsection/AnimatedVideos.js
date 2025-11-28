@@ -113,7 +113,7 @@ export default function AnimatedVideos() {
   const staticVideos = [
     {
       id: 1,
-      url: "/asset/animateVideos/video2.gif",
+      url: "/asset/animateVideos/video2.mp4",
       title: "Animated Video 1",
       created_at: "2023-10-01"
     },
