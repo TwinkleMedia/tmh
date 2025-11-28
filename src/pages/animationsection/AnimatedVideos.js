@@ -135,12 +135,12 @@ export default function AnimatedVideos() {
       title: "Animated Video 4",
       created_at: "2023-10-01"
     },
-    {
-      id: 5,
-      url: "/asset/animateVideos/video6.mp4",
-      title: "Animated Video 5",
-      created_at: "2023-10-01"
-    },
+    // {
+    //   id: 5,
+    //   url: "/asset/animateVideos/video6.mp4",
+    //   title: "Animated Video 5",
+    //   created_at: "2023-10-01"
+    // },
   ]
   const [animatesData, setanimatesData] = useState(staticVideos);
   const [startIndex, setStartIndex] = useState(0);
