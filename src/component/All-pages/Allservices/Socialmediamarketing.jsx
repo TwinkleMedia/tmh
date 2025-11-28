@@ -251,7 +251,7 @@ export default function SocialMediaMarketing() {
             </div>
             {/* 6 */}
             <div className="text-box">
-              <img src="/icons/rocket.svg" className="icon" alt="" />
+              {/* <img src="/icons/rocket.svg" className="icon" alt="" /> */}
               <h3>Community Engagement</h3>
               <p>
                 Building meaningful relationships

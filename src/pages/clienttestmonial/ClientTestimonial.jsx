@@ -475,7 +475,7 @@ const ClientTestimonial = () => {
               loop
               muted
               playsInline
-              preload="none"
+              preload="metadata"
               loading="lazy"
               style={{ width: "100%", height: "auto" }}
             />
