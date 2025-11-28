@@ -117,13 +117,13 @@ export default function BehindTheSeen() {
                 <div className="scroll-track top-bottom">
                   {Array(2).fill(0).map((_, i) => (
                     <>
-                      <video key={`c1-img1-${i}`} src="./asset/bts/bts1.mp4" autoPlay muted playsInline preload="none"
+                      <video key={`c1-img1-${i}`} src="./asset/bts/bts1.mp4" autoPlay muted playsInline preload="metadata"
                         loading="lazy" loop />
-                      <video key={`c1-img2-${i}`} src="./asset/bts/bts2.mp4" autoPlay muted playsInline preload="none"
+                      <video key={`c1-img2-${i}`} src="./asset/bts/bts2.mp4" autoPlay muted playsInline preload="metadata"
                         loading="lazy" loop />
-                      <video key={`c1-img3-${i}`} src="./asset/bts/bts3.mp4" autoPlay muted playsInline preload="none"
+                      <video key={`c1-img3-${i}`} src="./asset/bts/bts3.mp4" autoPlay muted playsInline preload="metadata"
                         loading="lazy" loop />
-                      <video key={`c1-img4-${i}`} src="./asset/bts/bts4.mp4" autoPlay muted playsInline preload="none"
+                      <video key={`c1-img4-${i}`} src="./asset/bts/bts4.mp4" autoPlay muted playsInline preload="metadata"
                         loading="lazy" loop />
                       <img key={`c1-img4-${i}`} src="./asset/bts/bts5.webp" />
                       <img key={`c1-img4-${i}`} src="./asset/bts/bts6.webp" />
