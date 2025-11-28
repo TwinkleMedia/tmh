@@ -168,27 +168,27 @@ export default function AnimatedVideos() {
 
 
   // Auto-slide every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (animatesData.length > 0) {
-        setStartIndex((prevIndex) => (prevIndex + 1) % animatesData.length);
-      }
-    }, 3000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (animatesData.length > 0) {
+  //       setStartIndex((prevIndex) => (prevIndex + 1) % animatesData.length);
+  //     }
+  //   }, 3000);
 
-    return () => clearInterval(interval);
-  }, [animatesData]);
+  //   return () => clearInterval(interval);
+  // }, [animatesData]);
 
-  const handleNext = () => {
-    if (animatesData.length === 0) return;
-    setStartIndex((prevIndex) => (prevIndex + 1) % animatesData.length);
-  };
+  // const handleNext = () => {
+  //   if (animatesData.length === 0) return;
+  //   setStartIndex((prevIndex) => (prevIndex + 1) % animatesData.length);
+  // };
 
-  const handlePrev = () => {
-    if (animatesData.length === 0) return;
-    setStartIndex(
-      (prevIndex) => (prevIndex - 1 + animatesData.length) % animatesData.length
-    );
-  };
+  // const handlePrev = () => {
+  //   if (animatesData.length === 0) return;
+  //   setStartIndex(
+  //     (prevIndex) => (prevIndex - 1 + animatesData.length) % animatesData.length
+  //   );
+  // };
 
   // Get visible animates with infinite loop
   const visibleanimates = [];
