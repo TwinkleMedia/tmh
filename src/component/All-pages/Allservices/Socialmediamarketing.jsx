@@ -234,7 +234,7 @@ export default function SocialMediaMarketing() {
             </div>
             {/* 4 */}
             <div className="image-box">
-              <img src="/asset/mock3.png" alt="mockups" />
+              <img src="/asset/mock3.jpg" alt="mockups" />
             </div>
 
             {/* 5 */}
