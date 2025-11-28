@@ -218,7 +218,7 @@ export default function SocialMediaMarketing() {
 
             {/* 2 */}
             <div className="image-box">
-              <img src="/asset/mock1.png" alt="" />
+              <img src="/asset/mock1.png" alt="mockups" />
             </div>
 
             {/* 3 */}
@@ -230,11 +230,11 @@ export default function SocialMediaMarketing() {
               </p>
             </div>
             <div className="image-box">
-              <img src="/asset/mock2.png" alt="" />
+              <img src="/asset/mock2.png" alt="mockups" />
             </div>
             {/* 4 */}
             <div className="image-box">
-              <img src="/asset/mock3.png" alt="" />
+              <img src="/asset/mock3.png" alt="mockups" />
             </div>
 
             {/* 5 */}
@@ -246,7 +246,7 @@ export default function SocialMediaMarketing() {
               </p>
             </div>
             <div className="image-box">
-              <img src="/asset/mock4.png" alt="" />
+              <img src="/asset/mock4.png" alt="mockups" />
             </div>
             {/* 6 */}
             <div className="text-box">
