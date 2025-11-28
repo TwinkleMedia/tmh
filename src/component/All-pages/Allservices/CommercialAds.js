@@ -286,7 +286,7 @@ export default function CommercialAds() {
               <button className="serv-btn">Get Quote</button>
             </div>
           </div>
-          <img src="./asset/commercial1.jpg"></img>
+          <img src="./asset/commercial1.jpg" className="Cimg"></img>
         </section>
 
       </div>
