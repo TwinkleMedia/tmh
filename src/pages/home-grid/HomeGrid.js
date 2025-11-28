@@ -242,6 +242,7 @@ export default function HomeGrid() {
     "/asset/bestCreation/img18.png",
     "/asset/bestCreation/img19.png",
     "/asset/bestCreation/img20.png",
+    "/asset/bestCreation/img21.png",
   ];
   const groupedImages = [];
   for (let i = 0; i < images.length; i += 4) {
