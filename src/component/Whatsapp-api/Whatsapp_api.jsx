@@ -29,7 +29,7 @@ function Whatsapp_api() {
     "/asset/ourClients/fancylogo.png",
     "/asset/ourClients/kidezeeLogo.png",
     "/asset/ourClients/meridianLogo.png",
-    "/asset/ourClients/nandiinternationalLogo.png",
+    "/asset/ourClients/nandiInternationalLogo.png",
     "/asset/ourClients/Nestgurulogo.png",
     "/asset/ourClients/rapidiseLogo.jpg",
     "/asset/ourClients/samalaLogo.webp",
