@@ -1,8 +1,31 @@
-.textColor
-{
+.textColor {
     color: orange !important;
 }
-.textColor:hover
+
+.textColor:hover {
+    color: white !important;
+}
+
+.slider-Image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.fadeSlide
 {
-    color: white!important;
+    animation: fadeSlide 800ms ease-in-out;
+     will-change: transform, opacity;
+}
+@keyframes fadeSlide
+{
+    0%
+    {
+        opacity: 0;
+        transform:translateX(40px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform:translateX(0px);
+    }
 }
