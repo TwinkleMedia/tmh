@@ -96,8 +96,8 @@ export default function SocialMediaMarketing() {
           breadheading={"Social Media (SMM)"}
           breadcrumbsLabel={"Social Media (SMM)"}
         /> */}
-        <section className="hero-section">
-          <div className="hero-content">
+        <section className="hero-section" id="socialSection">
+          <div className="hero-content " id="socialContent">
             <Allservices
               Serviceh1={"Social Media Marketing Agency"}
               Serviceh1span={"In Navi Mumbai"}
@@ -123,17 +123,24 @@ export default function SocialMediaMarketing() {
           <div className="hero-image">
             <img src='./asset/upscaled.png' alt="Growth Chart" />
           </div>
-        </section>
+        </section >
         {/* <Allservices
           // Serviceh1={"Social Media Marketing Agency"}
           // Serviceh1span={"In Navi Mumbai"}
           h4para={""}
         /> */}
-      </div>
+      </div >
 
       {/* =================== MAIN CONTENT =================== */}
-      <div className="container smm-container socialContainer mt-4">
-
+      < div className="container" >
+        <div className="sw-main-content mt-5">
+          {/* <p>
+            At Twinkle Media Hub Pvt Ltd, we bring your brand’s story to life
+            through visually stunning and strategically designed commercial
+            advertisements. Whether for television, social media, or digital
+            campaigns, our ads are crafted to captivate, connect, and convert.
+          </p> */}
+        </div>
         {/* Intro paragraph */}
         <section className="smm-section">
           <div className="companyInfo">
@@ -150,7 +157,7 @@ export default function SocialMediaMarketing() {
                 humanize your brand's online presence, making meaningful connections
                 that drive growth and foster lasting relationships.
               </p>
-              <p>
+              <p id="companyP">
                 Our dedicated team of social media experts is committed to deliver
                 exceptional results. We begin by understanding your business
                 objectives, conducting in-depth market research, and crafting a
@@ -162,13 +169,14 @@ export default function SocialMediaMarketing() {
               <button className="serv-btn">Get Quote</button>
 
             </div>
- <img
-            src="/asset/smm-gif.gif"
-            alt="Marketing consulting"
-            style={{ width: "100%", maxWidth: "450px" }}
-          />
+            <img
+              src="/asset/smm-gif.gif"
+              alt="Marketing consulting"
+              className="gif"
+
+            />
           </div>
-         
+
         </section>
 
         {/* How our services help */}
@@ -287,7 +295,7 @@ export default function SocialMediaMarketing() {
           </div>
           <img src="/asset/social2.jpg" alt="smmImportants" />
         </section>
-      </div>
+      </div >
     </>
   );
 }

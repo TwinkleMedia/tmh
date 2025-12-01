@@ -11,21 +11,111 @@
     height: auto;
     display: block;
 }
-.fadeSlide
-{
-    animation: fadeSlide 800ms ease-in-out;
-     will-change: transform, opacity;
+
+.hero-image-slider {
+    width: 100%;
+    height: 450px;
+    /* adjust as you want */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@keyframes fadeSlide
-{
-    0%
-    {
+
+.slider-Image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* ensures uniform image size */
+    object-position: center;
+    display: block;
+    border-radius: 10px;
+    /* optional */
+}
+
+.fadeSlide {
+    animation: fadeSlide 800ms ease-in-out;
+    will-change: transform, opacity;
+}
+
+.serviceHero {
+    margin-bottom: 20px;
+}
+
+@keyframes fadeSlide {
+    0% {
         opacity: 0;
-        transform:translateX(40px);
+        transform: translateX(40px);
     }
-    100%
-    {
+
+    100% {
         opacity: 1;
-        transform:translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width:768px) {
+    .hero-image-slider {
+        width: 100%;
+        height: 260px;
+    }
+
+    .serviceHero {
+        flex-direction: column !important;
+        padding: 2.5rem 1.2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:991px) {
+    .serviceHero h1 {
+        font-size: 28px !important;
+    }
+
+    #subtitle {
+        font-size: 14px !important;
+    }
+
+    #servDesc {
+        font-size: 12px !important;
+    }
+
+    .serviceHero {
+        flex-direction: column !important;
+        padding: 2.5rem 1.2rem;
+        text-align: center;
+        margin-bottom: 20px;
+        gap: 5px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .hero-image-slider {
+        height: 550px !important;
+        width: 100% !important;
+        overflow: hidden;
+        /* keeps image inside frame */
+    }
+
+    .slider-Image {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        /* fill like your 2nd image */
+    }
+
+    .serviceHero h1 {
+        font-size: 32px !important;
+    }
+
+    #subtitle {
+        font-size: 16px !important;
+    }
+
+    #servDesc {
+        font-size: 14px !important;
     }
 }

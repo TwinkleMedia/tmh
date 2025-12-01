@@ -63,7 +63,14 @@
 
 }
 
+.no-flip {
+    transform: none !important;
+    transition: none !important;
+}
 
+.no-flip .flip-card-inner {
+    transform: none !important;
+}
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -80,6 +87,7 @@
     overflow: hidden;
     backface-visibility: hidden;
 }
+
 .card-face::before {
     content: "";
     position: absolute;
@@ -123,4 +131,10 @@
     line-height: 1.5;
     color: #fff !important;
     z-index: 4;
+}
+
+@media (max-width:1400px) {
+    .front-overlay-text {
+        font-size: 2rem;
+    }
 }

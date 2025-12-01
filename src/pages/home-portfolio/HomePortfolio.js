@@ -34,9 +34,9 @@ export default function HomePortfolio() {
           <p className="legend">Legend 3</p>
         </div>
       </Carousel> */}
-      <div className="py-5">
+      {/* <div className="py-5"> */}
           {/* <Heading headingLabel="Our Services" /> */}
-        </div>
+        {/* </div> */}
       {/* <PortfolioContent/> */}
     </>
   );

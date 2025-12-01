@@ -1,73 +1,172 @@
-
-
-.about{
-.bg-light{
+.about .bg-light {
     background-color: #000000 !important;
 }
-.logo{
+
+.about .logo {
     width: 200px;
     position: absolute;
     top: -50px;
-    left:2%;
+    left: 2%;
     animation: aboutlogoanimation 5s infinite linear;
 }
-.row h1{
+
+.about .row h1 {
     font-size: 45px;
-    text-shadow:var(--text-shadow);
+    text-shadow: var(--text-shadow);
 }
-p{
+
+.about p {
     font-size: 20px;
 }
 
-}
-.gradient-text{
+
+.gradient-text {
     color: #FA8F06;
 }
 
-@keyframes aboutlogoanimation{
-    0%{transform:scale(0)}
-    20%{transform:scale(1.2)}
-    40%{transform:scale(1)}
-    75%{transform:rotate(0)}
-    79%{transform:rotate(30deg)}
-    81%{transform:rotate(-30deg)}
-    85%{transform:rotate(0deg)}
-    100%{transform:rotate(0)}
- }
+.about-hero img {
+    width: 100%;
+    max-width: 520px;
+    /* normal desktop size */
+    height: auto;
+    animation: floatImg 6s ease-in-out infinite;
+}
+
+@keyframes aboutlogoanimation {
+    0% {
+        transform: scale(0)
+    }
+
+    20% {
+        transform: scale(1.2)
+    }
+
+    40% {
+        transform: scale(1)
+    }
+
+    75% {
+        transform: rotate(0)
+    }
+
+    79% {
+        transform: rotate(30deg)
+    }
+
+    81% {
+        transform: rotate(-30deg)
+    }
+
+    85% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
 
 
- .box-experice .numb-ex{
+.box-experice .numb-ex {
     font-size: 90px;
     line-height: 94px;
     color: var(--Primary-colour);
     transform: scale3d(1, 1.2, 1);
     margin-right: 15px;
     text-shadow: var(--text-shadow);
- }
+}
 
- .box-experice h3{
+.box-experice h3 {
     font-size: 2.5rem;
     display: inline-block;
     text-transform: uppercase;
     text-shadow: var(--text-shadow);
- }
- @media (max-width:500px){
-    .about{
-        .row h1{
-            font-size: 30px;
-        }
-        p{
-            font-size: 16px;
-        }
+}
+
+@media (max-width:500px) {
+    .about .row h1 {
+        font-size: 30px;
     }
+
+    .about p {
+        font-size: 16px;
+    }
+
     .box-experice .numb-ex {
         font-size: 50px;
     }
+
     .box-experice h3 {
         font-size: 1.5rem;
     }
 }
 
 .Breadcrumb_section {
-  display: none !important;
+    display: none !important;
+}
+
+@media (max-width: 991px) {
+
+    .hero-image img {
+        max-width: 380px !important;
+        /* increase image size */
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 32px !important;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 16px !important;
+        margin-top: 15px;
+    }
+
+    .hero-btn {
+        margin-top: 20px;
+    }
+
+    #about-section {
+        flex-direction: column-reverse !important;
+    }
+
+    .aboutContent {
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width:1400px) {
+    .aboutDesc {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .aboutContent h1 {
+        font-size: 2rem;
+    }
+
+    .about-hero img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-image img {
+        max-width: 300px !important;
+    }
+
+    .hero-content h1 {
+        font-size: 28px !important;
+    }
+
+    .hero-content p {
+        font-size: 15px !important;
+    }
 }

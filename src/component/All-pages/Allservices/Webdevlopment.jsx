@@ -100,8 +100,8 @@ export default function Webdevlopment() {
           breadheading={"Web Development"}
           breadcrumbsLabel={"Web Development"}
         /> */}
-        <section className="hero-section">
-          <div className="hero-content">
+        <section className="hero-section" id="webdevSection">
+          <div className="hero-content" id="web-content">
             <Allservices
               Serviceh1={"Website Design & Development"}
               Serviceh1span={"Services in Mumbai"}
@@ -115,14 +115,14 @@ export default function Webdevlopment() {
               Partner with Twinkle Media Hub Pvt Ltd and build a powerful digital foundation today.
             </p>
 
-            <p className="description">
+            <p className="description" id="webdesc">
               Welcome to Twinkle Media Hub Pvt Ltd - Your Trusted Web Development Company in Mumbai At Twinkle Media Hub Pvt Ltd, we specialize in crafting exceptional digital experiences through our expert web development and designing services. Located in the heart of Mumbai, our team of skilled professionals is dedicated to delivering cutting-edge solutions tailored to meet your business needs.
             </p>
 
             <button className="hero-btn">Get Started</button>
           </div>
 
-          <div className="hero-image">
+          <div className="hero-image" id="webdev">
             <img src='./asset/websiteMockup.png' alt="Mockup" />
           </div>
         </section>
@@ -332,7 +332,7 @@ export default function Webdevlopment() {
             <button className="serv-btn">Get Quote</button>
 
           </div>
-          <img src="./asset/web1.jpg" alt="" />
+          <img src="./asset/web1.jpg" alt="webisteDevelopementImage" className="webImg" />
         </div>
         <section className="process-section">
           <h2 className="title">Our Website Designing & Development Process</h2>

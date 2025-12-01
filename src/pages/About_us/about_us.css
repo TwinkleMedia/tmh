@@ -14,6 +14,7 @@
     text-align: center;
     position: relative;
 }
+
 .about-head-main::after {
     content: "";
     height: 6px;
@@ -24,6 +25,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
 .about-para {
     font-size: 1.2rem;
     font-weight: 600;
@@ -416,7 +418,7 @@ transition: all 0.5s ease 0s;
 
 .item:hover .item,
 .item:hover span.icon {
-    background:#fff;
+    background: #fff;
     border-radius: 10px;
     -webkit-transition: all .5s ease 0;
     transition: all .5s ease 0;
@@ -447,27 +449,27 @@ transition: all 0.5s ease 0s;
 }
 
 .item .feature_box_col_two {
-     background: rgba(5, 130, 247, 0.2);
+    background: rgba(5, 130, 247, 0.2);
     color: var(--secondary-color)
 }
 
 .item .feature_box_col_three {
-      background: rgba(5, 130, 247, 0.2);
+    background: rgba(5, 130, 247, 0.2);
     color: var(--secondary-color)
 }
 
 .item .feature_box_col_four {
-      background: rgba(5, 130, 247, 0.2);
+    background: rgba(5, 130, 247, 0.2);
     color: var(--secondary-color)
 }
 
 .item .feature_box_col_five {
-      background: rgba(5, 130, 247, 0.2);
+    background: rgba(5, 130, 247, 0.2);
     color: var(--secondary-color)
 }
 
 .item .feature_box_col_six {
-      background: rgba(5, 130, 247, 0.2);
+    background: rgba(5, 130, 247, 0.2);
     color: var(--secondary-color)
 }
 
@@ -559,22 +561,192 @@ transition: all 0.5s ease 0s;
     border-radius: 30px;
 }
 
-@media (max-width: 575px) {
-    .item p {
-        font-size: 20px;
-    }
-
-    .item h6 {
-        font-size: 1.5rem;
-    }
+.featurep {
+    color: #063F9C;
 }
 
+/* ============================================
+   RESPONSIVE — TABLET (max-width: 991px)
+============================================ */
 @media (max-width: 991px) {
     .item p {
         font-size: 15px;
     }
 
+    .ideas-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ideas-img {
+        text-align: center;
+    }
+
+    .ideas-img img {
+        max-width: 350px;
+    }
+
+    .team-img {
+        max-width: 350px;
+        height: auto;
+    }
+
+    .team-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-head-main {
+        font-size: 2rem;
+    }
+    .item {
+        height: 350px;
+        padding: 25px;
+    }
+
     .item h6 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+    .sectionBox
+    {
+        width: 100%;
+        max-width: none;
+    }
+      .missionSection {
+        display: block !important;
+    }
+
+    .missionSection .sectionBox {
+        width: 100% !important;
+        max-width: none !important;
+    }
+    .featurep
+    {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (max-width: 768px)
+============================================ */
+@media (max-width: 768px) {
+
+    .ideas-content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ideas-img img {
+        max-width: 300px;
+    }
+
+    .ideas-button {
+        font-size: 1rem;
+        padding: 0.7rem 1.6rem;
+    }
+
+    .team-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-head-main {
+        font-size: 1.8rem;
+    }
+
+    .about-head-main::after {
+        width: 160px;
+    }
+
+    .sectionBox {
+        max-width: 100%;
+    }
+     .missionSection {
+    display: block !important;
+  }
+
+  .missionSection .sectionBox {
+    width: 100% !important;
+  }
+}
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (max-width: 575px)
+============================================ */
+@media (max-width: 575px) {
+
+    .about-head-main {
+        font-size: 1.6rem;
+    }
+
+    .team-img {
+        max-width: 280px;
+    }
+
+    .ideas-img img {
+        max-width: 260px;
+    }
+
+    .ideas-button {
+        padding: .6rem 1.3rem;
+        font-size: 0.95rem;
+    }
+
+    .item {
+        padding: 20px;
+    }
+
+    .item h6 {
+        font-size: 1.4rem;
+    }
+
+    .item p {
+        font-size: 14px;
+    }
+
+    .aboutp-img {
+        max-width: 250px;
+    }
+}
+
+/* ============================================
+   VERY SMALL SCREEN (max-width: 420px)
+============================================ */
+@media (max-width: 420px) {
+
+    .ideas-img img,
+    .team-img {
+        max-width: 220px;
+    }
+
+    .about-head-main {
+        font-size: 1.4rem;
+    }
+
+    .ideas-button {
+        font-size: 0.85rem;
+        padding: .5rem 1.1rem;
+    }
+
+    .arrow-icon {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .missionSection
+    {
+        margin: 10px;
+    }
+}
+
+@media (max-width:1399px) {
+    .sectionBox {
+        max-width: 300px;
+    }
+
+    .missionSection {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
     }
 }

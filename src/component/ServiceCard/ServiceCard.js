@@ -4,23 +4,26 @@ import { Link } from 'react-router-dom'
 export default function ServiceCard(props) {
   const [isFlipped, setisFlipped] = React.useState(false);
   const handleFlip = () => {
-    setisFlipped(!isFlipped);
+    if (!props.disableAnimation) {
+      setisFlipped(!isFlipped);
+    }
+
   }
   return (
-    <Link className="col-md-6 col-lg-4 mb-4" to={`/${props.url}`} onClick={(e) => {
-      if (window.innerWidth <= 768) {
+    <Link className="col-md-6 col-lg-4 mb-4" onClick={(e) => {
+      if (window.innerWidth <= 768 && !props.disableAnimation) {
         e.preventDefault();
         handleFlip();
       }
     }
     }>
       <div
-        className={`flip-card ${isFlipped ? "flip-mobile" : ""}`}
+        className={`flip-card ${props.disableAnimation ? "no-flip" : ""} ${isFlipped ? "flip-mobile" : ""} ${props.customClass || ""}`}
         onClick={() => {
-          if (window.innerWidth <= 768) setisFlipped(!isFlipped);
+          if (window.innerWidth <= 768 && !props.disableAnimation) setisFlipped(!isFlipped);
         }}
       >
-        <div className="flip-card-inner" style={{ background: "url('/asset/service1.jpg')"}}>
+        <div className="flip-card-inner" style={{ background: props.disableBg ? "none" : "url('/asset/service1.jpg')" }}>
 
           {/* FRONT */}
           <div className="flip-card-front card-face d-flex flex-column justify-content-center align-items-center p-4">

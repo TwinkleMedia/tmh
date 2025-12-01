@@ -101,7 +101,7 @@ export default function BehindTheSeen() {
       <div className="container">
 
         {/* Section Title */}
-        <Heading headingLabel="Behind The Seen" />
+        <Heading headingLabel="Behind The Scene" />
 
         <div className="video-wrapper">
           <iframe
@@ -114,7 +114,7 @@ export default function BehindTheSeen() {
           <div className="side-thumbnails">
             <div className="Bts-right">
               <div className="image-column col-1">
-                <div className="scroll-track top-bottom">
+                <div className="scroll-track2 top-bottom">
                   {Array(2).fill(0).map((_, i) => (
                     <>
                       <video key={`c1-img1-${i}`} src="/asset/bts/bts1.mp4" autoPlay muted playsInline preload="metadata"

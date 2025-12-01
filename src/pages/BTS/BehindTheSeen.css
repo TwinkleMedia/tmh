@@ -297,7 +297,7 @@
   width: 100%;
 }
 
-.scroll-track video {
+.scroll-track2 video {
   width: 100%;
   height: 200px;
   border-radius: 18px;
@@ -350,7 +350,7 @@
     max-height: 400px;
   }
 
-  .scroll-track video {
+  .scroll-track2 video {
     height: 180px;
   }
 }

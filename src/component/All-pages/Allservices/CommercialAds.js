@@ -103,8 +103,8 @@ export default function CommercialAds() {
           breadheading={"Commercial Ads"}
           breadcrumbsLabel={"Commercial Ads"}
         /> */}
-        <section className="hero-section">
-          <div className="hero-content">
+        <section className="hero-section commercialSection">
+          <div className="hero-content commercial-content">
             <Allservices
               Serviceh1={"Commercial Ad "}
               Serviceh1span={"Production in Mumbai"}
@@ -125,7 +125,7 @@ export default function CommercialAds() {
             <button className="hero-btn">Get Started</button>
           </div>
 
-          <div className="hero-image">
+          <div className="hero-image commercial-image">
             <img src='./asset/commercialban.png' alt="Shoot" />
           </div>
         </section>

@@ -1,16 +1,33 @@
 import React, { useEffect, useState } from "react";
 import "./Service.css";
 import Heading from "../../component/Heading/Heading";
-import TerminalIcon from "@mui/icons-material/Terminal";
 import ServiceCard from "../../component/ServiceCard/ServiceCard";
 import Breadcrumbs from "../../component/Breadcrumbs/Breadcrumbs";
 import { Helmet } from "react-helmet";
 import Allservices from "../../component/All-pages/Allservices/Mainservices/Allservices";
 import { Typewriter } from "react-simple-typewriter";
+import ServicesSection from "./ServicesSection";
+import './serviceSection.css'
+import {
+  CommandLineIcon,        // replaces TerminalIcon
+  ChartBarIcon,
+  CameraIcon,
+  GlobeAltIcon,
+  PencilIcon,             // replaces PencilAltIcon
+  ChatBubbleOvalLeftIcon, // replaces ChatAlt2Icon
+  MegaphoneIcon,
+  CurrencyDollarIcon,
+  VideoCameraIcon
+} from '@heroicons/react/24/outline';
+
 export default function Service() {
   const images = [
-    "./asset/upscaled.png",
     "./asset/websiteMockup.png",
+    "./asset/ssm.png",
+    "./asset/gd.png",
+    "./asset/dm.png",
+    "./asset/seo.png",
+    "./asset/payperclick.png",
   ]
   const [currentState, setCurrentState] = useState(0)
   useEffect(() => {
@@ -26,7 +43,7 @@ export default function Service() {
     });
   });
   return (
-    <div id="services" className="">
+    <div id="services">
       <Helmet>
         <title>
           Twinkle Media Hub Services Best for SEO, PPC, Social Media, Website
@@ -63,7 +80,7 @@ export default function Service() {
                 breadheading={"Social Media (SMM)"}
                 breadcrumbsLabel={"Social Media (SMM)"}
               /> */}
-        <section className="hero-section">
+        <section className="hero-section serviceHero">
           <div className="hero-content">
             <Allservices
               Serviceh1={<>
@@ -85,11 +102,11 @@ export default function Service() {
                     Social Media Marketing <br /> Agency In Navi Mumbai
                   </h1> */}
 
-            <p className="subtitle">
+            <p className="subtitle" id="subtitle">  
               Partner with Twinkle Media Hub Pvt Ltd and elevate your digital presence today.
             </p>
 
-            <p className="description">
+            <p className="description" id="servDesc">
               As a premier social media marketing agency, we craft impactful digital
               strategies that boost engagement and drive conversions. Our mission is
               to transform your brand’s presence with measurable results.
@@ -110,78 +127,64 @@ export default function Service() {
       </div>
       <Heading headingLabel="Best Digital Marketing Agency in Mumbai" />
       <div className="container">
-        <div className="row">
-
-          <ServiceCard
+        <div className="row servicesSection">
+          <ServicesSection
             url="CommercialAds"
-            icon={<TerminalIcon />}
+            icon={<CameraIcon className="w-12 h-12 text-blue-500" />}
             heading="Commercial Ads"
-            className="textColor"
-          ><br /><br />
-          </ServiceCard>
-
-          <ServiceCard
+            desc="High-quality ads to boost your brand visibility."
+          />
+          <ServicesSection
             url="socialmediamarketing"
-            icon={<TerminalIcon />}
-            heading="SOCIAL MEDIA MARKETING (SMM)"
-            className="test textColor"
-          ><br /><br />
-          </ServiceCard>
-
-          <ServiceCard
+            icon={<ChatBubbleOvalLeftIcon className="w-12 h-12 text-blue-500" />}
+            heading="Social Media Marketing (SMM)"
+            desc="Engage your audience across social platforms effectively."
+          />
+          <ServicesSection
             url="websitedevlopment"
-            icon={<TerminalIcon />}
-            heading="WEB DEVELOPMENT"
-            className="textColor"
-          ><br /><br />
-          </ServiceCard>
-
-          <ServiceCard
+            icon={<GlobeAltIcon className="w-12 h-12 text-blue-500" />}
+            heading="Web Development"
+            desc="Build responsive and professional websites for your business."
+          />
+          <ServicesSection
             url="seo"
-            icon={<TerminalIcon />}
-            heading="SEO (SEARCH ENGINE OPTIMIZATION)"
-            className="textColor"
-          ><br /><br />
-          </ServiceCard>
-          <ServiceCard
+            icon={<ChartBarIcon className="w-12 h-12 text-blue-500" />}
+            heading="SEO (Search Engine Optimization)"
+            desc="Improve your website ranking on Google and other search engines."
+          />
+          <ServicesSection
             url="GraphicsDesigning"
-            icon={<TerminalIcon />}
-            heading="GRAPHIC DESIGN"
-            className="textColor"
-          ><br /><br />
-          </ServiceCard>
-
-          <ServiceCard
+            icon={<PencilIcon className="w-12 h-12 text-blue-500" />}
+            heading="Graphic Design"
+            desc="Creative designs to enhance your brand identity."
+          />
+          <ServicesSection
             url="bulkWhatsapp"
-            icon={<TerminalIcon />}
-            heading="BULK WHATASPP MARKETING"
-            className="textColor"
-          ><br /><br />
-          </ServiceCard>
-          <ServiceCard
+            icon={<MegaphoneIcon className="w-12 h-12 text-blue-500" />}
+            heading="Bulk WhatsApp Marketing"
+            desc="Reach your customers directly with targeted WhatsApp campaigns."
+          />
+          <ServicesSection
             url="Directmarketing"
-            icon={<TerminalIcon />}
-            heading="DIRECT MARKETING"
-            className="textColor"
-          ><br /><br />
-          </ServiceCard>
-          <ServiceCard
+            icon={<CurrencyDollarIcon className="w-12 h-12 text-blue-500" />}
+            heading="Direct Marketing"
+            desc="Personalized campaigns to increase conversions and sales."
+          />
+          <ServicesSection
             url="PayPerClick"
-            icon={<TerminalIcon />}
-            heading="PAY PER CLICK"
-            className="textColor"
-          >
-            <br /><br />
-          </ServiceCard>
-          <ServiceCard
+            icon={<CommandLineIcon className="w-12 h-12 text-blue-500" />}
+            heading="Pay Per Click"
+            desc="Targeted PPC campaigns to maximize ROI."
+          />
+          <ServicesSection
             url="mediaProduction"
-            icon={<TerminalIcon />}
+            icon={<VideoCameraIcon className="w-12 h-12 text-blue-500" />}
             heading="Media Production"
-            className="textColor"
-          ><br /><br />
-          </ServiceCard>
+            desc="Professional video and audio production services."
+          />
         </div>
       </div>
+
     </div>
   );
 }

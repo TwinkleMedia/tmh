@@ -84,8 +84,8 @@ export default function About() {
           </div>
         </div>
       </div> */}
-      <section className="hero-section">
-                <div className="hero-content">
+      <section className="hero-section" id="about-section">
+                <div className="hero-content aboutContent">
                   <Allservices
                     Serviceh1={"ELEVATE YOUR BRAND AND GROW YOUR BUSINESS"}
                     // Serviceh1span={"TAKE YOUR BUSINESS TO NEXT LEVEL"}
@@ -95,7 +95,7 @@ export default function About() {
                     Social Media Marketing <br /> Agency In Navi Mumbai
                   </h1> */}
       
-                  <p className="description">
+                  <p className="description aboutDesc">
                      At <b>Twinkle Media Hub Pvt Ltd.®</b>, we are a passionate team of advertising and digital marketing experts dedicated to transforming businesses into powerful brands. We craft captivating campaigns that tell
                   We create <b>captivating campaigns®</b> that tell your unique story, build stronger connections, generate quality leads, and deliver measurable results. From strategic planning and innovative <b>creativity®</b> to data-driven optimization and <b>performance marketing®</b>, we empower businesses of every size to shine brighter and stand out in the digital world — all with affordable, <b>high-quality solutions®</b>.
                   </p>
@@ -103,7 +103,7 @@ export default function About() {
                   <button className="hero-btn">Get Started</button>
                 </div>
       
-                <div className="hero-image">
+                <div className="hero-image about-hero">
                   <img src='./asset/img/digitalwebsite1.png' alt="Mockup" />
                 </div>
               </section>
