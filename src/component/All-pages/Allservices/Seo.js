@@ -224,7 +224,7 @@ export default function Seo() {
         <div className="sw-main-content mt-3 benfitSection">
           <div className="seo-features-container">
             <div className="seo-features-wrapper">
-              <div className="features-grid">
+              <div className="features-grid3">
                 {features.map((feature) => (
                   <div
                     key={feature.id}

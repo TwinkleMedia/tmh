@@ -225,7 +225,7 @@
     margin: 0 auto;
 }
 
-.features-grid {
+.features-grid3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
@@ -236,7 +236,7 @@
 }
 
 @media (min-width: 768px) {
-    .features-grid {
+    .features-grid3 {
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
     }
