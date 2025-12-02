@@ -2,9 +2,30 @@ import React from "react";
 import Breadcrumbs from "../../Breadcrumbs/Breadcrumbs";
 import Allservices from "./Mainservices/Allservices";
 import { Helmet } from "react-helmet";
-
+import './graphic.css'
+import { ArrowRight, MessageCircle, Sparkles, TrendingUp, Video } from "lucide-react";
 export default function GraphicsDesigning() {
-  React.useEffect(()=>{
+  const features = [
+    {
+      icon: Video,
+      title: "Motion Video Excellence",
+      description: "Engage and inspire with captivating motion videos",
+      color: "#f59e0b"
+    },
+    {
+      icon: Sparkles,
+      title: "Creative Production",
+      description: "From concept to final production with unique vision",
+      color: "#ec4899"
+    },
+    {
+      icon: TrendingUp,
+      title: "Strategy Driven",
+      description: "Blend creativity with strategy for compelling content",
+      color: "#3b82f6"
+    }
+  ];
+  React.useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -45,41 +66,78 @@ export default function GraphicsDesigning() {
       </Helmet>
       <div className="">
         <Breadcrumbs breadheading={"GRaphic"} breadcrumbsLabel={"SEO"} />
+        <section className="hero-section" id="graphic-section">
+          <div className="hero-content">
+            <Allservices
+              Serviceh1={"Creative Graphic Design "}
+              Serviceh1span={"Services in Mumbai"}
+            // h4para={""}
+            />
+            {/* <h1>
+              Social Media Marketing <br /> Agency In Navi Mumbai
+            </h1> */}
 
-        <Allservices
-          Serviceh1={"Creative Graphic Design "}
-          Serviceh1span={"Services in Mumbai"}
-          h4para={""}
-        />
+            <p className="subtitle">
+              Twinkle Media Hub -Your Trusted SEO Experts in Mumbai
+            </p>
+
+            <p className="description">
+              Welcome to Twinkle Media Hub Pvt Ltd, your premier destination for cutting-edge graphic design solutions in Mumbai. At Twinkle Media Hub, we specialize in transforming ideas into captivating visuals that resonate with your audience. Whether you're looking for 2D animation in Mumbai to bring your brand story to life or seeking top-tier 3D animation services for a dynamic presentation, our team of skilled professionals is here to exceed your expectations.
+            </p>
+
+            <button className="hero-btn">Get Started</button>
+          </div>
+
+          <div className="hero-image commercial-image">
+            <img src='./asset/graphicdesign.png' alt="Shoot" />
+          </div>
+        </section>
       </div>
       <div className="container">
         <div className="sw-main-content mt-5">
-          <p>
-            Welcome to Twinkle Media Hub Pvt Ltd, your premier destination for
-            cutting-edge graphic design solutions in Mumbai. At Twinkle Media
-            Hub, we specialize in transforming ideas into captivating visuals
-            that resonate with your audience. Whether you're looking for 2D
-            animation in Mumbai to bring your brand story to life or seeking
-            top-tier 3D animation services for a dynamic presentation, our team
-            of skilled professionals is here to exceed your expectations.
-            <br />
-            <br /> Our expertise extends beyond animation to include motion
-            videos that engage and inspire. As a leading digital marketing
-            agency in Mumbai, we blend creativity with strategy to deliver
-            compelling content that drives results. From initial concept to
-            final production, Twinkle Media Hub ensures every project reflects
-            your unique vision and goals.
-            <br />
-            <br /> Discover the power of visual storytelling with Twinkle Media
-            Hub. Whether you need a creative video production that captivates
-            viewers or require visual storytelling services tailored to Mumbai's
-            diverse audience, we're here to elevate your brand presence.
-            <br />
-            <br /> Contact Twinkle Media Hub today to explore how our animation
-            studio in Mumbai can enhance your digital strategy. Trust Twinkle
-            Media Hub for exceptional creativity and unmatched innovation in
-            graphic design.
-          </p>
+          <div className="hero-card">
+            <div className="section-tag">
+              <Sparkles size={16} />
+              Beyond Animation
+            </div>
+            <div className="Graphichero-content">
+              <h2 className="hero-title">
+                Expertise That Extends <span>Beyond Animation</span>
+              </h2>
+              <p className="hero-description">
+                Our expertise extends beyond animation to include motion videos that engage and inspire.
+                As a leading digital marketing agency in Mumbai, we blend creativity with strategy to
+                deliver compelling content that drives results. From initial concept to final production,
+                Twinkle Media Hub ensures every project reflects your unique vision and goals.
+              </p>
+            </div>
+          </div>
+          <div className="features-gridgraph">
+            {features.map((feature, index) => (
+              <div key={index} className="feature-cardgraph" style={{ '--card-color': feature.color }}>
+                <div className="feature-icon-wrappergraph">
+                  <feature.icon />
+                </div>
+                <h3 className="feature-titlegraph">{feature.title}</h3>
+                <p className="feature-descriptiongraph">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="cta-section">
+            <div className="cta-content">
+              <h2 className="cta-title">Ready to Enhance Your Digital Strategy?</h2>
+              <p className="cta-description">
+                Contact Twinkle Media Hub today to explore how our animation studio in Mumbai can
+                enhance your digital strategy. Trust Twinkle Media Hub for exceptional creativity
+                and unmatched innovation in graphic design.
+              </p>
+              <button className="cta-button">
+                <MessageCircle size={20} />
+                Contact Us Now
+                <ArrowRight size={20} />
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* <div className="row">
