@@ -35,13 +35,13 @@ export default function Service() {
       setCurrentState((prev) => (prev + 1) % images.length)
     }, 3000);
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, []);
   React.useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
-  });
+  },[]);
   return (
     <div id="services">
       <Helmet>
@@ -102,7 +102,7 @@ export default function Service() {
                     Social Media Marketing <br /> Agency In Navi Mumbai
                   </h1> */}
 
-            <p className="subtitle" id="subtitle">  
+            <p className="subtitle" id="subtitle">
               Partner with Twinkle Media Hub Pvt Ltd and elevate your digital presence today.
             </p>
 

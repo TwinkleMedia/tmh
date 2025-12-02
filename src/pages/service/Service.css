@@ -32,6 +32,9 @@
     display: block;
     border-radius: 10px;
     /* optional */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .fadeSlide {
@@ -44,15 +47,14 @@
 }
 
 @keyframes fadeSlide {
-    0% {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  0% { 
+    transform: translateX(50px); 
+    opacity: 0; 
+  }
+  100% { 
+    transform: translateX(0); 
+    opacity: 1; 
+  }
 }
 
 @media (max-width:768px) {

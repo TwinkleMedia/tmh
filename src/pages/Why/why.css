@@ -42,6 +42,7 @@
   width: 420px;
   padding: 28px 22px;
   transition: 0.3s ease-in-out;
+  text-align: center;
 }
 
 .Homestrategy-card:hover {
@@ -50,9 +51,10 @@
 }
 
 .Homestrategy-card i {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 15px;
-  color: #5ba0f5;
+  /* color: #5ba0f5; */
+  color: #ffa100;
 }
 
 .Homestrategy-card h3 {
