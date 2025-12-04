@@ -1,0 +1,431 @@
+.Wsubtitle {
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+}
+
+.wh3 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffa100;
+}
+
+.wspan {
+    color: #063F9C;
+}
+
+.wh4 {
+    text-align: center;
+    color: #063F9C;
+}
+
+.whatStartbtn {
+    margin-top: 1.5rem;
+    background: #063F9C;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid #063F9C;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.anchorTag:visited {
+    color: inherit;
+    /* Prevent purple visited color */
+}
+
+.anchorTag:active,
+.anchorTag:focus {
+    color: inherit;
+    /* Prevent black on click */
+    outline: none;
+    /* Remove outline (optional) */
+}
+
+.whatStartbtn:hover {
+    background: transparent;
+    color: #063F9C;
+    border: 2px solid #063F9C;
+}
+
+.textCenter {
+    text-align: center !important;
+}
+
+.whatsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wp-hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.wp-hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.wp-hero-text {
+    flex: 1;
+}
+
+.wp-hero-text h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: #063F9C;
+    font-weight: 700;
+}
+
+.wp-hero-text .highlight {
+    color: #ff7d00;
+    font-weight: bold;
+}
+
+.wp-hero-text p {
+    font-size: 16px;
+    color: #1c5abc;
+}
+
+.wp-hero-text ul {
+    margin-top: 10px;
+    list-style: disc;
+    padding-left: 20px;
+    color: #1c5abc;
+}
+
+/* SECTION TITLE */
+.wp-section-title {
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* FEATURES GRID */
+.wp-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.wp-card {
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.wp-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #063F9C;
+}
+
+.wp-card p {
+    color: #0b50be;
+    margin-bottom: 20px;
+}
+
+.wp-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* WHY WHATSAPP */
+.wp-why {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.wp-why p {
+    margin-top: 10px;
+    color: #1c5abc;
+}
+
+.wp-stats {
+    margin-top: 35px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.stat-box h3 {
+    font-size: 28px;
+    color: #063F9C;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 14px;
+    color: #1c5abc;
+}
+
+.stat-box {
+    background-color: #567dc926;
+    padding: 20px;
+}
+
+/* what is whatsapp marketing */
+.flowchart-container {
+    padding: 60px 20px;
+}
+
+.flowchart-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.flowmain-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+/* Flowchart Structure */
+.flowchart-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    position: relative;
+}
+
+/* Connecting Lines */
+.flowchart-grid::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 16.66%;
+    right: 16.66%;
+    height: 2px;
+    background: #cbd5e1;
+    z-index: 1;
+}
+
+.flowsection-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Vertical line from top */
+.flowsection-column::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 80px;
+    background: #cbd5e1;
+    z-index: 1;
+}
+
+.flowcategory-badge {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+}
+
+/* Vertical line from badge to cards */
+.flowsection-column::after {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 40px;
+    background: #cbd5e1;
+    z-index: 1;
+}
+
+.flowcards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Horizontal line connecting two cards */
+.flowcards-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: #cbd5e1;
+}
+
+.flowcards-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: #cbd5e1;
+}
+
+/* Info Card */
+.flowinfo-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid #e5e7eb;
+}
+
+.flowcard-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--card-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.flowinfo-card:hover .flowcard-icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.flowcard-icon-wrapper svg {
+    width: 26px;
+    height: 26px;
+    color: white;
+    stroke-width: 2;
+}
+
+.flowcard-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #063F9C;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.flowcard-description {
+    font-size: 14px;
+    color: #0859dd;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.wstatsBox {
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .flowchart-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .flowchart-grid::before {
+        display: none;
+    }
+
+    .flowsection-column::before {
+        height: 60px;
+    }
+
+    .flowmain-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .flowchart-container {
+        padding: 40px 16px;
+    }
+
+    .flowmain-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .flowcategory-badge {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    .flowinfo-card {
+        padding: 20px;
+    }
+
+    .flowcard-title {
+        font-size: 16px;
+    }
+
+    .flowcard-description {
+        font-size: 13px;
+    }
+
+    .flowcard-icon-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .flowcard-icon-wrapper svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flowmain-title {
+        font-size: 24px;
+    }
+
+    .flowchart-grid {
+        gap: 40px;
+    }
+
+    .flowcards-wrapper {
+        gap: 16px;
+    }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .wp-hero {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .wp-hero-text {
+        max-width: 500px;
+    }
+
+    .wp-hero-text h1 {
+        font-size: 26px;
+    }
+}

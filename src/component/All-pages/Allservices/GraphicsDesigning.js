@@ -4,6 +4,7 @@ import Allservices from "./Mainservices/Allservices";
 import { Helmet } from "react-helmet";
 import './graphic.css'
 import { ArrowRight, MessageCircle, Sparkles, TrendingUp, Video } from "lucide-react";
+import { Link } from "react-router-dom";
 export default function GraphicsDesigning() {
   const features = [
     {
@@ -140,7 +141,7 @@ export default function GraphicsDesigning() {
             <div className="graphicTrack">
               {[...images, ...images].map((src, i) =>
               (
-                <img key={i} src={src} alt="ourGraphicWOrk" />
+                <img key={i} src={src} alt="ourGraphicWOrk"/>
               ))}
             </div>
           </div>
@@ -152,11 +153,13 @@ export default function GraphicsDesigning() {
                 enhance your digital strategy. Trust Twinkle Media Hub for exceptional creativity
                 and unmatched innovation in graphic design.
               </p>
-              <button className="cta-button">
-                <MessageCircle size={20} />
-                Contact Us Now
-                <ArrowRight size={20} />
-              </button>
+              <Link to='/contact'>
+                <button className="cta-button">
+                  <MessageCircle size={20} />
+                  Contact Us Now
+                  <ArrowRight size={20} />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
