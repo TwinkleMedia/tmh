@@ -25,6 +25,18 @@ export default function GraphicsDesigning() {
       color: "#3b82f6"
     }
   ];
+  const images = [
+    "./asset/graphic/graphic1.webp",
+    "./asset/graphic/graphic2.webp",
+    "./asset/graphic/graphic3.webp",
+    "./asset/graphic/graphic4.webp",
+    "./asset/graphic/graphic5.webp",
+    "./asset/graphic/graphic6.webp",
+    "./asset/graphic/graphic7.webp",
+    "./asset/graphic/graphic8.webp",
+    "./asset/graphic/graphic9.webp",
+    "./asset/graphic/graphic10.webp",
+  ]
   React.useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -77,15 +89,15 @@ export default function GraphicsDesigning() {
               Social Media Marketing <br /> Agency In Navi Mumbai
             </h1> */}
 
-            <p className="subtitle">
+            <p className="Graphicsubtitle">
               Twinkle Media Hub -Your Trusted SEO Experts in Mumbai
             </p>
 
-            <p className="description">
+            <p className="Graphicdescription">
               Welcome to Twinkle Media Hub Pvt Ltd, your premier destination for cutting-edge graphic design solutions in Mumbai. At Twinkle Media Hub, we specialize in transforming ideas into captivating visuals that resonate with your audience. Whether you're looking for 2D animation in Mumbai to bring your brand story to life or seeking top-tier 3D animation services for a dynamic presentation, our team of skilled professionals is here to exceed your expectations.
             </p>
 
-            <button className="hero-btn">Get Started</button>
+            <button className="hero-btn" id="graphicBtn">Get Started</button>
           </div>
 
           <div className="hero-image commercial-image">
@@ -122,6 +134,15 @@ export default function GraphicsDesigning() {
                 <p className="feature-descriptiongraph">{feature.description}</p>
               </div>
             ))}
+          </div>
+          <div className="graphicWork">
+            <h3>Our Work</h3>
+            <div className="graphicTrack">
+              {[...images, ...images].map((src, i) =>
+              (
+                <img key={i} src={src} alt="ourGraphicWOrk" />
+              ))}
+            </div>
           </div>
           <div className="cta-section">
             <div className="cta-content">

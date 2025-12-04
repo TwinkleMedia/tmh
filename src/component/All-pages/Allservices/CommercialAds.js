@@ -247,24 +247,24 @@ export default function CommercialAds() {
           <h3>Our Work</h3>
           <div className="marquee-track">
             {/* ORIGINAL IMAGES */}
-            <img src="/asset/marcquee/b1.png" alt="" />
-            <img src="/asset/marcquee/b2.png" alt="" />
-            <img src="/asset/marcquee/b3.png" alt="" />
-            <img src="/asset/marcquee/b4.png" alt="" />
-            <img src="/asset/marcquee/b5.png" alt="" />
-            <img src="/asset/marcquee/b6.png" alt="" />
-            <img src="/asset/marcquee/b7.png" alt="" />
-            <img src="/asset/marcquee/b8.png" alt="" />
+            <img src="/asset/marcquee/b1.png" alt="our Work" />
+            <img src="/asset/marcquee/b2.png" alt="our Work" />
+            <img src="/asset/marcquee/b3.png" alt="our Work" />
+            <img src="/asset/marcquee/b4.png" alt="our Work" />
+            <img src="/asset/marcquee/b5.png" alt="our Work" />
+            <img src="/asset/marcquee/b6.png" alt="our Work" />
+            <img src="/asset/marcquee/b7.png" alt="our Work" />
+            <img src="/asset/marcquee/b8.png" alt="our Work" />
 
             {/* DUPLICATED FOR INFINITE LOOP */}
-            <img src="/asset/marcquee/b1.png" alt="" />
-            <img src="/asset/marcquee/b2.png" alt="" />
-            <img src="/asset/marcquee/b3.png" alt="" />
-            <img src="/asset/marcquee/b4.png" alt="" />
-            <img src="/asset/marcquee/b5.png" alt="" />
-            <img src="/asset/marcquee/b6.png" alt="" />
-            <img src="/asset/marcquee/b7.png" alt="" />
-            <img src="/asset/marcquee/b8.png" alt="" />
+            <img src="/asset/marcquee/b1.png" alt="our Work" />
+            <img src="/asset/marcquee/b2.png" alt="our Work" />
+            <img src="/asset/marcquee/b3.png" alt="our Work" />
+            <img src="/asset/marcquee/b4.png" alt="our Work" />
+            <img src="/asset/marcquee/b5.png" alt="our Work" />
+            <img src="/asset/marcquee/b6.png" alt="our Work" />
+            <img src="/asset/marcquee/b7.png" alt="our Work" />
+            <img src="/asset/marcquee/b8.png" alt="our Work" />
           </div>
         </div>
         <section className="ourApproach">
