@@ -95,16 +95,16 @@ export default function GraphicsDesigning() {
       </div>
       <div className="container">
         <div className="sw-main-content mt-5">
-          <div className="hero-card">
+          <div className="Graphichero-card">
             <div className="section-tag">
               <Sparkles size={16} />
               Beyond Animation
             </div>
             <div className="Graphichero-content">
-              <h2 className="hero-title">
+              <h2 className="Graphichero-title">
                 Expertise That Extends <span>Beyond Animation</span>
               </h2>
-              <p className="hero-description">
+              <p className="Graphichero-description">
                 Our expertise extends beyond animation to include motion videos that engage and inspire.
                 As a leading digital marketing agency in Mumbai, we blend creativity with strategy to
                 deliver compelling content that drives results. From initial concept to final production,
@@ -249,7 +249,7 @@ export default function GraphicsDesigning() {
           </p>
         </div> */}
 
-        <button className="serv-btn">Get Quote</button>
+        {/* <button className="serv-btn">Get Quote</button> */}
       </div>
     </>
   );
