@@ -54,7 +54,7 @@
 }
 
 .Payfeature-card {
-    background: white;
+    background: #567dc926;
     border-radius: 16px;
     padding: 32px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
@@ -62,11 +62,6 @@
     border: 2px solid transparent;
 }
 
-.Payfeature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-    border-color: var(--card-color);
-}
 
 .Payfeature-icon {
     width: 60px;
@@ -246,7 +241,7 @@
 .platform-name {
     font-size: 18px;
     font-weight: 700;
-    color: #1f2937;
+    color: #063F9C;
 }
 
 .payCta {
