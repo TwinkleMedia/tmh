@@ -4,7 +4,7 @@ import Allservices from "./Mainservices/Allservices";
 import { Helmet } from "react-helmet";
 
 export default function PayPerClick() {
-  React.useEffect(()=>{
+  React.useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -43,12 +43,32 @@ export default function PayPerClick() {
       </Helmet>
       <div className="">
         <Breadcrumbs breadheading={"PayperClick"} breadcrumbsLabel={"SEO"} />
+        <section className="hero-section" id="graphic-section">
+          <div className="hero-content">
+            <Allservices
+              Serviceh1={"Best PPC Service Provider Company"}
+              Serviceh1span={"In Mumbai & Navi Mumbai"}
+            // h4para={""}
+            />
+            {/* <h1>
+              Social Media Marketing <br /> Agency In Navi Mumbai
+            </h1> */}
 
-        <Allservices
-          Serviceh1={"Best PPC Service Provider Company"}
-          Serviceh1span={"In Mumbai & Navi Mumbai"}
-          h4para={""}
-        />
+            <p className="subtitle Wsubtitle">
+              Twinkle Media Hub -Your Trusted SEO Experts in Mumbai
+            </p>
+
+            <p className="description">
+              Welcome to Twinkle Media Hub Pvt Ltd, your premier destination for cutting-edge graphic design solutions in Mumbai. At Twinkle Media Hub, we specialize in transforming ideas into captivating visuals that resonate with your audience. Whether you're looking for 2D animation in Mumbai to bring your brand story to life or seeking top-tier 3D animation services for a dynamic presentation, our team of skilled professionals is here to exceed your expectations.
+            </p>
+
+            <button className="hero-btn" id="graphicBtn">Get Started</button>
+          </div>
+
+          <div className="hero-image commercial-image">
+            <img src='./asset/payperclick.png' alt="Shoot" />
+          </div>
+        </section>
       </div>
       <div className="container">
         <div className="sw-main-content mt-5">
