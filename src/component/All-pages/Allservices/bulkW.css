@@ -412,6 +412,10 @@
     .flowcards-wrapper {
         gap: 16px;
     }
+    .stat-box h3
+    {
+        font-size: 18px;
+    }
 }
 
 /* RESPONSIVENESS */
@@ -427,5 +431,9 @@
 
     .wp-hero-text h1 {
         font-size: 26px;
+    }
+    .stat-box h3
+    {
+        font-size: 18px;
     }
 }
