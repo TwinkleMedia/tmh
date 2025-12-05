@@ -164,12 +164,12 @@ export default function Service() {
             heading="Bulk WhatsApp Marketing"
             desc="Reach your customers directly with targeted WhatsApp campaigns."
           />
-          <ServicesSection
+          {/* <ServicesSection
             url="Directmarketing"
             icon={<CurrencyDollarIcon className="w-12 h-12 text-blue-500" />}
             heading="Direct Marketing"
             desc="Personalized campaigns to increase conversions and sales."
-          />
+          /> */}
           <ServicesSection
             url="PayPerClick"
             icon={<CommandLineIcon className="w-12 h-12 text-blue-500" />}

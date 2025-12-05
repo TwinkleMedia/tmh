@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Breadcrumbs/Breadcrumbs";
 import Allservices from "./Mainservices/Allservices";
 import { Helmet } from "react-helmet";
-
+import './shoot.css'
+import { Link } from "react-router-dom";
+import { ArrowRight, MessageCircle } from "lucide-react";
 export default function ProductShoot() {
   React.useEffect(() => {
     window.scrollTo({
@@ -10,10 +12,23 @@ export default function ProductShoot() {
       behavior: "smooth",
     });
   });
+  useEffect(() => {
+    const elements = document.querySelectorAll(".fadeup")
+    const oberver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible")
+        }
+      });
+    },
+      { threshold: 0.2 }
+    );
+    elements.forEach(el => oberver.observe(el));
+  }, [])
   return (
     <>
-    <Helmet>
-    <title>
+      <Helmet>
+        <title>
           Best Media Production Company in Navi Mumbai | Media Production Agency In Navi Mumbai
         </title>
         <link rel="canonical" href="https://www.twinklemediahub.com/mediaProduction" />
@@ -39,21 +54,41 @@ export default function ProductShoot() {
           content="Twinkle Media Hub - Best Media Production Agency in Navi Mumbai - Our Media Production company in Navi Mumbai offers affordable Media Production services to boost your online presence & drive traffic with the best SEO Practices."
         />
         <meta property="og:type" content="website" />
-    </Helmet>
+      </Helmet>
       <div className="">
         <Breadcrumbs
           breadheading={"Media Production"}
           breadcrumbsLabel={"Media Production"}
         />
+        <section className="hero-section" id="graphic-section">
+          <div className="hero-content">
+            <Allservices
+              Serviceh1={"Bringing Your Products to Life "}
+              Serviceh1span={"with Twinkle Media Hub Pvt Ltd"}
+            // h4para={""}
+            />
+            {/* <h1>
+              Social Media Marketing <br /> Agency In Navi Mumbai
+            </h1> */}
 
-        <Allservices
-          Serviceh1={"Bringing Your Products to Life with "}
-          Serviceh1span={"Twinkle Media Hub Pvt Ltd"}
-          h4para={""}
-        />
+            <p className="Graphicsubtitle">
+              Twinkle Media Hub Pvt Ltd: Your Trusted Partner in Creative Media Production Services in Mumbai
+            </p>
+
+            <p className="Graphicdescription">
+              At Twinkle Media Hub Pvt Ltd, we specialize in delivering top-notch media production services that cater to all your visual storytelling needs. Our extensive range of services is designed to help your brand shine across various platforms, ensuring you make a lasting impact on your audience.
+            </p>
+
+            <button className="hero-btn" id="graphicBtn">Get Started</button>
+          </div>
+
+          <div className="hero-image commercial-image">
+            <img src='./asset/media/media.png' alt="Shoot" />
+          </div>
+        </section>
       </div>
       <div className="container">
-        <div className="sw-main-content mt-5">
+        {/* <div className="sw-main-content mt-2">
           <p>
             At Twinkle Media Hub Pvt Ltd, we specialize in delivering top-notch
             media production services that cater to all your visual storytelling
@@ -61,7 +96,7 @@ export default function ProductShoot() {
             brand shine across various platforms, ensuring you make a lasting
             impact on your audience.
           </p>
-        </div>
+        </div> */}
 
         {/* <div className="row">
           <div className="col-lg-8 col-md-6 col-sm-12">
@@ -115,8 +150,26 @@ export default function ProductShoot() {
             />
           </div>
         </div> */}
+        <div className="section-wrapper">
 
-        <h2>Commercial Ad Shoots</h2>
+          <h2 className="main-title fadeup">Commercial Ad Shoots</h2>
+
+          <p className="top-description fadeup">
+            In today’s competitive market, creating compelling advertisements is crucial for capturing your audience’s attention.
+            Our Commercial Ad Shoots are meticulously crafted to highlight your brand’s unique selling points, engage your target
+            audience, and drive results. From concept development to final production, we ensure every element of your ad resonates
+            with your brand identity.
+          </p>
+
+          <div className="image-row fadeup">
+            <img src="./asset/media/media6.png" alt="img1" />
+            <img src="./asset/media/media5.png" alt="img2" />
+            <img src="./asset/media/media4.png" alt="img3" />
+            <img src="./asset/media/media3.png" alt="img4" />
+          </div>
+
+        </div>
+        {/* <h2>Commercial Ad Shoots</h2>
         <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto"></span>
         <div className="sw-main-content mt-3">
           <p>
@@ -127,9 +180,9 @@ export default function ProductShoot() {
             concept development to final production, we ensure every element of
             your ad resonates with your brand identity.
           </p>
-        </div>
+        </div> */}
 
-        <h3>Commercial Photography</h3>
+        {/* <h3>Commercial Photography</h3>
         <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto"></span>
         <div className="sw-main-content mt-3">
           <p>
@@ -140,9 +193,9 @@ export default function ProductShoot() {
             product photography to lifestyle shoots, we deliver visuals that
             captivate and convert.
           </p>
-        </div>
+        </div> */}
 
-        <h3>Corporate Photoshoots</h3>
+        {/* <h3>Corporate Photoshoots</h3>
         <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto"></span>
         <div className="sw-main-content mt-3">
           <p>
@@ -152,23 +205,69 @@ export default function ProductShoot() {
             that reflect your company's professionalism and ethos, helping you
             build a strong and trustworthy brand image.
           </p>
-        </div>
-        <h3>Product Shoot</h3>
-        <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto"></span>
-        <div className="sw-main-content mt-3">
-          <p>
-          Showcasing your products in the best light is crucial for driving sales and customer engagement. Our Product Shoot services are designed to highlight the unique features and benefits of your products, creating images that entice and inform potential customers. Our Product Photography services provide high-quality, detailed images that make your products stand out. Whether for e-commerce, catalogs, or promotional materials, we focus on capturing the essence of your products, ensuring they look appealing and desirable to your target audience.
-          </p>
-        </div>
-        <h3>Chroma Video Ad Shoots</h3>
-        <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto"></span>
-        <div className="sw-main-content mt-3">
-          <p>
-          Take your video advertisements to the next level with our Chroma Video Ad Shoots. Utilizing green screen technology, we create dynamic and engaging video content that can be placed in any setting or background, providing limitless creative possibilities for your marketing campaigns.
-          </p>
-        </div>
+        </div> */}
+        <div className="section-wrapper">
 
-        <button className="serv-btn">Get Quote</button>
+          <h2 className="main-title">Product Shoots</h2>
+
+          <p className="top-description">
+            Showcasing your products in the best light is crucial for driving sales and customer engagement. Our Product Shoot services are designed to highlight the unique features and benefits of your products, creating images that entice and inform potential customers. Our Product Photography services provide high-quality, detailed images that make your products stand out. Whether for e-commerce, catalogs, or promotional materials, we focus on capturing the essence of your products, ensuring they look appealing and desirable to your target audience.
+          </p>
+
+          <div className="image-row">
+            <img src="./asset/media/media10.png" alt="img1" />
+            <img src="./asset/media/media11.png" alt="img2" />
+            <img src="./asset/media/media12.png" alt="img3" />
+            <img src="./asset/media/media13.png" alt="img4" />
+          </div>
+
+        </div>
+        {/* <h3>Product Shoot</h3>
+        <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto"></span>
+        <div className="sw-main-content mt-3">
+          <p>
+            Showcasing your products in the best light is crucial for driving sales and customer engagement. Our Product Shoot services are designed to highlight the unique features and benefits of your products, creating images that entice and inform potential customers. Our Product Photography services provide high-quality, detailed images that make your products stand out. Whether for e-commerce, catalogs, or promotional materials, we focus on capturing the essence of your products, ensuring they look appealing and desirable to your target audience.
+          </p>
+        </div> */}
+        {/* <h3>Chroma Video Ad Shoots</h3>
+        <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto"></span>
+        <div className="sw-main-content mt-3">
+          <p>
+            Take your video advertisements to the next level with our Chroma Video Ad Shoots. Utilizing green screen technology, we create dynamic and engaging video content that can be placed in any setting or background, providing limitless creative possibilities for your marketing campaigns.
+          </p>
+        </div> */}
+        <div className="section-wrapper">
+
+          <h2 className="main-title">Model Shoots</h2>
+
+          <p className="top-description">
+            We create impactful model shoots that showcase your brand’s style, emotion, and message through professional lighting, direction, and photography.
+          </p>
+
+          <div className="image-row">
+            <img src="./asset/media/media1.png" alt="img1" />
+            <img src="./asset/media/media2.png" alt="img2" />
+            <img src="./asset/media/media8.png" alt="img3" />
+            <img src="./asset/media/media9.png" alt="img4" />
+          </div>
+
+        </div>
+        {/* <button className="serv-btn">Get Quote</button> */}
+        <div className="Shootcta-section">
+          <div className="Shootcta-content">
+            <h2 className="Shootcta-title">Ready to Elevate Your Brand with High-Quality Shoots?</h2>
+            <p className="Shootcta-description">
+              Contact Twinkle Media Hub today to explore how our professional shoot services can elevate your digital strategy. Trust us for creative excellence and high-impact visual content.
+            </p>
+            <Link to='/contact'>
+              <button className="Shootcta-button">
+                <MessageCircle size={20} />
+                Contact Us Now
+                <ArrowRight size={20} />
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );
