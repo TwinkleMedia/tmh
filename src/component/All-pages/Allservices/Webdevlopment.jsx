@@ -4,6 +4,7 @@ import Allservices from "./Mainservices/Allservices";
 import { Helmet } from "react-helmet";
 import "./Webdev.css"
 import { FaSearch, FaPaintBrush, FaRocket, FaTools } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const demoImages = [
   "./asset/website1.png",
   "./asset/website2.png",
@@ -61,7 +62,7 @@ export default function Webdevlopment() {
       color: "#FFA500",
     },
   ];
-  const frames = [1, 2, 3, 4,5,6,7,8];
+  const frames = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
     <>
       <Helmet>
@@ -119,7 +120,7 @@ export default function Webdevlopment() {
               Welcome to Twinkle Media Hub Pvt Ltd - Your Trusted Web Development Company in Mumbai At Twinkle Media Hub Pvt Ltd, we specialize in crafting exceptional digital experiences through our expert web development and designing services. Located in the heart of Mumbai, our team of skilled professionals is dedicated to delivering cutting-edge solutions tailored to meet your business needs.
             </p>
 
-            <button className="hero-btn">Get Started</button>
+            <button className="hero-btn"><Link to="/contact">Get Started</Link></button>
           </div>
 
           <div className="hero-image" id="webdev">
@@ -269,52 +270,52 @@ export default function Webdevlopment() {
           {/* <p>Mumbai’s fast-paced market demands ads that not only look great but also resonate deeply with the audience. Our team blends creativity, storytelling, and marketing strategy to deliver commercials that leave a lasting impression.</p> */}
           <div class="Webservice-grid">
             <div class="Webservice-card">
-              <i class="fa-solid fa-lightbulb"></i>
+              <i class="fa-solid fa-laptop-code"></i>
               <h3>Web Development Solutions</h3>
               <p>As a leading Web Development Company in Mumbai, we offer custom-built websites that are robust, scalable, and tailored to your specific requirements. Whether you need a corporate website, an e-commerce platform, or a web application, we have the expertise to deliver.</p>
             </div>
 
             <div class="Webservice-card">
-              <i class="fa-solid fa-video"></i>
+              <i class="fa-solid fa-pen-nib"></i>
               <h3>Website Designers in Mumbai</h3>
               <p>Our Mumbai Website Designers are passionate about creating visually stunning designs that captivate your audience and enhance user experience. We combine creativity with functionality to ensure your website not only looks great but also performs seamlessly across all devices.</p>
             </div>
 
             <div class="Webservice-card">
-              <i class="fa-solid fa-users"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
               <h3>E-commerce Website Development</h3>
               <p>Drive your online business forward with our E-commerce Website Development services in Mumbai. We build secure and user-friendly online stores that maximize conversions and deliver a seamless shopping experience.</p>
             </div>
 
             <div class="Webservice-card">
-              <i class="fa-solid fa-chart-line"></i>
+             <i class="fa-solid fa-tablet-screen-button"></i>
               <h3>Responsive Website Design</h3>
               <p>Ensure your website looks flawless on every device with our Responsive Website Design services in Mumbai. We create mobile-friendly websites that adapt effortlessly to various screen sizes, boosting user engagement and satisfaction.</p>
             </div>
             <div class="Webservice-card">
-              <i class="fa-solid fa-chart-line"></i>
+              <i class="fa-brands fa-wordpress"></i>
               <h3>WordPress Website Development</h3>
               <p> Harness the power of WordPress with our WordPress Website Development services in Mumbai. We create feature-rich and easy-to-manage WordPress websites that empower your business to thrive online.</p>
             </div>
             <div class="Webservice-card">
-              <i class="fa-solid fa-chart-line"></i>
+              <i class="fa-brands fa-php"></i>
               <h3>PHP Web Development</h3>
               <p>Our PHP Web Development services in Mumbai leverage the versatility of PHP to build dynamic and interactive websites that meet your unique business objectives.</p>
             </div>
             <div class="Webservice-card">
-              <i class="fa-solid fa-chart-line"></i>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
               <h3>Website Maintenance Services</h3>
               <p> Keep your website running smoothly with our Website Maintenance Services in Mumbai. We offer proactive maintenance and support to ensure your website remains secure, up-to-date, and optimized for peak performance.</p>
             </div>
             <div class="Webservice-card">
-              <i class="fa-solid fa-chart-line"></i>
+              <i class="fa-solid fa-layer-group"></i>
               <h3>UI/UX Design</h3>
               <p>Our PHP Web Development services in Mumbai leverage the versatility of PHP to build dynamic and interactive websites that meet your unique business objectives.</p>
             </div>
           </div>
         </section>
 
-        <h3>
+        <h3 className="color">
           We Offer Creative, Innovative, and SEO-Friendly Website Designing at
           an Affordable Price.
         </h3>
@@ -336,7 +337,7 @@ export default function Webdevlopment() {
         </div>
         <section className="process-section">
           <h2 className="title">Our Website Designing & Development Process</h2>
-          <p className="subtitle">
+          <p id="subtitle">
             Discover how we bring your vision to life with our streamlined approach:
           </p>
 

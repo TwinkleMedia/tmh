@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import './seo.css'
 import Seotime from "./Seotime";
 import { BarChart3, FileCheck, Globe, MapPin, Search, Target } from "lucide-react";
+import { Link } from "react-router-dom";
 export default function Seo() {
   const features = [
     {
@@ -113,8 +114,7 @@ export default function Seo() {
               services tailored to elevate your online presence and boost your
               rankings in search engines.
             </p>
-
-            <button className="hero-btn">Get Started</button>
+            <button className="hero-btn"><Link to="/contact">Get Started</Link></button>
           </div>
 
           <div className="hero-image commercial-image">
@@ -290,20 +290,20 @@ export default function Seo() {
             </div>
 
             <div class="choose-card seoCard">
-             <i class="fa-solid fa-headset"></i>   
+              <i class="fa-solid fa-headset"></i>
               <h3>Expert Team</h3>
               <p>Skilled SEO professionals with in-depth industry knowledge and experience.</p>
             </div>
 
             <div class="choose-card seoCard">
-             <i class="fa-solid fa-chalkboard-user"></i>
+              <i class="fa-solid fa-chalkboard-user"></i>
               <h3>Tailored Solutions</h3>
               <p>Customized SEO strategies designed to align with
                 your business objectives.</p>
             </div>
 
             <div class="choose-card seoCard">
-          <i class="fa-solid fa-phone-volume"></i> 
+              <i class="fa-solid fa-phone-volume"></i>
               <h3>Transparent Communication:</h3>
               <p>Clear reporting and regular updates on
                 campaign progress.</p>

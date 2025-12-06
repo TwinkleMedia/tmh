@@ -1,6 +1,6 @@
 .about {
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    color: #FFA100;
     /* optional: makes text visible on black */
 
 }
@@ -13,13 +13,14 @@
     text-shadow: 1px 1px 1px white;
     text-align: center;
     position: relative;
+    color: #FFA100;
 }
 
 .about-head-main::after {
     content: "";
     height: 6px;
     width: 300px;
-    background-color: #f67b0c;
+    background-color: #FFA100;
     position: absolute;
     bottom: -13px;
     left: 50%;
@@ -63,6 +64,10 @@
 
 .team-about {
     margin-bottom: 5rem;
+}
+
+.color {
+    color: #FFA100;
 }
 
 .ideas-content-wrapper {
@@ -598,6 +603,7 @@ transition: all 0.5s ease 0s;
     .about-head-main {
         font-size: 2rem;
     }
+
     .item {
         height: 350px;
         padding: 25px;
@@ -606,12 +612,13 @@ transition: all 0.5s ease 0s;
     .item h6 {
         font-size: 1.6rem;
     }
-    .sectionBox
-    {
+
+    .sectionBox {
         width: 100%;
         max-width: none;
     }
-      .missionSection {
+
+    .missionSection {
         display: block !important;
     }
 
@@ -619,8 +626,8 @@ transition: all 0.5s ease 0s;
         width: 100% !important;
         max-width: none !important;
     }
-    .featurep
-    {
+
+    .featurep {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
@@ -663,14 +670,16 @@ transition: all 0.5s ease 0s;
     .sectionBox {
         max-width: 100%;
     }
-     .missionSection {
-    display: block !important;
-  }
 
-  .missionSection .sectionBox {
-    width: 100% !important;
-  }
+    .missionSection {
+        display: block !important;
+    }
+
+    .missionSection .sectionBox {
+        width: 100% !important;
+    }
 }
+
 /* ============================================
    RESPONSIVE — SMALL MOBILE (max-width: 575px)
 ============================================ */
@@ -733,8 +742,8 @@ transition: all 0.5s ease 0s;
         padding: 10px;
         font-size: 1rem;
     }
-    .missionSection
-    {
+
+    .missionSection {
         margin: 10px;
     }
 }

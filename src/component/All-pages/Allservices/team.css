@@ -5,6 +5,7 @@
 .Teamh2 {
     font-size: 3rem;
     margin-bottom: 10px;
+    color: #FFA100;
 }
 
 .Teamh2 span {
@@ -198,7 +199,7 @@
 
 .teamsub {
     font-size: 1.25rem;
-    color: #ffa100;
+    color: #FFA100;
     font-weight: 400;
 }
 

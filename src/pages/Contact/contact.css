@@ -110,6 +110,7 @@
 }
 .form-header {
   margin-bottom: 20px;
+  color: #FFA100 !important;
 }
 /* .submit-btn{
     color: orange;
@@ -188,7 +189,7 @@
 
   button::before {
     content: "";
-    background: #000;
+    background: #FFA100;
     width: 120%;
     left: -10%;
     transform: skew(30deg);

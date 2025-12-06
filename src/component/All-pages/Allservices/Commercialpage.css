@@ -1,6 +1,6 @@
 .why-choose {
   text-align: center;
-  color: #f67b0c;
+  color: #FFA100;
 }
 
 .why-choose h2 {
@@ -68,7 +68,7 @@
 .Ourservices-section h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #f67b0c;
+  color: #FFA100;
   margin-bottom: 50px;
   text-align: left;
 }
@@ -151,6 +151,7 @@
 
 .marquee-wrapper h3 {
   margin-bottom: 20px;
+  color: #FFA100;
 }
 
 .marquee-track {

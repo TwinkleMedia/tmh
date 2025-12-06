@@ -116,7 +116,7 @@ export default function PayPerClick() {
               Welcome to Twinkle Media Hub, your premier destination for result-driven PPC advertising services in Mumbai. Our expert team specializes in creating and managing high-performance PPC campaigns that deliver measurable results and maximize your return on investment.
             </p>
 
-            <button className="hero-btn" id="graphicBtn">Get Started</button>
+             <button className="hero-btn"><Link to="/contact">Get Started</Link></button>
           </div>
 
           <div className="hero-image commercial-image">

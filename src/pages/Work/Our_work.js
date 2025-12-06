@@ -135,11 +135,19 @@ export default function Our_work() {
             className="Frameyt-video"
           ></iframe>
 
-          <iframe
+          {/* <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/DgPExhHCKCc?mute=1"
             data-src="https://www.youtube.com/embed/DgPExhHCKCc?si=vhR-R7nxs8zR73yM"
+            className="Frameyt-video"
+          ></iframe> */}
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/NOoeBeSUbIw?mute=1"
+            data-src="https://www.youtube.com/embed/NOoeBeSUbIw?si=xkIlLvV3LIEVUFhR"
             className="Frameyt-video"
           ></iframe>
           {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/AaEbEe-HHEU?si=Ga4Hp-qEO064nCnJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="ytVideos"></iframe> */}

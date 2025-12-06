@@ -4,6 +4,7 @@ import Allservices from "./Mainservices/Allservices";
 import { Helmet } from "react-helmet";
 import './Socialmedia.css'
 import './Commercialpage.css'
+import { Link } from "react-router-dom";
 export default function CommercialAds() {
   React.useEffect(() => {
     window.scrollTo({
@@ -122,7 +123,7 @@ export default function CommercialAds() {
               At Twinkle Media Hub Pvt Ltd, we bring your brand’s story to life through visually stunning and strategically designed commercial advertisements. Whether for television, social media, or digital campaigns, our ads are crafted to captivate, connect, and convert.
             </p>
 
-            <button className="hero-btn">Get Started</button>
+            <button className="hero-btn"><Link to="/contact">Get Started</Link></button>
           </div>
 
           <div className="hero-image commercial-image">
@@ -243,21 +244,21 @@ export default function CommercialAds() {
             </li>
           </ol> */}
         {/* </div> */}
-        <div className="marquee-wrapper">
+        {/* <div className="marquee-wrapper">
           <h3>Our Work</h3>
-          <div className="marquee-track">
+          <div className="marquee-track"> */}
             {/* ORIGINAL IMAGES */}
-            <img src="/asset/marcquee/b1.png" alt="our Work" />
+            {/* <img src="/asset/marcquee/b1.png" alt="our Work" />
             <img src="/asset/marcquee/b2.png" alt="our Work" />
             <img src="/asset/marcquee/b3.png" alt="our Work" />
             <img src="/asset/marcquee/b4.png" alt="our Work" />
             <img src="/asset/marcquee/b5.png" alt="our Work" />
             <img src="/asset/marcquee/b6.png" alt="our Work" />
             <img src="/asset/marcquee/b7.png" alt="our Work" />
-            <img src="/asset/marcquee/b8.png" alt="our Work" />
+            <img src="/asset/marcquee/b8.png" alt="our Work" /> */}
 
             {/* DUPLICATED FOR INFINITE LOOP */}
-            <img src="/asset/marcquee/b1.png" alt="our Work" />
+            {/* <img src="/asset/marcquee/b1.png" alt="our Work" />
             <img src="/asset/marcquee/b2.png" alt="our Work" />
             <img src="/asset/marcquee/b3.png" alt="our Work" />
             <img src="/asset/marcquee/b4.png" alt="our Work" />
@@ -266,10 +267,10 @@ export default function CommercialAds() {
             <img src="/asset/marcquee/b7.png" alt="our Work" />
             <img src="/asset/marcquee/b8.png" alt="our Work" />
           </div>
-        </div>
+        </div> */}
         <section className="ourApproach">
           <div className="ourappInfo">
-            <h2>Our Approach to Commercial Ad Production</h2>
+            <h2 className="color">Our Approach to Commercial Ad Production</h2>
             <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto"></span>
             <div className="sw-main-content mt-3 approach">
               <p>

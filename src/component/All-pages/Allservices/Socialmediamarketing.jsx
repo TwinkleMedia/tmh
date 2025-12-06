@@ -5,6 +5,7 @@ import Allservices from "./Mainservices/Allservices";
 import { Helmet } from "react-helmet";
 import './Socialmedia.css'
 import Heading from "../../Heading/Heading";
+import { Link } from "react-router-dom";
 export default function SocialMediaMarketing() {
   React.useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -117,7 +118,7 @@ export default function SocialMediaMarketing() {
               to transform your brand’s presence with measurable results.
             </p>
 
-            <button className="hero-btn">Get Started</button>
+             <button className="hero-btn"><Link to="/contact">Get Started</Link></button>
           </div>
 
           <div className="hero-image">
@@ -145,7 +146,7 @@ export default function SocialMediaMarketing() {
         <section className="smm-section">
           <div className="companyInfo">
             <div className="data">
-              <h3 className="socialTeamh3">How Our Social Team Can Help?</h3>
+              <h3 className="socialTeamh3 color">How Our Social Team Can Help?</h3>
               <span className="animate-border center-line"></span>
 
               <p>
@@ -188,7 +189,7 @@ export default function SocialMediaMarketing() {
 
         {/* Process section */}
         <section className="smm-section">
-          <h3>Our Social Media Marketing Agency Process</h3>
+          <h3 className="color">Our Social Media Marketing Agency Process</h3>
           <span className="animate-border center-line"></span>
           {/* 
           <div className="smm-process-list">
@@ -281,7 +282,7 @@ export default function SocialMediaMarketing() {
         {/* Final CTA */}
         <section className="smm-section ctaSection">
           <div className="finalCta">
-            <h3>Get Started with Twinkle Media Hub</h3>
+            <h3 className="color">Get Started with Twinkle Media Hub</h3>
             <span className="animate-border center-line"></span>
 
             <p className="ctap">

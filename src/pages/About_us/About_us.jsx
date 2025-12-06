@@ -147,7 +147,7 @@ export default function About_us() {
             /></div>
           <div className="col-12 col-md-8 mt-4">
             <div className="skills-section">
-              <h4>Skill we Have</h4>
+              <h4 className="color">Skill we Have</h4>
               <h6 className="mt-4 skillText">Strategy Consultancy</h6>
               <div className="progress progress-wrapper">
                 <div

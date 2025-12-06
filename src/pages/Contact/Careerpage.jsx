@@ -23,7 +23,7 @@ function Careerpage() {
     const message = `Name: ${name}%0AEmail: ${email}%0APosition: ${subject}%0A%0A*Please attach your CV before sending.*`;
 
     // Your WhatsApp number without +
-    const whatsappNumber = '917009680118';
+    const whatsappNumber = '917900193079';
 
     // WhatsApp link
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;

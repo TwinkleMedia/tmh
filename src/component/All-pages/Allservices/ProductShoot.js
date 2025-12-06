@@ -79,7 +79,7 @@ export default function ProductShoot() {
               At Twinkle Media Hub Pvt Ltd, we specialize in delivering top-notch media production services that cater to all your visual storytelling needs. Our extensive range of services is designed to help your brand shine across various platforms, ensuring you make a lasting impact on your audience.
             </p>
 
-            <button className="hero-btn" id="graphicBtn">Get Started</button>
+            <button className="hero-btn"><Link to="/contact">Get Started</Link></button>
           </div>
 
           <div className="hero-image commercial-image">
@@ -162,10 +162,10 @@ export default function ProductShoot() {
           </p>
 
           <div className="image-row fadeup">
-            <img src="./asset/media/media6.png" alt="img1" />
-            <img src="./asset/media/media5.png" alt="img2" />
-            <img src="./asset/media/media4.png" alt="img3" />
-            <img src="./asset/media/media3.png" alt="img4" />
+            <img src="./asset/media/media6.webp" alt="img1" />
+            <img src="./asset/media/media5.webp" alt="img2" />
+            <img src="./asset/media/media4.webp" alt="img3" />
+            <img src="./asset/media/media3.webp" alt="img4" />
           </div>
 
         </div>
@@ -215,10 +215,10 @@ export default function ProductShoot() {
           </p>
 
           <div className="image-row">
-            <img src="./asset/media/media10.png" alt="img1" />
-            <img src="./asset/media/media11.png" alt="img2" />
-            <img src="./asset/media/media12.png" alt="img3" />
-            <img src="./asset/media/media13.png" alt="img4" />
+            <img src="./asset/media/media10.webp" alt="img1" />
+            <img src="./asset/media/media11.webp" alt="img2" />
+            <img src="./asset/media/media12.webp" alt="img3" />
+            <img src="./asset/media/media13.webp" alt="img4" />
           </div>
 
         </div>
@@ -245,10 +245,28 @@ export default function ProductShoot() {
           </p>
 
           <div className="image-row">
-            <img src="./asset/media/media1.png" alt="img1" />
-            <img src="./asset/media/media2.png" alt="img2" />
-            <img src="./asset/media/media8.png" alt="img3" />
-            <img src="./asset/media/media9.png" alt="img4" />
+            <img src="./asset/media/model1.webp" alt="img2" />
+            <img src="./asset/media/model2.webp" alt="img3" />
+            <img src="./asset/media/model3.webp" alt="img4" />
+            <img src="./asset/media/model4.webp" alt="img6" />
+            <img src="./asset/media/model5.webp" alt="img7" />
+            <img src="./asset/media/model6.webp" alt="img8" />
+            <img src="./asset/media/model7.webp" alt="img9" />
+            <img src="./asset/media/model8.webp" alt="img10" />
+            <img src="./asset/media/model9.webp" alt="img11" />
+            <img src="./asset/media/model10.webp" alt="img12" />
+            <img src="./asset/media/model11.webp" alt="img13" />
+            <img src="./asset/media/model12.webp" alt="img14" />
+            <img src="./asset/media/model13.webp" alt="img15" />
+            <img src="./asset/media/model14.webp" alt="img16" />
+            <img src="./asset/media/model15.webp" alt="img17" />
+            <img src="./asset/media/model16.webp" alt="img18" />
+            <img src="./asset/media/model17.webp" alt="img19" />
+            <img src="./asset/media/model21.webp" alt="img24" />
+            <img src="./asset/media/model19.webp" alt="img22" />
+            <img src="./asset/media/model20.webp" alt="img23" />
+            <img src="./asset/media/model18.webp" alt="img20" /> 
+            <img src="./asset/media/model22.webp" alt="img25" />
           </div>
 
         </div>

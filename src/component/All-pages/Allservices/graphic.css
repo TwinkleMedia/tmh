@@ -168,7 +168,7 @@
 
 .graphicTrack img {
     height: 200px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     object-fit: contain;
     user-select: none;
     transition: transform 0.3s ease;

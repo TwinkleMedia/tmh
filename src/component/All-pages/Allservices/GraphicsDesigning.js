@@ -37,6 +37,14 @@ export default function GraphicsDesigning() {
     "./asset/graphic/graphic8.webp",
     "./asset/graphic/graphic9.webp",
     "./asset/graphic/graphic10.webp",
+    "./asset/graphic/graphic11.webp",
+    "./asset/graphic/graphic12.webp",
+    "./asset/graphic/graphic13.webp",
+    "./asset/graphic/graphic14.webp",
+    "./asset/graphic/graphic15.webp",
+    "./asset/graphic/graphic16.webp",
+    "./asset/graphic/graphic17.webp",
+    "./asset/graphic/graphic18.webp",
   ]
   React.useEffect(() => {
     window.scrollTo({
@@ -98,7 +106,7 @@ export default function GraphicsDesigning() {
               Welcome to Twinkle Media Hub Pvt Ltd, your premier destination for cutting-edge graphic design solutions in Mumbai. At Twinkle Media Hub, we specialize in transforming ideas into captivating visuals that resonate with your audience. Whether you're looking for 2D animation in Mumbai to bring your brand story to life or seeking top-tier 3D animation services for a dynamic presentation, our team of skilled professionals is here to exceed your expectations.
             </p>
 
-            <button className="hero-btn" id="graphicBtn">Get Started</button>
+            <button className="hero-btn"><Link to="/contact">Get Started</Link></button>
           </div>
 
           <div className="hero-image commercial-image">
@@ -141,7 +149,7 @@ export default function GraphicsDesigning() {
             <div className="graphicTrack">
               {[...images, ...images].map((src, i) =>
               (
-                <img key={i} src={src} alt="ourGraphicWOrk"/>
+                <img key={i} src={src} alt="ourGraphicWOrk" />
               ))}
             </div>
           </div>

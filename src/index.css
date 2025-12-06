@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 
 :root {
-  --primary-color: #f67b0c;
+  --primary-color: #FFA100;
   --text-shadow: 0 1px 2px #1c5abc;
   --background-color: #fff;
   --secondary-color: #1c5abc;
@@ -59,6 +60,7 @@
   0% {
     left: -100%;
   }
+
   50%,
   100% {
     left: 100%;
@@ -79,6 +81,7 @@
   0% {
     top: -100%;
   }
+
   50%,
   100% {
     top: 100%;
@@ -99,6 +102,7 @@
   0% {
     right: -100%;
   }
+
   50%,
   100% {
     right: 100%;
@@ -155,6 +159,7 @@
   0% {
     bottom: -100%;
   }
+
   50%,
   100% {
     bottom: 100%;

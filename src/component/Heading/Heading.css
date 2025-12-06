@@ -36,11 +36,11 @@
 
 .heading h2 {
   text-align: center;
-  color: #f67b0c;
+  color: #FFA100;
   font-size: 3vw;
   text-transform: uppercase;
-  font-family: "Anta", sans-serif;
-  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
   font-style: normal;
   margin-bottom: 20px;
 }
@@ -49,7 +49,7 @@
   content: "";
   height: 6px;
   width: 300px;
-  background-color: #f67b0c;
+  background-color: #FFA100;
   position: absolute;
   bottom: -13px;
   left: 50%;

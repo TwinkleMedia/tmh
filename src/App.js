@@ -45,7 +45,6 @@ export default function App() {
 
   return (
     <>
-    
       <div className="body">
         <Home />
         {/* <About /> */}
@@ -59,7 +58,7 @@ export default function App() {
         <HomeGrid />
         <AnimatedVideos />
         <ReelSlider />
-        <ClientTestimonial/>
+        <ClientTestimonial />
         <TestimonialSection />
         <FaQ />
         {/* <Our_usp /> */}

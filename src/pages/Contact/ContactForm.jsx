@@ -26,7 +26,7 @@ function ContactForm() {
         <div className="col-md-6" >
           <div className="contact-form">
             <h3 className="form-header text-black">Contact Us</h3>
-            <form className="text-black" onSubmit={handleSubmit}>
+            <form className="color" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label for="name">Name</label>
                 <input

@@ -126,7 +126,7 @@ export default function BulkWhatsapp() {
               Welcome to Twinkle Media Hub Pvt Ltd, your premier destination for cutting-edge graphic design solutions in Mumbai. At Twinkle Media Hub, we specialize in transforming ideas into captivating visuals that resonate with your audience. Whether you're looking for 2D animation in Mumbai to bring your brand story to life or seeking top-tier 3D animation services for a dynamic presentation, our team of skilled professionals is here to exceed your expectations.
             </p>
 
-            <button className="hero-btn" id="graphicBtn">Get Started</button>
+            <button className="hero-btn" id="graphicBtn"><a href="https://www.app.aisensy.com/login" target="_blank" rel="noopener noreferrer" className="anchorTag">Get Started</a></button>
           </div>
 
           <div className="hero-image commercial-image">

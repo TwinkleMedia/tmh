@@ -34,18 +34,21 @@ export default function Header() {
             <li className="nav-item">
               <Link className="nav-link" to="/">Our Work</Link>
             </li>
-            <li className="nav-item dropdown-custom">
+            {/* <li className="nav-item dropdown-custom">
               <div className="nav-link dropdown-toggle-custom">About</div>
               <div className="dropdown-menu-custom">
                 <Link className="dropdown-item-custom" to="/about">About</Link>
                 <Link className="dropdown-item-custom" to="/team">Our Team</Link>
               </div>
+            </li> */}
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/services">Services</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blog">Blog</Link>
+              <Link className="nav-link" to="/team">Team</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact</Link>

@@ -35,6 +35,7 @@ import { hydrate, render } from 'react-dom';
 import CommercialAds from './component/All-pages/Allservices/CommercialAds';
 import Team from './component/All-pages/Allservices/Team';
 import Careerpage from './pages/Contact/Careerpage';
+import Cursorfollow from './Cursorfollow';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -42,6 +43,7 @@ root.render(
 
   // const xyz = (
   <BrowserRouter>
+    <Cursorfollow />
     <Header />
 
 
