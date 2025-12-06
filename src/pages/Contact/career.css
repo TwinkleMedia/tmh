@@ -1,0 +1,216 @@
+.career-container {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+.career-header {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.career-header span {
+  color: #ff9800;
+}
+
+.career-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.career-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.form-section {
+  padding: 50px 40px;
+  background: #f8f9fa;
+}
+
+.form-title {
+  color: #1e3c72;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  color: #1e3c72;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #1e3c72;
+  box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+}
+
+.careersubmit-btn {
+  background: #1e3c72;
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.careersubmit-btn:hover {
+  background: #2a5298;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+}
+
+.info-section {
+  padding: 50px 40px;
+  background: white;
+}
+
+.info-title {
+  color: #1e3c72;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.info-block {
+  margin-bottom: 25px;
+}
+
+.info-heading {
+  color: #1e3c72;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.info-text {
+  color: #333;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.info-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-link:hover {
+  color: #1e3c72;
+}
+
+.follow-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.follow-title {
+  color: #ff9800;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.social-link {
+  color: #1e3c72;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.social-link:hover {
+  color: #ff9800;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 968px) {
+  .career-content {
+    grid-template-columns: 1fr;
+  }
+
+  .career-header {
+    font-size: 1.6rem;
+  }
+
+  .form-section,
+  .info-section {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .career-container {
+    padding: 20px 10px;
+  }
+
+  .career-header {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+
+  .form-section,
+  .info-section {
+    padding: 30px 20px;
+  }
+
+  .form-title,
+  .info-title {
+    font-size: 1.5rem;
+  }
+
+  .submit-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .social-icons {
+    gap: 20px;
+  }
+
+  .social-link {
+    font-size: 1.5rem;
+  }
+}

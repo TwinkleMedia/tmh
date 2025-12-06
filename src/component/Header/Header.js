@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 // import logo from "./../../image/brand.webp";
 import { Link } from "react-router-dom";
 import DownloadBtn from "../download-button/DownloadBtn";
 import pdf from "../download-button/TMH Company Profile.pdf";
 export default function Header() {
+
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container header-container">
@@ -33,8 +34,12 @@ export default function Header() {
             <li className="nav-item">
               <Link className="nav-link" to="/">Our Work</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+            <li className="nav-item dropdown-custom">
+              <div className="nav-link dropdown-toggle-custom">About</div>
+              <div className="dropdown-menu-custom">
+                <Link className="dropdown-item-custom" to="/about">About</Link>
+                <Link className="dropdown-item-custom" to="/team">Our Team</Link>
+              </div>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/services">Services</Link>
@@ -46,7 +51,7 @@ export default function Header() {
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Career</Link>
+              <Link className="nav-link" to="/career">Career</Link>
             </li>
           </ul>
 
