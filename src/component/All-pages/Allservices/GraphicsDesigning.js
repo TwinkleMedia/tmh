@@ -27,16 +27,6 @@ export default function GraphicsDesigning() {
     }
   ];
   const images = [
-    "./asset/graphic/graphic1.webp",
-    "./asset/graphic/graphic2.webp",
-    "./asset/graphic/graphic3.webp",
-    "./asset/graphic/graphic4.webp",
-    "./asset/graphic/graphic5.webp",
-    "./asset/graphic/graphic6.webp",
-    "./asset/graphic/graphic7.webp",
-    "./asset/graphic/graphic8.webp",
-    "./asset/graphic/graphic9.webp",
-    "./asset/graphic/graphic10.webp",
     "./asset/graphic/graphic11.webp",
     "./asset/graphic/graphic12.webp",
     "./asset/graphic/graphic13.webp",
