@@ -159,36 +159,36 @@ export default function Team() {
           <div className="team-wrapper">
             <div className="team-track">
               <div className="membg">
-                <img src="/asset/team/memb1.png" alt="our team" />
+                <img src="./asset/team/memb1.png" alt="our team" />
               </div>
               <div className="membg">
-                <img src="/asset/team/memb2.png" alt="our team" />
+                <img src="./asset/team/memb2.png" alt="our team" />
               </div>
               <div className="membg">
-                <img src="/asset/team/memb3.png" alt="our team" />
+                <img src="./asset/team/memb3.png" alt="our team" />
               </div>
               <div className="membg">
-                <img src="/asset/team/memb4.png" alt="our team" />
+                <img src="./asset/team/memb4.png" alt="our team" />
               </div>
               <div className="membg">
-                <img src="/asset/team/memb5.png" alt="our team" />
+                <img src="./asset/team/memb5.png" alt="our team" />
               </div>
 
               {/* duplicates for infinite loop */}
               <div className="membg">
-                <img src="/asset/team/memb1.png" alt="our team" />
+                <img src="./asset/team/memb1.png" alt="our team" />
               </div>
               <div className="membg">
-                <img src="/asset/team/memb2.png" alt="our team" />
+                <img src="./asset/team/memb2.png" alt="our team" />
               </div>
               <div className="membg">
-                <img src="/asset/team/memb3.png" alt="our team" />
+                <img src="./asset/team/memb3.png" alt="our team" />
               </div>
               <div className="membg">
-                <img src="/asset/team/memb4.png" alt="our team" />
+                <img src="./asset/team/memb4.png" alt="our team" />
               </div>
               <div className="membg">
-                <img src="/asset/team/memb5.png" alt="our team" />
+                <img src="./asset/team/memb5.png" alt="our team" />
               </div>
             </div>
           </div>
