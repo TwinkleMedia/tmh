@@ -244,30 +244,44 @@ export default function CommercialAds() {
             </li>
           </ol> */}
         {/* </div> */}
-        {/* <div className="marquee-wrapper">
+        <div className="marquee-wrapper">
           <h3>Our Work</h3>
-          <div className="marquee-track"> */}
+          <div className="marquee-track">
             {/* ORIGINAL IMAGES */}
-            {/* <img src="/asset/marcquee/b1.png" alt="our Work" />
-            <img src="/asset/marcquee/b2.png" alt="our Work" />
-            <img src="/asset/marcquee/b3.png" alt="our Work" />
-            <img src="/asset/marcquee/b4.png" alt="our Work" />
-            <img src="/asset/marcquee/b5.png" alt="our Work" />
-            <img src="/asset/marcquee/b6.png" alt="our Work" />
-            <img src="/asset/marcquee/b7.png" alt="our Work" />
-            <img src="/asset/marcquee/b8.png" alt="our Work" /> */}
+            <img src="/asset/marcquee/commercial1.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial2.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial3.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial4.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial5.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial6.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial7.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial8.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial9.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial10.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial11.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial12.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial13.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial14.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial15.webp" alt="our Work" />
 
             {/* DUPLICATED FOR INFINITE LOOP */}
-            {/* <img src="/asset/marcquee/b1.png" alt="our Work" />
-            <img src="/asset/marcquee/b2.png" alt="our Work" />
-            <img src="/asset/marcquee/b3.png" alt="our Work" />
-            <img src="/asset/marcquee/b4.png" alt="our Work" />
-            <img src="/asset/marcquee/b5.png" alt="our Work" />
-            <img src="/asset/marcquee/b6.png" alt="our Work" />
-            <img src="/asset/marcquee/b7.png" alt="our Work" />
-            <img src="/asset/marcquee/b8.png" alt="our Work" />
+            <img src="/asset/marcquee/commercial1.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial2.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial3.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial4.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial5.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial6.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial7.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial8.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial9.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial10.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial11.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial12.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial13.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial14.webp" alt="our Work" />
+            <img src="/asset/marcquee/commercial15.webp" alt="our Work" />
           </div>
-        </div> */}
+        </div>
         <section className="ourApproach">
           <div className="ourappInfo">
             <h2 className="color">Our Approach to Commercial Ad Production</h2>
