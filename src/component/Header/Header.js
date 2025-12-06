@@ -51,10 +51,10 @@ export default function Header() {
               <Link className="nav-link" to="/team">Team</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/career">Career</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/career">Career</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </li>
           </ul>
 
