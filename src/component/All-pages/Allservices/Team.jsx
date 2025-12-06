@@ -152,7 +152,7 @@ export default function Team() {
               <span>Meet</span> Our Team
             </h2>
             <div>
-              <img src="./asset/team/fullteam.png" alt="" />
+              <img src="./asset/team/fullteam.png" alt="full team" />
             </div>
           </section>
 
