@@ -47,6 +47,7 @@ root.render(
     <Header />
 
 
+    <ScrollTop />
 
     <Whatsappbutton />
     <Routes>
@@ -79,7 +80,6 @@ root.render(
       <Route path="*" element={<Page404 />} />
 
     </Routes>
-    <ScrollTop />
     <Footer />
   </BrowserRouter>
 );

@@ -19,6 +19,7 @@
   font-family: "Anta", sans-serif;
   margin-bottom: 20px;
 }
+
 .section-title::after {
   content: '';
   width: 250px;
@@ -36,7 +37,8 @@
   padding: 20px 0;
 }
 
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
   background-color: rgba(255, 255, 255, 0.15);
   color: #fff;
   border: none;
@@ -55,7 +57,8 @@
   justify-content: center;
 }
 
-.prev-btn:hover, .next-btn:hover {
+.prev-btn:hover,
+.next-btn:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -73,6 +76,7 @@
   gap: 8px;
   padding: 0 4px;
 }
+
 .reelvideo-container {
   position: relative;
   /* aspect-ratio: 9/16; */
@@ -102,6 +106,36 @@
 
 .reelvideo-container:hover .reelvideo-overlay {
   opacity: 1;
+}
+
+.insta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.reelvideo-container:hover .insta-overlay {
+  opacity: 1;
+}
+
+.insta-overlay i {
+  font-size: 42px;
+  color: #ff0069;
+  /* Instagram pinkish tone */
+}
+
+.insta-text {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .reelvideo-info {
@@ -174,7 +208,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4px;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
@@ -182,10 +216,11 @@
 
 @media (max-width: 480px) {
   .reelvideo-grid {
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .prev-btn, .next-btn {
+
+  .prev-btn,
+  .next-btn {
     width: 32px;
     height: 32px;
     font-size: 1.2rem;

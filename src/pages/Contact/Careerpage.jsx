@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaInstagram, FaYoutube, FaFacebook } from 'react-icons/fa';
 import { IoLogoLinkedin } from 'react-icons/io5';
 import './career.css';
@@ -38,7 +38,9 @@ function Careerpage() {
       cv: e.target.files[0]
     });
   };
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   return (
     <div className="career-container">
       <h1 className="career-header">

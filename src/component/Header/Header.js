@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Header.css";
 // import logo from "./../../image/brand.webp";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import DownloadBtn from "../download-button/DownloadBtn";
 import pdf from "../download-button/TMH Company Profile.pdf";
 export default function Header() {
-
+  const routerLocation = useLocation();
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container header-container">
@@ -32,7 +32,13 @@ export default function Header() {
           {/* Center: Nav Links */}
           <ul className="navbar-nav mx-auto text-center">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Our Work</Link>
+              {/* <Link className="nav-link" to="/">Our Work</Link> */}
+               <Link
+                className={`nav-link ${routerLocation.pathname === "/" ? "active" : ""}`}
+                to="/"
+              >
+                Our Work
+              </Link>
             </li>
             {/* <li className="nav-item dropdown-custom">
               <div className="nav-link dropdown-toggle-custom">About</div>
@@ -42,19 +48,50 @@ export default function Header() {
               </div>
             </li> */}
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              {/* <Link className="nav-link" to="/about">About</Link> */}
+              <Link
+                className={`nav-link ${routerLocation.pathname === "/about" ? "active" : ""}`}
+                to="/about"
+              >
+                About
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/services">Services</Link>
+              {/* <Link className="nav-link" to="/services">Services</Link> */}
+               <Link
+                className={`nav-link ${routerLocation.pathname === "/services" ? "active" : ""}`}
+                to="/services"
+              >
+                Services
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/team">Team</Link>
+              {/* <Link className="nav-link" to="/team">Team</Link> */}
+              <Link
+                className={`nav-link ${routerLocation.pathname === "/team" ? "active" : ""}`}
+                to="/team"
+              >
+                Team
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              {/* <Link className="nav-link" to="/career">Career</Link> */}
+               <Link
+                className={`nav-link ${routerLocation.pathname === "/career" ? "active" : ""}`}
+                to="/career"
+              >
+                Career
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/career">Career</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              {/* <Link className="nav-link" to="/contact">Contact</Link> */}
+              <Link
+                className={`nav-link ${routerLocation.pathname === "/contact" ? "active" : ""}`}
+                to="/contact"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
 

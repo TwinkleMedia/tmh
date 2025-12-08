@@ -143,6 +143,10 @@ const ReelSlider = () => {
         <div className="reelvideo-grid">
           {visibleReels.map((reel) => (
             <div key={reel.id} className="reelvideo-container">
+              <div className="insta-overlay">
+                <i className="fab fa-instagram"></i>
+                <div className="insta-text"><a href="https://www.instagram.com/twinklemediahub/" target="_blank"  rel="noopener noreferrer">Follow Us</a></div>
+              </div>
               <video
                 src={reel.url}
                 controls
