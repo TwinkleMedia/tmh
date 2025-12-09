@@ -41,6 +41,77 @@
     object-fit: contain;
     user-select: none;
 }
+.leaders-section {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+/* Left Side */
+.leader.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(135deg, #0047AB 0%, #0066CC 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+/* Right Side */
+.leader.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    background:#FFA100;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.leader-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.leader-img img {
+    width: 315px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.leader-text {
+    color: white;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.leader-name {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.leader-role {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.9;
+    margin: 0;
+}
 
 @keyframes scroll {
     0% {
@@ -174,7 +245,7 @@
 .leadership-section {
     min-height: 100vh;
     background: linear-gradient(to bottom, #ffffff 0%, #f8fafc 100%);
-    padding: 80px 20px;
+    padding: 0px 20px;
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -275,14 +346,6 @@
 
 .leader-info {
     padding: 40px;
-}
-
-.leader-name {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #063f9c;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .divider {
