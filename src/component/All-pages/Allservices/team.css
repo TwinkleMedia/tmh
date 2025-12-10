@@ -41,11 +41,13 @@
     object-fit: contain;
     user-select: none;
 }
+
 .leaders-section {
     position: relative;
     height: 500px;
     overflow: hidden;
     margin-bottom: 80px;
+    
 }
 
 /* Left Side */
@@ -70,7 +72,7 @@
     top: 0;
     width: 55%;
     height: 100%;
-    background:#FFA100;
+    background: #FFA100;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
     display: flex;
     align-items: center;
@@ -133,7 +135,6 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    /* Space between the two quote blocks */
     align-items: center;
 }
 
@@ -312,14 +313,10 @@
 .leader-image {
     width: 180px;
     height: 180px;
-    /* border-radius: 50%; */
     margin: 0 auto 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 6px solid #ffffff; */
-    /* box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); */
-    /* position: relative; */
     transition: transform 0.3s ease;
 }
 
@@ -385,6 +382,59 @@
     font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+
+    .leader.left,
+    .leader.right {
+        padding: 40px;
+    }
+
+    .leader-content {
+        gap: 30px;
+    }
+
+    .leader-img img {
+        width: 250px;
+        height: 400px;
+    }
+
+    .leader-name {
+        font-size: 36px;
+    }
+
+    .leader-role {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1024px) {
+    .leaders-section {
+        height: 450px;
+    }
+
+    .leader.left,
+    .leader.right {
+        padding: 30px;
+    }
+
+    .leader-content {
+        gap: 20px;
+    }
+
+    .leader-img img {
+        width: 200px;
+        height: 350px;
+    }
+
+    .leader-name {
+        font-size: 30px;
+    }
+
+    .leader-role {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 1100px) {
     .leaders-container {
         grid-template-columns: 1fr;
@@ -393,43 +443,119 @@
 }
 
 @media (max-width: 768px) {
-    .leadership-section {
-        padding: 60px 20px;
+    .leaders-section {
+        height: auto;
+        margin-bottom: 40px;
     }
 
-    .main-title {
-        font-size: 2.5rem;
+    .leader.left,
+    .leader.right {
+        position: relative;
+        width: 100%;
+        height: auto;
+        clip-path: none;
+        padding: 40px 20px;
     }
 
-    .subtitle {
-        font-size: 1.1rem;
+    .leader.left {
+        margin-bottom: 0;
     }
 
-    .leader-image {
-        width: 150px;
-        height: 150px;
+    .leader-content {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
     }
 
-    .name-initial {
-        font-size: 3.5rem;
+    .leader.right .leader-content {
+        flex-direction: column;
+    }
+
+    .leader-text,
+    .right-text {
+        text-align: center;
+    }
+
+    .leader-img img {
+        width: 250px;
+        height: 350px;
     }
 
     .leader-name {
-        font-size: 1.75rem;
+        font-size: 32px;
     }
 
-    .leader-info {
-        padding: 30px 25px;
-    }
-
-    .leader-image-wrapper {
-        padding: 40px 30px 25px;
+    .leader-role {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 540px) {
-    .leaders-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
+@media (max-width: 640px) {
+
+    .leader.left,
+    .leader.right {
+        padding: 35px 20px;
+    }
+
+    .leader-img img {
+        width: 220px;
+        height: 320px;
+    }
+
+    .leader-name {
+        font-size: 28px;
+    }
+
+    .leader-role {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .leaders-section {
+        margin-bottom: 30px;
+    }
+
+    .leader.left,
+    .leader.right {
+        padding: 30px 15px;
+    }
+
+    .leader-content {
+        gap: 20px;
+    }
+
+    .leader-img img {
+        width: 180px;
+        height: 280px;
+    }
+
+    .leader-name {
+        font-size: 24px;
+    }
+
+    .leader-role {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .leader.left,
+    .leader.right {
+        padding: 25px 10px;
+    }
+
+    .leader-img img {
+        width: 150px;
+        height: 240px;
+    }
+
+    .leader-name {
+        font-size: 22px;
+    }
+
+    .leader-role {
+        font-size: 13px;
     }
 }

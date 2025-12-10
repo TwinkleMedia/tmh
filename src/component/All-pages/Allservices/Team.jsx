@@ -89,35 +89,35 @@ export default function Team() {
     `}
         </script>
       </Helmet>
-<section className="leaders-section">
+      <section className="leaders-section">
 
-                {/* Left Side - CEO */}
-                <div className="leader left">
-                  <div className="leader-content">
-                    <div className="leader-img">
-                      <img src="./asset/Team/maam.png" alt="CEO" />
-                    </div>
-                    <div className="leader-text">
-                      <h2 className="leader-name">Deepika Rajan</h2>
-                      <p className="leader-role">-CEO</p>
-                    </div>
-                  </div>
-                </div>
+        {/* Left Side - CEO */}
+        <div className="leader left">
+          <div className="leader-content">
+            <div className="leader-img">
+              <img src="./asset/Team/maam.png" alt="CEO" />
+            </div>
+            <div className="leader-text">
+              <h2 className="leader-name">Deepika Rajan</h2>
+              <p className="leader-role">-CEO</p>
+            </div>
+          </div>
+        </div>
 
-                {/* Right Side - Managing Director */}
-                <div className="leader right">
-                  <div className="leader-content">
-                    <div className="leader-text right-text">
-                      <h2 className="leader-name">Harpinder Singh</h2>
-                      <p className="leader-role">-Managing Director</p>
-                    </div>
-                    <div className="leader-img">
-                      <img src="./asset/Team/sir.png" alt="managing director" />
-                    </div>
-                  </div>
-                </div>
+        {/* Right Side - Managing Director */}
+        <div className="leader right">
+          <div className="leader-content">
+            <div className="leader-text right-text">
+              <h2 className="leader-name">Harpinder Singh</h2>
+              <p className="leader-role">-Managing Director</p>
+            </div>
+            <div className="leader-img">
+              <img src="./asset/Team/sir.png" alt="managing director" />
+            </div>
+          </div>
+        </div>
 
-              </section>
+      </section>
       <div className="container">
         <div className="leadership-section">
           <div className="container">
