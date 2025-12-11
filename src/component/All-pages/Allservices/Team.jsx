@@ -57,7 +57,7 @@ export default function Team() {
             "@type": "Organization",
             "name": "Twinkle Media Hub Pvt. Ltd.",
             "url": "https://www.twinklemediahub.com",
-            "logo": "https://www.twinklemediahub.com/logo.webp",
+            "logo": "https://www.twinklemediahub.com/logo.png",
             "description": "Leading commercial advertisement production company in Mumbai & Navi Mumbai.",
             "address": {
               "@type": "PostalAddress",
