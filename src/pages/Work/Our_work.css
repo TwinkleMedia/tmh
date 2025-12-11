@@ -174,7 +174,11 @@
   transform: scale(1.1);
 }
 
-
+.section-description
+{
+  color: #063f9c;
+  margin: 40px auto;
+}
 /* Add these styles to your Our_work.css file */
 
 .loadLess {

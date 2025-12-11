@@ -115,27 +115,65 @@ export default function Our_work() {
     //     )}
     //   </div>
     // </div>
-    <div className="portfolio p-5" id="work">
-      <div className="container">
-        <Heading headingLabel={"Story Frame Productions"} />
-        <div className="Framevideo-wrapper">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/7L4URcpvDW8?mute=1"
-            data-src="https://www.youtube.com/embed/7L4URcpvDW8?si=mKSRWDhq66syZHZ3"
-            className="Frameyt-video"
-          ></iframe>
+    <>
+      {/* JSON-LD SCHEMA HERE */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            itemListElement: [
+              {
+                "@type": "VideoObject",
+                name: "Career Guidance Podcast",
+                embedUrl: "https://www.youtube.com/embed/7L4URcpvDW8",
+              },
+              {
+                "@type": "VideoObject",
+                name: "CIDCO Scam Exposed Podcast",
+                embedUrl: "https://www.youtube.com/embed/xVsq1BoO4Fo",
+              },
+              {
+                "@type": "VideoObject",
+                name: "Navi Mumbai Airport Discussion",
+                embedUrl: "https://www.youtube.com/embed/NOoeBeSUbIw",
+              },
+            ],
+          }),
+        }}
+      ></script>
 
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/xVsq1BoO4Fo?mute=1"
-            data-src="https://www.youtube.com/embed/xVsq1BoO4Fo?si=NIfeQbL9nR-FKNuS"
-            className="Frameyt-video"
-          ></iframe>
+      <div className="portfolio p-5" id="work">
+        <div className="container">
+          <Heading headingLabel={"Story Frame Productions"} />
+          <p className="section-description">
+            Explore our commercial ads, brand films, corporate videos, and digital campaigns crafted by Twinkle Media Hub — Navi Mumbai’s leading digital marketing and media production agency.
+          </p>
+          <div className="Framevideo-wrapper">
+            <iframe
+              loading="lazy"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/7L4URcpvDW8?mute=1"
+              data-src="https://www.youtube.com/embed/7L4URcpvDW8?si=mKSRWDhq66syZHZ3"
+              title="Career Guidance Podcast By Twinkle Media Hub"
+              aria-label="Career Guidance Podcast by Twinkle Media Hub"
+              className="Frameyt-video"
+            ></iframe>
 
-          {/* <iframe
+            <iframe
+              loading="ladzy"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/xVsq1BoO4Fo?mute=1"
+              data-src="https://www.youtube.com/embed/xVsq1BoO4Fo?si=NIfeQbL9nR-FKNuS"
+              title="Cidco Scam Exposed Podcast by Twinkle Media Hub"
+              aria-label="Cidco Scam Exposed Podcast by Twinkle Media Hub"
+              className="Frameyt-video"
+            ></iframe>
+
+            {/* <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/DgPExhHCKCc?mute=1"
@@ -143,17 +181,21 @@ export default function Our_work() {
             className="Frameyt-video"
           ></iframe> */}
 
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/NOoeBeSUbIw?mute=1"
-            data-src="https://www.youtube.com/embed/NOoeBeSUbIw?si=xkIlLvV3LIEVUFhR"
-            className="Frameyt-video"
-          ></iframe>
-          {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/AaEbEe-HHEU?si=Ga4Hp-qEO064nCnJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="ytVideos"></iframe> */}
-        </div>
+            <iframe
+              loading="lazy"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/NOoeBeSUbIw?mute=1"
+              data-src="https://www.youtube.com/embed/NOoeBeSUbIw?si=xkIlLvV3LIEVUFhR"
+              className="Frameyt-video"
+              title="Discussion on Navi Mumbai's International Airport Podcast By Twinkle Media Hub"
+              aria-label="Discussion on Navi Mumbai's International Airport Podcast By Twinkle Media Hub"
+            ></iframe>
+            {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/AaEbEe-HHEU?si=Ga4Hp-qEO064nCnJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="ytVideos"></iframe> */}
+          </div>
 
+        </div>
       </div>
-    </div>
+    </>
   );
 }
