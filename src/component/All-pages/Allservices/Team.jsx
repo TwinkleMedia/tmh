@@ -39,7 +39,7 @@ export default function Team() {
           content="Twinkle Media Hub is the top ad production company creating high-impact commercial ads for brands across India."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.twinklemediahub.com/assets/Team/fullteam.png" />
+        <meta property="og:image" content="https://www.twinklemediahub.com/assets/Team/fullteam.webp" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best Commercial Ads Company in Mumbai & Navi Mumbai | Twinkle Media Hub" />
@@ -47,7 +47,7 @@ export default function Team() {
           name="twitter:description"
           content="Create high-impact commercial ads with Twinkle Media Hub. Trusted by top brands."
         />
-        <meta name="twitter:image" content="https://www.twinklemediahub.com/assets/Team/fullteam.png" />
+        <meta name="twitter:image" content="https://www.twinklemediahub.com/assets/Team/fullteam.webp" />
 
         {/* Schema Markup for SEO */}
         <script type="application/ld+json">
@@ -57,7 +57,7 @@ export default function Team() {
             "@type": "Organization",
             "name": "Twinkle Media Hub Pvt. Ltd.",
             "url": "https://www.twinklemediahub.com",
-            "logo": "https://www.twinklemediahub.com/logo.png",
+            "logo": "https://www.twinklemediahub.com/logo.webp",
             "description": "Leading commercial advertisement production company in Mumbai & Navi Mumbai.",
             "address": {
               "@type": "PostalAddress",
@@ -80,7 +80,7 @@ export default function Team() {
         <div className="leader left">
           <div className="leader-content">
             <div className="leader-img">
-              <img src="./asset/Team/maam.png" alt="CEO" />
+              <img src="./asset/Team/maam.webp" alt="CEO" />
             </div>
             <div className="leader-text">
               <h2 className="leader-name">Deepika Rajan</h2>
@@ -97,7 +97,7 @@ export default function Team() {
               <p className="leader-role">-Managing Director</p>
             </div>
             <div className="leader-img">
-              <img src="./asset/Team/sir.png" alt="managing director" />
+              <img src="./asset/Team/sir.webp" alt="managing director" />
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function Team() {
                 <div className="card-border"></div>
                 <div className="leader-image-wrapper">
                   <div className="leader-image ceo-bg">
-                    <img src="./asset/team/maam.png" alt="" />
+                    <img src="./asset/team/maam.webp" alt="" />
                   </div>
                   <div className="designation-badge ceo-badge">
                     Chief Executive Officer
@@ -134,7 +134,7 @@ export default function Team() {
                 <div className="card-border"></div>
                 <div className="leader-image-wrapper">
                   <div className="leader-image md-bg">
-                    <img src="./asset/team/sir.png" alt="" />
+                    <img src="./asset/team/sir.webp" alt="" />
 
                   </div>
                   <div className="designation-badge md-badge">
@@ -160,43 +160,43 @@ export default function Team() {
               <span>Meet</span> Our Team
             </h2>
             <div>
-              <img src="./asset/Team/fullteam.png" alt="full team" />
+              <img src="./asset/Team/fullteam.webp" alt="full team" />
             </div>
           </section>
 
           <div className="team-wrapper">
             <div className="team-track">
               <div className="membg">
-                <img src="./asset/Team/memb1.png" alt="our team" />
+                <img src="./asset/Team/memb1.webp" alt="our team" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb2.png" alt="our team" />
+                <img src="./asset/Team/memb2.webp" alt="our team" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb3.png" alt="our team" />
+                <img src="./asset/Team/memb3.webp" alt="our team" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb4.png" alt="our team" />
+                <img src="./asset/Team/memb4.webp" alt="our team" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb5.png" alt="our team" />
+                <img src="./asset/Team/memb5.webp" alt="our team" />
               </div>
 
               {/* duplicates for infinite loop */}
               <div className="membg">
-                <img src="./asset/Team/memb1.png" alt="our team" />
+                <img src="./asset/Team/memb1.webp" alt="our team" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb2.png" alt="our team" />
+                <img src="./asset/Team/memb2.webp" alt="our team" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb3.png" alt="our team" />
+                <img src="./asset/Team/memb3.webp" alt="our team" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb4.png" alt="our team" />
+                <img src="./asset/Team/memb4.webp" alt="our team" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb5.png" alt="our team" />
+                <img src="./asset/Team/memb5.webp" alt="our team" />
               </div>
             </div>
           </div>
