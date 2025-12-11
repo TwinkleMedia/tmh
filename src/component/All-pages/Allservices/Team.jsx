@@ -167,36 +167,36 @@ export default function Team() {
           <div className="team-wrapper">
             <div className="team-track">
               <div className="membg">
-                <img src="./asset/Team/memb1.webp" alt="our team" />
+                <img src="./asset/Team/memb1.webp" alt="Twinkle media hub team member " loading="lazy"/>
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb2.webp" alt="our team" />
+                <img src="./asset/Team/memb2.webp" alt="Twinkle media hub team member" loading="lazy" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb3.webp" alt="our team" />
+                <img src="./asset/Team/memb3.webp" alt="Twinkle media hub team member" loading="lazy" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb4.webp" alt="our team" />
+                <img src="./asset/Team/memb4.webp" alt="Twinkle media hub team member" loading="lazy" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb5.webp" alt="our team" />
+                <img src="./asset/Team/memb5.webp" alt="Twinkle media hub team member" loading="lazy"/>
               </div>
 
               {/* duplicates for infinite loop */}
               <div className="membg">
-                <img src="./asset/Team/memb1.webp" alt="our team" />
+                <img src="./asset/Team/memb1.webp" alt="Twinkle media hub team member" loading="lazy"/>
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb2.webp" alt="our team" />
+                <img src="./asset/Team/memb2.webp" alt="Twinkle media hub team member" loading="lazy"/>
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb3.webp" alt="our team" />
+                <img src="./asset/Team/memb3.webp" alt="Twinkle media hub team member" loading="lazy" />
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb4.webp" alt="our team" />
+                <img src="./asset/Team/memb4.webp" alt="Twinkle media hub team member" loading="lazy"/>
               </div>
               <div className="membg">
-                <img src="./asset/Team/memb5.webp" alt="our team" />
+                <img src="./asset/Team/memb5.webp" alt="Twinkle media hub team member" loading="lazy"/>
               </div>
             </div>
           </div>
