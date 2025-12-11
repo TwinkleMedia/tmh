@@ -132,30 +132,63 @@ const ReelSlider = () => {
   }
 
   return (
-    <div className="reel-container">
+    <div className="reel-container" aria-label="Showcase Reels from Twinkle Media Hub">
+      {/* JSON-LD SCHEMA */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "Our Showcase Reels",
+          "itemListElement": reels.map((video, i) => ({
+            "@type": "VideoObject",
+            "position": i + 1,
+            "name": video.title,
+            "uploadDate": video.created_at,
+            "contentUrl": video.url,
+            "description": `A showcase reel by Twinkle Media Hub titled ${video.title}`,
+            "thumbnailUrl": "/asset/reels/thumb.jpg"
+          }))
+        })}
+      </script>
+      <h2 className="visually-hidden">Our Showcase Reels</h2>
       <Heading headingLabel="Our Showcase Reels" />
-
+      <p className="section-description">
+        Explore a collection of our creative and high-performing reels crafted for brands,
+        campaigns, and social media storytelling.
+      </p>
       <div className="reel-slider">
-        <button className="prev-btn" onClick={handlePrev}>
+        <button className="prev-btn" onClick={handlePrev} aria-label="Previous reel">
           <ChevronLeft />
         </button>
 
         <div className="reelvideo-grid">
           {visibleReels.map((reel) => (
-            <div key={reel.id} className="reelvideo-container">
+            <article
+              key={reel.id}
+              className="reelvideo-container"
+              aria-label={`Reel: ${reel.title}`}
+            >
               <div className="insta-overlay">
                 <i className="fab fa-instagram"></i>
-                <div className="insta-text"><a href="https://www.instagram.com/twinklemediahub/" target="_blank"  rel="noopener noreferrer">Follow Us</a></div>
+                <div className="insta-text">
+                  <a href="https://www.instagram.com/twinklemediahub/" target="_blank" rel="noopener noreferrer">
+                    Follow Us
+                  </a>
+                </div>
               </div>
+
               <video
                 src={reel.url}
+                title={reel.title}
                 controls
-                autoPlay
                 loop
                 muted
+                preload="metadata"
                 playsInline
+                loading="lazy"
                 style={{ width: "100%", height: "auto" }}
               />
+
               <div className="reelvideo-overlay">
                 <div className="reelvideo-info">
                   <div className="reelvideo-title">{reel.title}</div>
@@ -163,23 +196,25 @@ const ReelSlider = () => {
                     Uploaded on: {new Date(reel.created_at).toLocaleDateString()}
                   </div>
                 </div>
+
                 <div className="reelvideo-controls">
-                  <button className="control-button">
+                  <button className="control-button" aria-label="Like">
                     <Heart size={24} />
                   </button>
-                  <button className="control-button">
+                  <button className="control-button" aria-label="Comment">
                     <MessageCircle size={24} />
                   </button>
-                  <button className="control-button">
+                  <button className="control-button" aria-label="Share">
                     <Share2 size={24} />
                   </button>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
-        <button className="next-btn" onClick={handleNext}>
+
+        <button className="next-btn" onClick={handleNext} aria-label="Next Reel">
           <ChevronRight />
         </button>
       </div>

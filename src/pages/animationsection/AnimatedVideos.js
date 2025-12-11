@@ -191,12 +191,12 @@ export default function AnimatedVideos() {
   // };
 
   // Get visible animates with infinite loop
-  const visibleanimates = [];
+  const visiblevideos = [];
   const count = Math.min(videosToShow, animatesData.length);
 
   for (let i = 0; i < count; i++) {
     const index = (startIndex + i) % animatesData.length;
-    visibleanimates.push(animatesData[index]);
+    visiblevideos.push(animatesData[index]);
   }
   const handleNext = () => {
     setStartIndex((prevIndex) => (prevIndex + 1) % animatesData.length);
@@ -205,53 +205,67 @@ export default function AnimatedVideos() {
   const handlePrev = () => {
     setStartIndex((prevIndex) => (prevIndex - 1 + animatesData.length) % animatesData.length);
   };
-  return (<div className="animate-container">
+  return (<div className="animate-container" aria-label="Animated Videos by Twinkle Media Hub">
+    {/* SEO JSON-LD Schema */}
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Animated Videos",
+        "description": "Collection of professional animated videos by Twinkle Media Hub, Navi Mumbai.",
+        "itemListElement": animatesData.map((video, index) => ({
+          "@type": "VideoObject",
+          "position": index + 1,
+          "name": video.title,
+          "uploadDate": video.created_at,
+          "contentUrl": video.url,
+          "description": `Animated visual content titled ${video.title} by Twinkle Media Hub.`,
+          "thumbnailUrl": "/asset/animateVideos/thumbnail.jpg"
+        }))
+      })}
+    </script>
+    <h2 className="visually-hidden">Animated Videos</h2>
     <Heading headingLabel="Animated videos" />
-
+    <p className="section-description">
+      Discover our high-quality animated promotional videos designed for brand storytelling,
+      digital marketing, and creative visual communication.
+    </p>
     <div className="animate-slider">
-      <button className="prev-btn" onClick={handlePrev}>
+      <button className="prev-btn" onClick={handlePrev} aria-label="Previous animated video">
         <ChevronLeft />
       </button>
 
       <div className="animatevideo-grid">
-        {visibleanimates.map((animate, index) => (
-          <div key={animate.id || index} className="video-container" style={{ width: '100%', maxWidth: '600px', margin: '0 auto' }}>
+        {visiblevideos.map((video) => (
+          <article
+            key={video.id}
+            className="video-container"
+            aria-label={`Animated video: ${video.title}`}
+            style={{ width: "100%", maxWidth: "600px", margin: "0 auto" }}
+          >
             <video
-              src={animate.url}
-              autoPlay
+              src={video.url}
+              title={video.title}
               muted
               loop
               playsInline
-              preload="none"
+              preload="metadata"
               loading="lazy"
-              style={{ width: "100%", height: "auto", borderRadius: '10px' }}
+              style={{ width: "100%", height: "auto", borderRadius: "10px" }}
             />
-            {/* <div className="video-overlay"> */}
-            {/* <div className="video-info"> */}
-            {/* <div className="video-title">{animate.title}</div> */}
-            {/* <div className="video-description">
-                  Uploaded on: {new Date(animate.created_at).toLocaleDateString()}
-                </div> */}
-            {/* </div> */}
-            {/* <div className="video-controls">
-                <button className="control-button">
-                  <Heart size={24} />
-                </button>
-                <button className="control-button">
-                  <MessageCircle size={24} />
-                </button>
-                <button className="control-button">
-                  <Share2 size={24} />
-                </button>
-              </div> */}
-            {/* </div> */}
-          </div>
-        ))}
 
+            <div className="visually-hidden" style={{ paddingTop: "8px", textAlign: "center" }}>
+              <strong>{video.title}</strong>
+              <div style={{ fontSize: "14px", color: "#666" }}>
+                Uploaded: {new Date(video.created_at).toLocaleDateString()}
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
 
 
-      <button className="next-btn" onClick={handleNext}>
+      <button className="next-btn" onClick={handleNext} aria-label="Next animated video">
         <ChevronRight />
       </button>
     </div>

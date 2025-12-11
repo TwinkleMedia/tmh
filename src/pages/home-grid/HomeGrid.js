@@ -261,9 +261,28 @@ export default function HomeGrid() {
     return () => clearInterval(interval);
   }, [groupedImages.length]);
   return (
-    <div className="four-carousel-wrapper">
+    <div className="four-carousel-wrapper" aria-label="Our Best Creation Gallery">
+      {/* JSON-LD SCHEMA */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "Our Best Creation",
+          "itemListElement": images.map((img, index) => ({
+            "@type": "ImageObject",
+            "position": index + 1,
+            "contentUrl": img,
+            "description": "Twinkle Media Hub - Best Creative Work"
+          }))
+        })}
+      </script>
       <div className="py-4">
+        <h2 className="visually-hidden">Our Best Creation</h2>
         <Heading headingLabel="Our Best Creation" />
+        <p className="section-description">
+          Explore some of our finest creative work, showcasing brand storytelling, visual design,
+          photography, and promotional content crafted for our clients.
+        </p>
       </div>
 
       {/* SLIDER */}
@@ -295,7 +314,8 @@ export default function HomeGrid() {
               >
                 <img
                   src={img}
-                  alt={`slide-${idx}-${i}`}
+                  alt={`Creative work sample slide- ${idx}-${i} from Twinkle Media Hub`}
+                  loading="lazy"
                   style={{
                     width: "100%",
                     height: "auto",
@@ -314,6 +334,7 @@ export default function HomeGrid() {
         onClick={() =>
           setCurrent(current === 0 ? groupedImages.length - 1 : current - 1)
         }
+        aria-label="Previous Slide"
       >
         ❮
       </button>
@@ -323,6 +344,7 @@ export default function HomeGrid() {
         onClick={() =>
           setCurrent(current === groupedImages.length - 1 ? 0 : current + 1)
         }
+        aria-label="Next Slide"
       >
         ❯
       </button>

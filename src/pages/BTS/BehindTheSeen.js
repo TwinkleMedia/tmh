@@ -97,17 +97,23 @@ export default function BehindTheSeen() {
     //     )}
     //   </div>
     // </div>
-    <div className="portfolio pt-5" id="behind-the-seen">
+    <div className="portfolio pt-5" id="behind-the-seen" aria-labelledby="bts-heading">
       <div className="container">
 
         {/* Section Title */}
         <Heading headingLabel="Behind The Scene" />
-
+        <p className="section-description">
+          Behind-the-scenes production clips from Twinkle Media Hub showcasing
+          real filming environments, on-set workflows, lighting setups, and
+          professional crew coordination in Navi Mumbai.
+        </p>
         <div className="video-wrapper">
           <iframe
             className="yt-video"
             src="https://www.youtube.com/embed/T9fS2CghQFY?autoplay=1&mute=1&loop=1&playlist=T9fS2CghQFY&controls=1&rel=0&modestbranding=1"
-            title="YouTube video player"
+            title="Behind The Scene – Twinkle Media Hub Production Shoot"
+            loading="lazy"
+            aria-label="Behind-the-scenes production video from Twinkle Media Hub"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
@@ -116,18 +122,71 @@ export default function BehindTheSeen() {
               <div className="image-column col-1">
                 <div className="scroll-track2 top-bottom">
                   {Array(2).fill(0).map((_, i) => (
-                    <>
-                      <video key={`c1-img1-${i}`} src="/asset/bts/bts1.mp4" autoPlay muted playsInline preload="metadata"
-                        loading="lazy" loop />
-                      <video key={`c1-img2-${i}`} src="/asset/bts/bts2.mp4" autoPlay muted playsInline preload="metadata"
-                        loading="lazy" loop />
-                      <video key={`c1-img3-${i}`} src="/asset/bts/bts3.mp4" autoPlay muted playsInline preload="metadata"
-                        loading="lazy" loop />
-                      <video key={`c1-img4-${i}`} src="/asset/bts/bts4.mp4" autoPlay muted playsInline preload="metadata"
-                        loading="lazy" loop />
-                      <img key={`c1-img4-${i}`} src="/asset/bts/bts5.webp" />
-                      <img key={`c1-img4-${i}`} src="/asset/bts/bts6.webp" />
-                    </>
+                    <React.Fragment key={i}>
+
+                      <video
+                        key={`bts1-${i}`}
+                        src="/asset/bts/bts1.mp4"
+                        autoPlay
+                        muted
+                        playsInline
+                        preload="metadata"
+                        loading="lazy"
+                        loop
+                        aria-label="Behind the scenes clip 1 – shooting setup"
+                      />
+
+                      <video
+                        key={`bts2-${i}`}
+                        src="/asset/bts/bts2.mp4"
+                        autoPlay
+                        muted
+                        playsInline
+                        preload="metadata"
+                        loading="lazy"
+                        loop
+                        aria-label="Behind the scenes clip 2 – filming equipment"
+                      />
+
+                      <video
+                        key={`bts3-${i}`}
+                        src="/asset/bts/bts3.mp4"
+                        autoPlay
+                        muted
+                        playsInline
+                        preload="metadata"
+                        loading="lazy"
+                        loop
+                        aria-label="Behind the scenes clip 3 – crew working on location"
+                      />
+
+                      <video
+                        key={`bts4-${i}`}
+                        src="/asset/bts/bts4.mp4"
+                        autoPlay
+                        muted
+                        playsInline
+                        preload="metadata"
+                        loading="lazy"
+                        loop
+                        aria-label="Behind the scenes clip 4 – lighting setup"
+                      />
+
+                      <img
+                        key={`bts5-${i}`}
+                        src="/asset/bts/bts5.webp"
+                        loading="lazy"
+                        alt="Behind the scenes photo – production still 1"
+                      />
+
+                      <img
+                        key={`bts6-${i}`}
+                        src="/asset/bts/bts6.webp"
+                        loading="lazy"
+                        alt="Behind the scenes photo – production still 2"
+                      />
+
+                    </React.Fragment>
                   ))}
                 </div>
               </div>

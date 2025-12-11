@@ -459,53 +459,79 @@ const ClientTestimonial = () => {
     const index = (startIndex + i) % testimonials.length;
     visibletestimonialss.push(testimonials[index]);
   }
-  return (<div className="testimonial-container"><Heading headingLabel="Client Testimonial" />
-    <div className="testimonials-slider">
-      {/* <button className="prev-btn" onClick={handlePrev}>
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": testimonials.map((item, index) => ({
+      "@type": "Review",
+      "position": index + 1,
+      "author": "Client",
+      "reviewBody": item.description,
+      "name": item.title,
+      "datePublished": item.created_at
+    }))
+  };
+
+  return (
+    <div className="testimonial-container" aria-label="Client Testimonials">
+      <Heading headingLabel="Client Testimonial" />
+      <script type="application/ld+json">
+        {JSON.stringify(jsonLd)}
+      </script>
+      <div className="testimonials-slider">
+        {/* <button className="prev-btn" onClick={handlePrev}>
         <ChevronLeft />
       </button> */}
+        <div className="Clientvideo-grid" role="list">
+          {visibletestimonialss.map((item) => (
+            <article
+              key={item.id}
+              className="Clientvideo-container"
+              role="listitem"
+              aria-label={`Testimonial from client: ${item.title}`}
+            >
+              <figure>
+                <video
+                  src={item.url}
+                  title={item.title}
+                  autoPlay
+                  loop
+                  muted
+                  controls
+                  playsInline
+                  preload="metadata"
+                  loading="lazy"
+                  style={{ width: "100%", height: "auto" }}
+                ></video>
 
-      <div className="Clientvideo-grid">
-        {visibletestimonialss.map((testimonials) => (
-          <div key={testimonials.id} className="Clientvideo-container">
-            <video
-              src={testimonials.url}
-              controls
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="metadata"
-              loading="lazy"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <div className="Clientvideo-overlay">
-              <div className="Clientvideo-info">
-                <div className="Clientvideo-title">{testimonials.title}</div>
-                <div className="Clientvideo-description">
-                  Uploaded on: {new Date(testimonials.created_at).toLocaleDateString()}
-                </div>
-              </div>
+                <figcaption>
+                  <h3 className="Clientvideo-title">{item.title}</h3>
+                  <p className="Clientvideo-description">{item.description}</p>
+                  <p className="upload-date">
+                    Uploaded on: {new Date(item.created_at).toLocaleDateString()}
+                  </p>
+                </figcaption>
+              </figure>
+
               <div className="Clientvideo-controls">
-                <button className="control-button">
+                <button aria-label="Like this testimonial" className="control-button">
                   <Heart size={24} />
                 </button>
-                <button className="control-button">
+                <button aria-label="Comment on this testimonial" className="control-button">
                   <MessageCircle size={24} />
                 </button>
-                <button className="control-button">
+                <button aria-label="Share this testimonial" className="control-button">
                   <Share2 size={24} />
                 </button>
               </div>
-            </div>
-          </div>
-        ))}
-      </div>
+            </article>
+          ))}
+        </div>
 
-      {/* <button className="next-btn" onClick={handleNext}>
+        {/* <button className="next-btn" onClick={handleNext}>
         <ChevronRight />
       </button> */}
-    </div></div>)
+      </div></div>)
 }
 
 export default ClientTestimonial;

@@ -174,11 +174,14 @@
   transform: scale(1.1);
 }
 
-.section-description
-{
+.section-description {
   color: #063f9c;
   margin: 40px auto;
+  text-align: center;
+  max-width: 900px;
+  margin: 10px auto;
 }
+
 /* Add these styles to your Our_work.css file */
 
 .loadLess {
@@ -318,6 +321,7 @@
     height: 200px;
   }
 }
+
 @media (max-width: 480px) {
   .Framevideo-wrapper {
     grid-template-columns: 1fr;

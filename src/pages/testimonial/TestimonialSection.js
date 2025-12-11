@@ -79,18 +79,30 @@ export default function TestimonialSection() {
   const goToSlide = (index) => {
     setCurrentIndex(index);
   };
-
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: testimonials.map((t, index) => ({
+      "@type": "Review",
+      position: index + 1,
+      author: t.name,
+      reviewBody: t.quote,
+      name: "Twinkle Media Hub Client Testimonial",
+    })),
+  };
   return (
     <div
-      className="testimonial-section container py-5"
+      className="testimonial-section container pb-5" aria-label="Customer Testimonials and Google Reviews"
       onMouseEnter={stopAutoSlide}
       onMouseLeave={startAutoSlide}
+
     >
+      <script type="application/ld+json">{JSON.stringify(jsonLdData)}</script>
       <div className="row justify-content-center py-5">
         <Heading headingLabel="Google Reviews" />
       </div>
 
-      <div className="slider-wrapper">
+      <div className="slider-wrapper" role="region" aria-live="polite">
         <div
           className="slider"
           style={{
@@ -98,21 +110,22 @@ export default function TestimonialSection() {
           }}
         >
           {testimonials.map((testimonial, index) => (
-            <div className="slide" key={index}>
+            <article className="slide" key={index}>
               <div className="card testimonial-card text-center m-auto">
                 <div className="card-body">
-                  {/* <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="testimonial-img mb-3"
-                  /> */}
                   <img
                     src="asset/img/googlereview.png"
-                    alt="Google"
+                    alt="Google Reviews Verified"
                     className="google-icon mb-2"
+                    loading="lazy"
                   />
-                  <p className="testimonial-quote">"{testimonial.quote}"</p>
-                  <h5 className="testimonial-name mt-3">{testimonial.name}</h5>
+
+                  <blockquote className="testimonial-quote">
+                    “{testimonial.quote}”
+                  </blockquote>
+
+                  <h3 className="testimonial-name mt-3">{testimonial.name}</h3>
+
                   {testimonial.designation && (
                     <p className="testimonial-designation">
                       {testimonial.designation}
@@ -120,18 +133,19 @@ export default function TestimonialSection() {
                   )}
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
 
       {/* Dots Navigation */}
-      <div className="dots">
+      <div className="dots" role="navigation" aria-label="Testimonial Pagination">
         {testimonials.map((_, idx) => (
           <span
             key={idx}
             className={`dot ${idx === currentIndex ? "active" : ""}`}
             onClick={() => goToSlide(idx)}
+            aria-label={`View testimonial ${idx + 1}`}
           ></span>
         ))}
       </div>
