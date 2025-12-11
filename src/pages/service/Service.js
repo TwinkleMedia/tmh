@@ -41,28 +41,24 @@ export default function Service() {
       top: 0,
       behavior: 'smooth'
     });
-  },[]);
+  }, []);
   return (
     <div id="services">
       <Helmet>
-        <title>
-          Twinkle Media Hub Services Best for SEO, PPC, Social Media, Website
-          Development
-        </title>
+        <title>Best Digital Marketing Services in Mumbai | SEO, PPC, Social Media, Web Development</title>
         <link rel="canonical" href="https://www.twinklemediahub.com/services" />
         <meta
           name="description"
-          content="Twinkle Media Hub Pvt. Ltd. -  Best e-commerce Digital Marketing Services with advanced designer consultants at affordable packages for SEO, PPC & Social Media experts. Top professional branding agency to outsource Website Design & Development Companies - India"
+          content="Twinkle Media Hub Pvt. Ltd. delivers top-rated Digital Marketing Services in Mumbai including SEO, PPC, Social Media Marketing, Website Development, Branding, Video Production & Graphic Designing. Boost your online presence with expert strategies."
         />
         <meta
           name="keywords"
-          content="Digital Marketing, SEO, PPC, Social Media Marketing, Email Marketing, Graphic design, Direct Marketing, Web Development, Video Editing, Email Marketing, Bulk WhatsApp marketing,"
+          content="Digital Marketing Services Mumbai, SEO Company Mumbai, Social Media Marketing Agency India, PPC Services Mumbai, Web Development Company, Best Digital Marketing Agency in Mumbai, Graphic Design Services, Video Production Agency, Branding Agency India"
         />
-        <meta
-          property="og:title"
-          content="Twinkle Media Hub Services Best for SEO, PPC, Social Media, Website
-          Development"
-        />
+        <link rel="canonical" href="https://www.twinklemediahub.com/services" />
+        {/* Open Graph (Facebook / LinkedIn) */}
+        <meta property="og:title" content="Best Digital Marketing Agency in Mumbai | SEO, PPC, SMM & Web Development" />
+       
         <meta
           property="og:site_name"
           content="Twinkle Media Hub Services Pvt. Ltd."
