@@ -58,17 +58,46 @@ export default function Service() {
         <link rel="canonical" href="https://www.twinklemediahub.com/services" />
         {/* Open Graph (Facebook / LinkedIn) */}
         <meta property="og:title" content="Best Digital Marketing Agency in Mumbai | SEO, PPC, SMM & Web Development" />
-       
-        <meta
-          property="og:site_name"
-          content="Twinkle Media Hub Services Pvt. Ltd."
-        />
-        <meta property="og:url" content="https://twinklemediahub.com/services" />
         <meta
           property="og:description"
-          content="Twinkle Media Hub Pvt. Ltd. -  Best e-commerce Digital Marketing Services with advanced designer consultants at affordable packages for SEO, PPC & Social Media experts. Top professional branding agency to outsource Website Design & Development Companies - India"
+          content="Get premium SEO, PPC, Social Media Marketing, Website Development & Branding Services. Grow your business with strategic and result-driven digital marketing solutions."
         />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.twinklemediahub.com/services" />
+        <meta property="og:image" content="https://www.twinklemediahub.com/assets/logo.png" />
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Twinkle Media Hub – Best Digital Marketing & SEO Services in Mumbai" />
+        <meta
+          name="twitter:description"
+          content="Top SEO, PPC, Social Media, Graphic Design & Website Development services. Your trusted digital marketing partner in India."
+        />
+        <meta name="twitter:image" content="https://www.twinklemediahub.com/assets/logo.png" />
+        {/* Schema Markup (SEO Booster) */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org/",
+        "@type": "ProfessionalService",
+        "name": "Twinkle Media Hub Pvt. Ltd.",
+        "url": "https://www.twinklemediahub.com/services",
+        "logo": "https://www.twinklemediahub.com/assets/logo.png",
+        "description": "Best Digital Marketing Agency in Mumbai providing SEO, PPC, SMM, Website Development, Branding & Media Production.",
+        "sameAs": [
+          "https://www.facebook.com/twinklemediahub",
+          "https://www.instagram.com/twinklemediahub",
+          "https://www.linkedin.com/company/twinklemediahub"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mumbai",
+          "addressLocality": "Mumbai",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "India"
+        }
+      }
+    `}
+        </script>
       </Helmet>
       <Breadcrumbs breadheading={"Services"} breadcrumbsLabel={"Services"} />
       <div className="smm-hero-section">
@@ -112,7 +141,7 @@ export default function Service() {
           </div>
 
           <div className="hero-image hero-image-slider">
-            <img key={currentState} src={images[currentState]} alt="images Slider" className="slider-Image fadeSlide" />
+            <img key={currentState} src={images[currentState]} alt="Digital Marketing Services – Twinkle Media Hub" className="slider-Image fadeSlide" />
           </div>
         </section>
         {/* <Allservices
@@ -121,7 +150,7 @@ export default function Service() {
                 h4para={""}
               /> */}
       </div>
-      <Heading headingLabel="Best Digital Marketing Agency in Mumbai" />
+      <Heading headingLabel="Top Digital Marketing Services in Mumbai – SEO, PPC, SMM, Web Development" />
       <div className="container">
         <div className="row servicesSection">
           <ServicesSection
@@ -179,6 +208,29 @@ export default function Service() {
             desc="Professional video and audio production services."
           />
         </div>
+      </div>
+      <div className="service-extra-section container mt-5">
+        <h2 className="service-extra-title">
+          Why Choose Our Digital Marketing Services in Mumbai?
+        </h2>
+
+        <p className="service-extra-text">
+          Twinkle Media Hub Pvt. Ltd. is recognized as one of the best Digital Marketing
+          Agencies in Mumbai. Our expert team specializes in SEO, Social Media Marketing,
+          Website Development, PPC Advertising, Branding, and Media Production — helping
+          businesses grow with data-driven strategies and high-performance campaigns.
+        </p>
+
+        <h3 className="service-extra-subtitle">Industries We Serve</h3>
+
+        <ul className="industry-list">
+          <li>E-commerce</li>
+          <li>Real Estate</li>
+          <li>Hotels & Hospitality</li>
+          <li>Education</li>
+          <li>Fitness & Gym</li>
+          <li>Corporate & Startups</li>
+        </ul>
       </div>
 
     </div>

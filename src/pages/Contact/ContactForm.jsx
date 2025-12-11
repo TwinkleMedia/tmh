@@ -28,7 +28,7 @@ function ContactForm() {
             <h3 className="form-header text-black">Contact Us</h3>
             <form className="color" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label for="name">Name</label>
+                <label for="name">Full Name</label>
                 <input
                   type="text"
                   className="form-control"
@@ -45,7 +45,7 @@ function ContactForm() {
               </div>
               <br />
               <div className="form-group">
-                <label for="email">Email</label>
+                <label for="email">Email Address</label>
                 <input
                   type="email"
                   className="form-control"
@@ -85,7 +85,7 @@ function ContactForm() {
                   id="message"
                   name="message"
                   rows="4"
-                  placeholder="Enter your message"
+                  placeholder="Write your message"
                   value={formData.message}
                   onChange={(e) => {
                     setFormData({
@@ -98,8 +98,7 @@ function ContactForm() {
               <br />
               <button type="submit" className="submit-btn btn mb-2">
                 <button type="button">
-                  {" "}
-                  <span>Submit</span>
+                  <span>Send Message</span>
                 </button>
               </button>
             </form>
@@ -109,7 +108,7 @@ function ContactForm() {
           <div className="contact-details">
             <h3>Get in touch</h3>
             <p>
-              <strong>Address:</strong>
+              <strong>Office Address:</strong>
             </p>
             <a href="#" target="_blank">
               <p>
@@ -132,7 +131,7 @@ function ContactForm() {
             <p>
               <strong>Email:</strong>
             </p>
-            <a href="mailto:info@eksafoodproducts.com">
+            <a href="mailto:info@twinklemediahub.com">
               <p className="text-break">info@twinklemediahub.com</p>
             </a>
             <h4 className=" text-center">Follow Us</h4>
