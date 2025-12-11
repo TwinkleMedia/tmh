@@ -80,7 +80,7 @@ export default function Team() {
         <div className="leader left">
           <div className="leader-content">
             <div className="leader-img">
-              <img src="./asset/Team/maam.webp" alt="CEO" />
+              <img src="./asset/Team/maam.webp" alt="Twinkle Media Hub - CEO" />
             </div>
             <div className="leader-text">
               <h2 className="leader-name">Deepika Rajan</h2>
@@ -97,7 +97,7 @@ export default function Team() {
               <p className="leader-role">-Managing Director</p>
             </div>
             <div className="leader-img">
-              <img src="./asset/Team/sir.webp" alt="managing director" />
+              <img src="./asset/Team/sir.webp" alt="Twinkle Media Hub - managing director" />
             </div>
           </div>
         </div>
