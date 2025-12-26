@@ -169,13 +169,17 @@ const ReelSlider = () => {
               aria-label={`Reel: ${reel.title}`}
             >
               <div className="insta-overlay">
-                <i className="fab fa-instagram"></i>
-                <div className="insta-text">
-                  <a href="https://www.instagram.com/twinklemediahub/" target="_blank" rel="noopener noreferrer">
-                    Follow Us
-                  </a>
-                </div>
+                <a
+                  href="https://www.instagram.com/twinklemediahub/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="insta-link"
+                  aria-label="Follow us on Instagram"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
               </div>
+
 
               <video
                 src={reel.url}
