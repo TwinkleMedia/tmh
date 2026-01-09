@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Heading from "../../component/Heading/Heading";
 import "./AnimatedVideos.css";
@@ -109,7 +109,7 @@ export default function AnimatedVideos() {
   //     </div>
   //   </div>
   // );
-
+  const videoRef = useRef({});
   const staticVideos = [
     {
       id: 1,
@@ -157,6 +157,23 @@ export default function AnimatedVideos() {
   const [animatesData, setanimatesData] = useState(staticVideos);
   const [startIndex, setStartIndex] = useState(0);
   const [videosToShow, setVideosToShow] = useState(4); // default for desktop
+  const handleVideoToggle = (currentId) => {
+    Object.entries(videoRef.current).forEach(([id, videoEl]) => {
+      if (!videoEl) return;
+
+      if (id === String(currentId)) {
+        if (videoEl.paused) {
+          videoEl.play();
+        } else {
+          videoEl.pause();
+          videoEl.currentTime = 0; // show thumbnail again
+        }
+      } else {
+        videoEl.pause();
+        videoEl.currentTime = 0;
+      }
+    });
+  };
 
   // Handle responsive videosToShow
   useEffect(() => {
@@ -256,14 +273,15 @@ export default function AnimatedVideos() {
             style={{ width: "100%", maxWidth: "600px", margin: "0 auto" }}
           >
             <video
+              ref={(el) => { if (el) videoRef.current[video.id] = el }}
               src={video.url}
               title={video.title}
               poster={video.thumbnailUrl}
               muted
               loop
               playsInline
-              onClick={(e) => e.currentTarget.play()}
-              preload="metadata"
+              onClick={() => handleVideoToggle(video.id)}
+              preload="metadata" 
               loading="lazy"
               style={{ width: "100%", height: "auto", borderRadius: "10px" }}
             />
