@@ -114,33 +114,45 @@ export default function AnimatedVideos() {
     {
       id: 1,
       url: "/asset/animateVideos/video2.mp4",
-      title: "Animated Video 1",
+      title: "/asset/animateVideos/Animated Video 1",
+      thumbnailUrl: "yc.png",
       created_at: "2023-10-01"
     },
     {
       id: 2,
       url: "/asset/animateVideos/video3.mp4",
       title: "Animated Video 2",
+      thumbnailUrl: "/asset/animateVideos/skyline.png",
       created_at: "2023-10-01"
     },
     {
       id: 3,
       url: "/asset/animateVideos/video4.mp4",
       title: "Animated Video 3",
+      thumbnailUrl: "/asset/animateVideos/yc.png",
       created_at: "2023-10-01"
     },
     {
       id: 4,
       url: "/asset/animateVideos/video5.mp4",
       title: "Animated Video 4",
+      thumbnailUrl: "/asset/animateVideos/divyam.png",
       created_at: "2023-10-01"
     },
-    // {
-    //   id: 5,
-    //   url: "/asset/animateVideos/video6.mp4",
-    //   title: "Animated Video 5",
-    //   created_at: "2023-10-01"
-    // },
+    {
+      id: 5,
+      url: "/asset/animateVideos/video6.mp4",
+      title: "Animated Video 5",
+      thumbnailUrl: "/asset/animateVideos/brewPeaks.png",
+      created_at: "2023-10-01"
+    },
+    {
+      id: 6,
+      url: "/asset/animateVideos/video7.mp4",
+      title: "Animated Video 5",
+      thumbnailUrl: "/asset/animateVideos/chintamani.png",
+      created_at: "2023-10-01"
+    },
   ]
   const [animatesData, setanimatesData] = useState(staticVideos);
   const [startIndex, setStartIndex] = useState(0);
@@ -246,9 +258,11 @@ export default function AnimatedVideos() {
             <video
               src={video.url}
               title={video.title}
+              poster={video.thumbnailUrl}
               muted
               loop
               playsInline
+              onClick={(e) => e.currentTarget.play()}
               preload="metadata"
               loading="lazy"
               style={{ width: "100%", height: "auto", borderRadius: "10px" }}
