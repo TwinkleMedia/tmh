@@ -115,7 +115,7 @@ export default function AnimatedVideos() {
       id: 1,
       url: "/asset/animateVideos/video2.mp4",
       title: "/asset/animateVideos/Animated Video 1",
-      thumbnailUrl: "yc.png",
+      thumbnailUrl: "/asset/animateVideos/yc.png",
       created_at: "2023-10-01"
     },
     {
@@ -129,7 +129,7 @@ export default function AnimatedVideos() {
       id: 3,
       url: "/asset/animateVideos/video4.mp4",
       title: "Animated Video 3",
-      thumbnailUrl: "/asset/animateVideos/yc.png",
+      thumbnailUrl: "/asset/animateVideos/meridian.png",
       created_at: "2023-10-01"
     },
     {
