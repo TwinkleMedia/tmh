@@ -306,7 +306,7 @@ export default function Home() {
           {/* LEFT CONTENT */}
           <div className="hero-left">
             <h1 className="hero-title">
-              <span>TMH : Top Digital Marketing,</span>
+              <span>TMH Top Digital Marketing,</span>
               <span>SEO Agency in Navi Mumbai</span>
             </h1>
 
