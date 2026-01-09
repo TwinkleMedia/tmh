@@ -134,20 +134,13 @@ export default function AnimatedVideos() {
     },
     {
       id: 4,
-      url: "/asset/animateVideos/video5.mp4",
-      title: "Animated Video 4",
-      thumbnailUrl: "/asset/animateVideos/divyam.png",
-      created_at: "2023-10-01"
-    },
-    {
-      id: 5,
       url: "/asset/animateVideos/video6.mp4",
       title: "Animated Video 5",
       thumbnailUrl: "/asset/animateVideos/brewPeaks.png",
       created_at: "2023-10-01"
     },
     {
-      id: 6,
+      id: 5,
       url: "/asset/animateVideos/video7.mp4",
       title: "Animated Video 5",
       thumbnailUrl: "/asset/animateVideos/chintamani.png",
