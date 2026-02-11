@@ -153,8 +153,8 @@ function Careerpage() {
 
               <div className="info-block">
                 <h3 className="info-heading">Phone:</h3>
-                <a href="tel:+917009680118" className="info-link">
-                  <p className="info-text">(+91) 7009680118</p>
+                <a href="tel:+918976171333" className="info-link">
+                  <p className="info-text">(+91) 8976171333</p>
                 </a>
                 <a href="tel:+917900193079" className="info-link">
                   <p className="info-text">(+91) 7900193079</p>

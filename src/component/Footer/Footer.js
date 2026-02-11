@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="footer_contact_list">
               <li><CiLocationOn className="s_icon location" /> Office No. 24, Plot 19, Gauri Complex, Sector 11, CBD Belapur, Navi Mumbai, Maharashtra 400614</li>
               <li><IoMailOpenOutline className="s_icon" /> <a href="mailto:info@twinklemediahub.com">info@twinklemediahub.com</a></li>
-              <li><LuPhone className="s_icon" /> <a href="tel:+917009680118">+91 70096 80118</a></li>
+              <li><LuPhone className="s_icon" /> <a href="tel:+917009680118">+91 8976171333</a></li>
               <li><LuPhone className="s_icon" /> <a href="tel:+917900193079">+91 79001 93079</a></li>
             </ul>
           </div>
