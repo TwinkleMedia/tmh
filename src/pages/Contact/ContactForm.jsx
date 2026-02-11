@@ -121,8 +121,8 @@ function ContactForm() {
             <p>
               <strong>Phone:</strong>
             </p>
-            <a href="tel:+917009680118">
-              <p>(+91) 7009680118</p>
+            <a href="tel:+918976171333">
+              <p>(+91) 8976171333</p>
             </a>
             <br />
             <a href="tel:+917900193079">
